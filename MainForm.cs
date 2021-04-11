@@ -53,7 +53,7 @@ namespace AGaugeApp
             //Tlabel2.Text = e.valueInRange.ToString();
             if (e.valueInRange == 0)
             {
-               // Tlabel4.Text = "in range 0";
+                // Tlabel4.Text = "in range 0";
             }
             else if (e.valueInRange == 1)
             {
@@ -125,15 +125,33 @@ namespace AGaugeApp
             aGauge4T -= 1;
             aGauge5T -= 1;
             if (aGauge1T <= 0)
+            {
                 aGauge1.Value = -125;
+                Agauge1_temp.Text = "-125";
+            }
             if (aGauge2T <= 0)
+            {
                 aGauge2.Value = -125;
+                Agauge2_temp.Text = "-125";
+            }
             if (aGauge3T <= 0)
+            {
                 aGauge3.Value = -125;
+                Agauge3_temp.Text = "-125";
+            }
+
             if (aGauge4T <= 0)
+            {
                 aGauge4.Value = -125;
+                Agauge4_temp.Text = "-125";
+            }
+
             if (aGauge5T <= 0)
+            {
                 aGauge5.Value = -125;
+                Agauge5_temp.Text = "-125";
+            }
+
 
             if (aGauge3.Value >= 100)
             {

@@ -94,6 +94,11 @@ namespace AGaugeApp
             this.GsensorID5 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.DserialPort1 = new System.IO.Ports.SerialPort(this.components);
+            this.Ag1_idinfo = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.Tabs1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -1042,6 +1047,7 @@ namespace AGaugeApp
             // 
             // St_Gauge1
             // 
+            this.St_Gauge1.Controls.Add(this.Ag1_idinfo);
             this.St_Gauge1.Controls.Add(this.GsensorID1);
             this.St_Gauge1.Controls.Add(this.label12);
             this.St_Gauge1.Controls.Add(this.textBox10);
@@ -1059,7 +1065,7 @@ namespace AGaugeApp
             // GsensorID1
             // 
             this.GsensorID1.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::AGaugeApp.Properties.Settings.Default, "GsensorID1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.GsensorID1.Location = new System.Drawing.Point(339, 56);
+            this.GsensorID1.Location = new System.Drawing.Point(453, 26);
             this.GsensorID1.Name = "GsensorID1";
             this.GsensorID1.Size = new System.Drawing.Size(333, 20);
             this.GsensorID1.TabIndex = 6;
@@ -1068,7 +1074,7 @@ namespace AGaugeApp
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(279, 59);
+            this.label12.Location = new System.Drawing.Point(393, 29);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(54, 13);
             this.label12.TabIndex = 5;
@@ -1117,6 +1123,7 @@ namespace AGaugeApp
             // 
             // St_Gauge2
             // 
+            this.St_Gauge2.Controls.Add(this.label17);
             this.St_Gauge2.Controls.Add(this.GsensorID2);
             this.St_Gauge2.Controls.Add(this.label13);
             this.St_Gauge2.Location = new System.Drawing.Point(4, 22);
@@ -1129,7 +1136,7 @@ namespace AGaugeApp
             // GsensorID2
             // 
             this.GsensorID2.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::AGaugeApp.Properties.Settings.Default, "GsensorID2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.GsensorID2.Location = new System.Drawing.Point(368, 62);
+            this.GsensorID2.Location = new System.Drawing.Point(453, 26);
             this.GsensorID2.Name = "GsensorID2";
             this.GsensorID2.Size = new System.Drawing.Size(333, 20);
             this.GsensorID2.TabIndex = 8;
@@ -1138,7 +1145,7 @@ namespace AGaugeApp
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(308, 65);
+            this.label13.Location = new System.Drawing.Point(393, 29);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(54, 13);
             this.label13.TabIndex = 7;
@@ -1146,6 +1153,7 @@ namespace AGaugeApp
             // 
             // St_Gauge3
             // 
+            this.St_Gauge3.Controls.Add(this.label18);
             this.St_Gauge3.Controls.Add(this.GsensorID3);
             this.St_Gauge3.Controls.Add(this.label14);
             this.St_Gauge3.Location = new System.Drawing.Point(4, 22);
@@ -1158,7 +1166,7 @@ namespace AGaugeApp
             // GsensorID3
             // 
             this.GsensorID3.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::AGaugeApp.Properties.Settings.Default, "GsensorID3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.GsensorID3.Location = new System.Drawing.Point(405, 58);
+            this.GsensorID3.Location = new System.Drawing.Point(453, 26);
             this.GsensorID3.Name = "GsensorID3";
             this.GsensorID3.Size = new System.Drawing.Size(333, 20);
             this.GsensorID3.TabIndex = 8;
@@ -1167,7 +1175,7 @@ namespace AGaugeApp
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(345, 61);
+            this.label14.Location = new System.Drawing.Point(393, 29);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(54, 13);
             this.label14.TabIndex = 7;
@@ -1175,6 +1183,7 @@ namespace AGaugeApp
             // 
             // St_Gauge4
             // 
+            this.St_Gauge4.Controls.Add(this.label19);
             this.St_Gauge4.Controls.Add(this.GsensorID4);
             this.St_Gauge4.Controls.Add(this.label15);
             this.St_Gauge4.Location = new System.Drawing.Point(4, 22);
@@ -1187,7 +1196,7 @@ namespace AGaugeApp
             // GsensorID4
             // 
             this.GsensorID4.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::AGaugeApp.Properties.Settings.Default, "GsensorID4", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.GsensorID4.Location = new System.Drawing.Point(416, 56);
+            this.GsensorID4.Location = new System.Drawing.Point(453, 26);
             this.GsensorID4.Name = "GsensorID4";
             this.GsensorID4.Size = new System.Drawing.Size(333, 20);
             this.GsensorID4.TabIndex = 8;
@@ -1196,7 +1205,7 @@ namespace AGaugeApp
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(356, 59);
+            this.label15.Location = new System.Drawing.Point(393, 29);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(54, 13);
             this.label15.TabIndex = 7;
@@ -1204,6 +1213,7 @@ namespace AGaugeApp
             // 
             // St_Gauge5
             // 
+            this.St_Gauge5.Controls.Add(this.label20);
             this.St_Gauge5.Controls.Add(this.GsensorID5);
             this.St_Gauge5.Controls.Add(this.label16);
             this.St_Gauge5.Location = new System.Drawing.Point(4, 22);
@@ -1216,7 +1226,7 @@ namespace AGaugeApp
             // GsensorID5
             // 
             this.GsensorID5.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::AGaugeApp.Properties.Settings.Default, "GsensorID5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.GsensorID5.Location = new System.Drawing.Point(431, 66);
+            this.GsensorID5.Location = new System.Drawing.Point(453, 26);
             this.GsensorID5.Name = "GsensorID5";
             this.GsensorID5.Size = new System.Drawing.Size(333, 20);
             this.GsensorID5.TabIndex = 8;
@@ -1225,7 +1235,7 @@ namespace AGaugeApp
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(371, 69);
+            this.label16.Location = new System.Drawing.Point(393, 29);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(54, 13);
             this.label16.TabIndex = 7;
@@ -1237,6 +1247,51 @@ namespace AGaugeApp
             this.DserialPort1.PortName = global::AGaugeApp.Properties.Settings.Default.ComPort;
             this.DserialPort1.ErrorReceived += new System.IO.Ports.SerialErrorReceivedEventHandler(this.DserialPort1_ErrorReceived);
             this.DserialPort1.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.DserialPort1_DataReceived);
+            // 
+            // Ag1_idinfo
+            // 
+            this.Ag1_idinfo.AutoSize = true;
+            this.Ag1_idinfo.Location = new System.Drawing.Point(430, 10);
+            this.Ag1_idinfo.Name = "Ag1_idinfo";
+            this.Ag1_idinfo.Size = new System.Drawing.Size(356, 13);
+            this.Ag1_idinfo.TabIndex = 7;
+            this.Ag1_idinfo.Text = "Enter sensor ID number in hex or Snumber  EG \"S1\" to auto detect hex ID";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(430, 10);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(356, 13);
+            this.label17.TabIndex = 9;
+            this.label17.Text = "Enter sensor ID number in hex or Snumber  EG \"S2\" to auto detect hex ID";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(430, 10);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(356, 13);
+            this.label18.TabIndex = 9;
+            this.label18.Text = "Enter sensor ID number in hex or Snumber  EG \"S3\" to auto detect hex ID";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(430, 10);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(356, 13);
+            this.label19.TabIndex = 9;
+            this.label19.Text = "Enter sensor ID number in hex or Snumber  EG \"S4\" to auto detect hex ID";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(430, 10);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(356, 13);
+            this.label20.TabIndex = 9;
+            this.label20.Text = "Enter sensor ID number in hex or Snumber  EG \"S5\" to auto detect hex ID";
             // 
             // PHeatingSystem
             // 
@@ -1341,5 +1396,10 @@ namespace AGaugeApp
         private System.Windows.Forms.Label Agauge4_temp;
         private System.Windows.Forms.Label Agauge3_temp;
         private System.Windows.Forms.Label Agauge2_temp;
+        private System.Windows.Forms.Label Ag1_idinfo;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
     }
 }
