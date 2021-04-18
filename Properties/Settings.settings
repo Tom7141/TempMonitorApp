@@ -6,43 +6,55 @@
       <Value Profile="(Default)">COM1</Value>
     </Setting>
     <Setting Name="BaudRate" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">9600</Value>
+      <Value Profile="(Default)">115200</Value>
     </Setting>
     <Setting Name="baurdr" Type="System.String" Scope="User">
-      <Value Profile="(Default)">9600</Value>
+      <Value Profile="(Default)">115200</Value>
     </Setting>
     <Setting Name="Gauge5_Label" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Hotwater ReturnTemp</Value>
+      <Value Profile="(Default)">T5</Value>
     </Setting>
     <Setting Name="Gauge4_Label" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Hotwater Feed Temp</Value>
+      <Value Profile="(Default)">T4</Value>
     </Setting>
     <Setting Name="Gauge3_Label" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Heating Return Temp</Value>
+      <Value Profile="(Default)">T3</Value>
     </Setting>
     <Setting Name="Gauge2_Label" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Heating FeedTemp</Value>
+      <Value Profile="(Default)">T2</Value>
     </Setting>
     <Setting Name="Gauge1_Label" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Boiler Temp</Value>
+      <Value Profile="(Default)">T1</Value>
     </Setting>
     <Setting Name="Program_Title" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Heating System Monitor</Value>
+      <Value Profile="(Default)">Temp System Monitor</Value>
     </Setting>
     <Setting Name="GsensorID1" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">S1</Value>
     </Setting>
     <Setting Name="GsensorID5" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">S2</Value>
     </Setting>
     <Setting Name="GsensorID4" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">S3</Value>
     </Setting>
     <Setting Name="GsensorID3" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">S4</Value>
     </Setting>
     <Setting Name="GsensorID2" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">S5</Value>
+    </Setting>
+    <Setting Name="AgMS_min1" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">-25</Value>
+    </Setting>
+    <Setting Name="AgMS_max1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">125</Value>
+    </Setting>
+    <Setting Name="AgMS_min2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">-20</Value>
+    </Setting>
+    <Setting Name="AgMS_max2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">125</Value>
     </Setting>
   </Settings>
 </SettingsFile>

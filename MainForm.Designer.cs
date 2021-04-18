@@ -38,6 +38,12 @@ namespace AGaugeApp
             this.Ttimer1 = new System.Windows.Forms.Timer(this.components);
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Tabs1 = new System.Windows.Forms.TabPage();
+            this.label35 = new System.Windows.Forms.Label();
+            this.aGauge7 = new AGaugeApp.AGauge();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.aGauge6 = new AGaugeApp.AGauge();
+            this.label34 = new System.Windows.Forms.Label();
             this.Agauge5_temp = new System.Windows.Forms.Label();
             this.Agauge4_temp = new System.Windows.Forms.Label();
             this.Agauge3_temp = new System.Windows.Forms.Label();
@@ -63,42 +69,62 @@ namespace AGaugeApp
             this.Gauge_Basics = new System.Windows.Forms.TabPage();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.St_Gauge1 = new System.Windows.Forms.TabPage();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.St_Gauge1 = new System.Windows.Forms.TabPage();
+            this.Ag1_idinfo = new System.Windows.Forms.Label();
             this.GsensorID1 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.AgMS_max1 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.AgMS_min1 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.St_Gauge2 = new System.Windows.Forms.TabPage();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.AgMS_max2 = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.AgMS_min2 = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.GsensorID2 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.St_Gauge3 = new System.Windows.Forms.TabPage();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.AgMS_max3 = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.AgMS_min3 = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.GsensorID3 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.St_Gauge4 = new System.Windows.Forms.TabPage();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.AgMS_max4 = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.AgMS_min4 = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.GsensorID4 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.St_Gauge5 = new System.Windows.Forms.TabPage();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.AgMS_max5 = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.AgMS_min5 = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.GsensorID5 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.DserialPort1 = new System.IO.Ports.SerialPort(this.components);
-            this.Ag1_idinfo = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.Tabs1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -167,12 +193,18 @@ namespace AGaugeApp
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(819, 337);
+            this.tabControl1.Size = new System.Drawing.Size(819, 529);
             this.tabControl1.TabIndex = 34;
             // 
             // Tabs1
             // 
             this.Tabs1.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.Tabs1.Controls.Add(this.label35);
+            this.Tabs1.Controls.Add(this.aGauge7);
+            this.Tabs1.Controls.Add(this.label36);
+            this.Tabs1.Controls.Add(this.label33);
+            this.Tabs1.Controls.Add(this.aGauge6);
+            this.Tabs1.Controls.Add(this.label34);
             this.Tabs1.Controls.Add(this.Agauge5_temp);
             this.Tabs1.Controls.Add(this.Agauge4_temp);
             this.Tabs1.Controls.Add(this.Agauge3_temp);
@@ -191,9 +223,257 @@ namespace AGaugeApp
             this.Tabs1.Location = new System.Drawing.Point(4, 22);
             this.Tabs1.Name = "Tabs1";
             this.Tabs1.Padding = new System.Windows.Forms.Padding(3);
-            this.Tabs1.Size = new System.Drawing.Size(811, 311);
+            this.Tabs1.Size = new System.Drawing.Size(811, 503);
             this.Tabs1.TabIndex = 0;
             this.Tabs1.Text = "Main";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(655, 390);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(20, 13);
+            this.label35.TabIndex = 49;
+            this.label35.Text = "T5";
+            // 
+            // aGauge7
+            // 
+            this.aGauge7.BaseArcColor = System.Drawing.Color.Indigo;
+            this.aGauge7.BaseArcRadius = 40;
+            this.aGauge7.BaseArcStart = 180;
+            this.aGauge7.BaseArcSweep = 330;
+            this.aGauge7.BaseArcWidth = 2;
+            this.aGauge7.Cap_Idx = ((byte)(1));
+            this.aGauge7.CapColors = new System.Drawing.Color[] {
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black};
+            this.aGauge7.CapPosition = new System.Drawing.Point(20, 140);
+            this.aGauge7.CapsPosition = new System.Drawing.Point[] {
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(20, 140),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10)};
+            this.aGauge7.CapsText = new string[] {
+        "",
+        "T5",
+        "",
+        "",
+        ""};
+            this.aGauge7.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge5_Label;
+            this.aGauge7.Center = new System.Drawing.Point(70, 70);
+            this.aGauge7.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge5_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge7.Location = new System.Drawing.Point(547, 235);
+            this.aGauge7.MaxValue = 50F;
+            this.aGauge7.MinValue = -20F;
+            this.aGauge7.Name = "aGauge7";
+            this.aGauge7.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
+            this.aGauge7.NeedleColor2 = System.Drawing.Color.BurlyWood;
+            this.aGauge7.NeedleRadius = 45;
+            this.aGauge7.NeedleType = 0;
+            this.aGauge7.NeedleWidth = 3;
+            this.aGauge7.Range_Idx = ((byte)(2));
+            this.aGauge7.RangeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.aGauge7.RangeEnabled = true;
+            this.aGauge7.RangeEndValue = 20F;
+            this.aGauge7.RangeInnerRadius = 30;
+            this.aGauge7.RangeOuterRadius = 40;
+            this.aGauge7.RangesColor = new System.Drawing.Color[] {
+        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
+        System.Drawing.Color.DarkTurquoise,
+        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
+        System.Drawing.Color.LawnGreen,
+        System.Drawing.Color.Red};
+            this.aGauge7.RangesEnabled = new bool[] {
+        true,
+        true,
+        true,
+        true,
+        true};
+            this.aGauge7.RangesEndValue = new float[] {
+        -10F,
+        50F,
+        20F,
+        5F,
+        50F};
+            this.aGauge7.RangesInnerRadius = new int[] {
+        30,
+        30,
+        30,
+        30,
+        30};
+            this.aGauge7.RangesOuterRadius = new int[] {
+        50,
+        40,
+        40,
+        40,
+        50};
+            this.aGauge7.RangesStartValue = new float[] {
+        -20F,
+        20F,
+        -10F,
+        -5F,
+        20F};
+            this.aGauge7.RangeStartValue = -10F;
+            this.aGauge7.ScaleLinesInterColor = System.Drawing.Color.Black;
+            this.aGauge7.ScaleLinesInterInnerRadius = 42;
+            this.aGauge7.ScaleLinesInterOuterRadius = 50;
+            this.aGauge7.ScaleLinesInterWidth = 1;
+            this.aGauge7.ScaleLinesMajorColor = System.Drawing.Color.Black;
+            this.aGauge7.ScaleLinesMajorInnerRadius = 40;
+            this.aGauge7.ScaleLinesMajorOuterRadius = 50;
+            this.aGauge7.ScaleLinesMajorStepValue = 10F;
+            this.aGauge7.ScaleLinesMajorWidth = 2;
+            this.aGauge7.ScaleLinesMinorColor = System.Drawing.Color.Gray;
+            this.aGauge7.ScaleLinesMinorInnerRadius = 43;
+            this.aGauge7.ScaleLinesMinorNumOf = 1;
+            this.aGauge7.ScaleLinesMinorOuterRadius = 50;
+            this.aGauge7.ScaleLinesMinorWidth = 1;
+            this.aGauge7.ScaleNumbersColor = System.Drawing.Color.Black;
+            this.aGauge7.ScaleNumbersFormat = null;
+            this.aGauge7.ScaleNumbersRadius = 62;
+            this.aGauge7.ScaleNumbersRotation = 0;
+            this.aGauge7.ScaleNumbersStartScaleLine = 1;
+            this.aGauge7.ScaleNumbersStepScaleLines = 2;
+            this.aGauge7.Size = new System.Drawing.Size(150, 169);
+            this.aGauge7.TabIndex = 48;
+            this.aGauge7.Text = "AGauge4";
+            this.aGauge7.Value = 0F;
+            // 
+            // label36
+            // 
+            this.label36.Location = new System.Drawing.Point(544, 407);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(153, 62);
+            this.label36.TabIndex = 47;
+            this.label36.Text = "label36";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(335, 390);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(20, 13);
+            this.label33.TabIndex = 46;
+            this.label33.Text = "T5";
+            // 
+            // aGauge6
+            // 
+            this.aGauge6.BaseArcColor = System.Drawing.Color.Indigo;
+            this.aGauge6.BaseArcRadius = 40;
+            this.aGauge6.BaseArcStart = 180;
+            this.aGauge6.BaseArcSweep = 330;
+            this.aGauge6.BaseArcWidth = 2;
+            this.aGauge6.Cap_Idx = ((byte)(1));
+            this.aGauge6.CapColors = new System.Drawing.Color[] {
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black};
+            this.aGauge6.CapPosition = new System.Drawing.Point(20, 140);
+            this.aGauge6.CapsPosition = new System.Drawing.Point[] {
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(20, 140),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10)};
+            this.aGauge6.CapsText = new string[] {
+        "",
+        "T5",
+        "",
+        "",
+        ""};
+            this.aGauge6.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge5_Label;
+            this.aGauge6.Center = new System.Drawing.Point(70, 70);
+            this.aGauge6.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge5_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge6.Location = new System.Drawing.Point(227, 235);
+            this.aGauge6.MaxValue = 50F;
+            this.aGauge6.MinValue = -20F;
+            this.aGauge6.Name = "aGauge6";
+            this.aGauge6.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
+            this.aGauge6.NeedleColor2 = System.Drawing.Color.BurlyWood;
+            this.aGauge6.NeedleRadius = 45;
+            this.aGauge6.NeedleType = 0;
+            this.aGauge6.NeedleWidth = 3;
+            this.aGauge6.Range_Idx = ((byte)(2));
+            this.aGauge6.RangeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.aGauge6.RangeEnabled = true;
+            this.aGauge6.RangeEndValue = 20F;
+            this.aGauge6.RangeInnerRadius = 30;
+            this.aGauge6.RangeOuterRadius = 40;
+            this.aGauge6.RangesColor = new System.Drawing.Color[] {
+        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
+        System.Drawing.Color.DarkTurquoise,
+        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
+        System.Drawing.Color.LawnGreen,
+        System.Drawing.Color.Red};
+            this.aGauge6.RangesEnabled = new bool[] {
+        true,
+        true,
+        true,
+        true,
+        true};
+            this.aGauge6.RangesEndValue = new float[] {
+        -10F,
+        50F,
+        20F,
+        5F,
+        50F};
+            this.aGauge6.RangesInnerRadius = new int[] {
+        30,
+        30,
+        30,
+        30,
+        30};
+            this.aGauge6.RangesOuterRadius = new int[] {
+        50,
+        40,
+        40,
+        40,
+        50};
+            this.aGauge6.RangesStartValue = new float[] {
+        -20F,
+        20F,
+        -10F,
+        -5F,
+        20F};
+            this.aGauge6.RangeStartValue = -10F;
+            this.aGauge6.ScaleLinesInterColor = System.Drawing.Color.Black;
+            this.aGauge6.ScaleLinesInterInnerRadius = 42;
+            this.aGauge6.ScaleLinesInterOuterRadius = 50;
+            this.aGauge6.ScaleLinesInterWidth = 1;
+            this.aGauge6.ScaleLinesMajorColor = System.Drawing.Color.Black;
+            this.aGauge6.ScaleLinesMajorInnerRadius = 40;
+            this.aGauge6.ScaleLinesMajorOuterRadius = 50;
+            this.aGauge6.ScaleLinesMajorStepValue = 10F;
+            this.aGauge6.ScaleLinesMajorWidth = 2;
+            this.aGauge6.ScaleLinesMinorColor = System.Drawing.Color.Gray;
+            this.aGauge6.ScaleLinesMinorInnerRadius = 43;
+            this.aGauge6.ScaleLinesMinorNumOf = 1;
+            this.aGauge6.ScaleLinesMinorOuterRadius = 50;
+            this.aGauge6.ScaleLinesMinorWidth = 1;
+            this.aGauge6.ScaleNumbersColor = System.Drawing.Color.Black;
+            this.aGauge6.ScaleNumbersFormat = null;
+            this.aGauge6.ScaleNumbersRadius = 62;
+            this.aGauge6.ScaleNumbersRotation = 0;
+            this.aGauge6.ScaleNumbersStartScaleLine = 1;
+            this.aGauge6.ScaleNumbersStepScaleLines = 2;
+            this.aGauge6.Size = new System.Drawing.Size(150, 169);
+            this.aGauge6.TabIndex = 45;
+            this.aGauge6.Text = "AGauge6";
+            this.aGauge6.Value = 0F;
+            // 
+            // label34
+            // 
+            this.label34.Location = new System.Drawing.Point(224, 407);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(153, 62);
+            this.label34.TabIndex = 44;
+            this.label34.Text = "label34";
             // 
             // Agauge5_temp
             // 
@@ -263,7 +543,7 @@ namespace AGaugeApp
         new System.Drawing.Point(10, 10)};
             this.aGauge5.CapsText = new string[] {
         "",
-        "Hotwater ReturnTemp",
+        "T5",
         "",
         "",
         ""};
@@ -370,7 +650,7 @@ namespace AGaugeApp
         new System.Drawing.Point(10, 10)};
             this.aGauge3.CapsText = new string[] {
         "",
-        "Heating Return Temp",
+        "T3",
         "",
         "",
         ""};
@@ -477,7 +757,7 @@ namespace AGaugeApp
         new System.Drawing.Point(10, 10)};
             this.aGauge2.CapsText = new string[] {
         "",
-        "Heating FeedTemp",
+        "T2",
         "",
         "",
         ""};
@@ -584,16 +864,17 @@ namespace AGaugeApp
         new System.Drawing.Point(10, 10)};
             this.aGauge1.CapsText = new string[] {
         "",
-        "Boiler Temp",
+        "T1",
         "",
         "",
         ""};
             this.aGauge1.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge1_Label;
             this.aGauge1.Center = new System.Drawing.Point(70, 70);
             this.aGauge1.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge1_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge1.DataBindings.Add(new System.Windows.Forms.Binding("MinValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_min1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.aGauge1.Location = new System.Drawing.Point(8, 10);
             this.aGauge1.MaxValue = 125F;
-            this.aGauge1.MinValue = -20F;
+            this.aGauge1.MinValue = global::AGaugeApp.Properties.Settings.Default.AgMS_min1;
             this.aGauge1.Name = "aGauge1";
             this.aGauge1.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
             this.aGauge1.NeedleColor2 = System.Drawing.Color.BurlyWood;
@@ -691,7 +972,7 @@ namespace AGaugeApp
         new System.Drawing.Point(10, 10)};
             this.aGauge4.CapsText = new string[] {
         "",
-        "Hotwater Feed Temp",
+        "T4",
         "",
         "",
         ""};
@@ -783,7 +1064,7 @@ namespace AGaugeApp
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(811, 311);
+            this.tabPage2.Size = new System.Drawing.Size(811, 503);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Settings";
             // 
@@ -800,7 +1081,7 @@ namespace AGaugeApp
             this.SettingsTabs.Location = new System.Drawing.Point(3, 3);
             this.SettingsTabs.Name = "SettingsTabs";
             this.SettingsTabs.SelectedIndex = 0;
-            this.SettingsTabs.Size = new System.Drawing.Size(805, 305);
+            this.SettingsTabs.Size = new System.Drawing.Size(805, 497);
             this.SettingsTabs.TabIndex = 13;
             // 
             // COM_PORTS
@@ -810,7 +1091,7 @@ namespace AGaugeApp
             this.COM_PORTS.Location = new System.Drawing.Point(4, 22);
             this.COM_PORTS.Name = "COM_PORTS";
             this.COM_PORTS.Padding = new System.Windows.Forms.Padding(3);
-            this.COM_PORTS.Size = new System.Drawing.Size(797, 279);
+            this.COM_PORTS.Size = new System.Drawing.Size(797, 471);
             this.COM_PORTS.TabIndex = 0;
             this.COM_PORTS.Text = "COM PORTS";
             this.COM_PORTS.UseVisualStyleBackColor = true;
@@ -919,20 +1200,10 @@ namespace AGaugeApp
             // 
             this.Gauge_Basics.Controls.Add(this.textBox8);
             this.Gauge_Basics.Controls.Add(this.label8);
-            this.Gauge_Basics.Controls.Add(this.textBox3);
-            this.Gauge_Basics.Controls.Add(this.label3);
-            this.Gauge_Basics.Controls.Add(this.label7);
-            this.Gauge_Basics.Controls.Add(this.textBox4);
-            this.Gauge_Basics.Controls.Add(this.textBox7);
-            this.Gauge_Basics.Controls.Add(this.label4);
-            this.Gauge_Basics.Controls.Add(this.label6);
-            this.Gauge_Basics.Controls.Add(this.textBox5);
-            this.Gauge_Basics.Controls.Add(this.textBox6);
-            this.Gauge_Basics.Controls.Add(this.label5);
             this.Gauge_Basics.Location = new System.Drawing.Point(4, 22);
             this.Gauge_Basics.Name = "Gauge_Basics";
             this.Gauge_Basics.Padding = new System.Windows.Forms.Padding(3);
-            this.Gauge_Basics.Size = new System.Drawing.Size(797, 279);
+            this.Gauge_Basics.Size = new System.Drawing.Size(797, 471);
             this.Gauge_Basics.TabIndex = 1;
             this.Gauge_Basics.Text = "Gauge Basics";
             this.Gauge_Basics.UseVisualStyleBackColor = true;
@@ -955,112 +1226,51 @@ namespace AGaugeApp
             this.label8.TabIndex = 13;
             this.label8.Text = "Program Title";
             // 
+            // St_Gauge1
+            // 
+            this.St_Gauge1.Controls.Add(this.textBox3);
+            this.St_Gauge1.Controls.Add(this.label3);
+            this.St_Gauge1.Controls.Add(this.Ag1_idinfo);
+            this.St_Gauge1.Controls.Add(this.GsensorID1);
+            this.St_Gauge1.Controls.Add(this.label12);
+            this.St_Gauge1.Controls.Add(this.AgMS_max1);
+            this.St_Gauge1.Controls.Add(this.label11);
+            this.St_Gauge1.Controls.Add(this.label10);
+            this.St_Gauge1.Controls.Add(this.AgMS_min1);
+            this.St_Gauge1.Controls.Add(this.label9);
+            this.St_Gauge1.Location = new System.Drawing.Point(4, 22);
+            this.St_Gauge1.Name = "St_Gauge1";
+            this.St_Gauge1.Size = new System.Drawing.Size(797, 471);
+            this.St_Gauge1.TabIndex = 2;
+            this.St_Gauge1.Text = "Gauge1";
+            this.St_Gauge1.UseVisualStyleBackColor = true;
+            // 
             // textBox3
             // 
             this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::AGaugeApp.Properties.Settings.Default, "Gauge1_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.textBox3.Location = new System.Drawing.Point(89, 55);
+            this.textBox3.Location = new System.Drawing.Point(202, 26);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(185, 20);
-            this.textBox3.TabIndex = 2;
+            this.textBox3.TabIndex = 8;
             this.textBox3.Text = global::AGaugeApp.Properties.Settings.Default.Gauge1_Label;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 58);
+            this.label3.Location = new System.Drawing.Point(122, 29);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 13);
-            this.label3.TabIndex = 3;
+            this.label3.TabIndex = 9;
             this.label3.Text = "Gauge1 Label";
             // 
-            // label7
+            // Ag1_idinfo
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(9, 161);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(74, 13);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Gauge5 Label";
-            // 
-            // textBox4
-            // 
-            this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::AGaugeApp.Properties.Settings.Default, "Gauge2_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.textBox4.Location = new System.Drawing.Point(89, 81);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(185, 20);
-            this.textBox4.TabIndex = 4;
-            this.textBox4.Text = global::AGaugeApp.Properties.Settings.Default.Gauge2_Label;
-            // 
-            // textBox7
-            // 
-            this.textBox7.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::AGaugeApp.Properties.Settings.Default, "Gauge5_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.textBox7.Location = new System.Drawing.Point(89, 158);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(185, 20);
-            this.textBox7.TabIndex = 10;
-            this.textBox7.Text = global::AGaugeApp.Properties.Settings.Default.Gauge5_Label;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 84);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 13);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Gauge2 Label";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(9, 135);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 13);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Gauge4 Label";
-            // 
-            // textBox5
-            // 
-            this.textBox5.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::AGaugeApp.Properties.Settings.Default, "Gauge3_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.textBox5.Location = new System.Drawing.Point(89, 106);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(185, 20);
-            this.textBox5.TabIndex = 6;
-            this.textBox5.Text = global::AGaugeApp.Properties.Settings.Default.Gauge3_Label;
-            // 
-            // textBox6
-            // 
-            this.textBox6.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::AGaugeApp.Properties.Settings.Default, "Gauge4_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.textBox6.Location = new System.Drawing.Point(89, 132);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(185, 20);
-            this.textBox6.TabIndex = 8;
-            this.textBox6.Text = global::AGaugeApp.Properties.Settings.Default.Gauge4_Label;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(9, 109);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(74, 13);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Gauge3 Label";
-            // 
-            // St_Gauge1
-            // 
-            this.St_Gauge1.Controls.Add(this.Ag1_idinfo);
-            this.St_Gauge1.Controls.Add(this.GsensorID1);
-            this.St_Gauge1.Controls.Add(this.label12);
-            this.St_Gauge1.Controls.Add(this.textBox10);
-            this.St_Gauge1.Controls.Add(this.label11);
-            this.St_Gauge1.Controls.Add(this.label10);
-            this.St_Gauge1.Controls.Add(this.textBox9);
-            this.St_Gauge1.Controls.Add(this.label9);
-            this.St_Gauge1.Location = new System.Drawing.Point(4, 22);
-            this.St_Gauge1.Name = "St_Gauge1";
-            this.St_Gauge1.Size = new System.Drawing.Size(797, 279);
-            this.St_Gauge1.TabIndex = 2;
-            this.St_Gauge1.Text = "Gauge1";
-            this.St_Gauge1.UseVisualStyleBackColor = true;
+            this.Ag1_idinfo.AutoSize = true;
+            this.Ag1_idinfo.Location = new System.Drawing.Point(430, 10);
+            this.Ag1_idinfo.Name = "Ag1_idinfo";
+            this.Ag1_idinfo.Size = new System.Drawing.Size(356, 13);
+            this.Ag1_idinfo.TabIndex = 7;
+            this.Ag1_idinfo.Text = "Enter sensor ID number in hex or Snumber  EG \"S1\" to auto detect hex ID";
             // 
             // GsensorID1
             // 
@@ -1080,17 +1290,19 @@ namespace AGaugeApp
             this.label12.TabIndex = 5;
             this.label12.Text = "Sensor ID";
             // 
-            // textBox10
+            // AgMS_max1
             // 
-            this.textBox10.Location = new System.Drawing.Point(96, 82);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 20);
-            this.textBox10.TabIndex = 4;
+            this.AgMS_max1.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::AGaugeApp.Properties.Settings.Default, "AgMS_max1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.AgMS_max1.Location = new System.Drawing.Point(685, 50);
+            this.AgMS_max1.Name = "AgMS_max1";
+            this.AgMS_max1.Size = new System.Drawing.Size(100, 20);
+            this.AgMS_max1.TabIndex = 4;
+            this.AgMS_max1.Text = global::AGaugeApp.Properties.Settings.Default.AgMS_max1;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(61, 85);
+            this.label11.Location = new System.Drawing.Point(650, 53);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(34, 13);
             this.label11.TabIndex = 3;
@@ -1099,23 +1311,24 @@ namespace AGaugeApp
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(93, 40);
+            this.label10.Location = new System.Drawing.Point(393, 53);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(95, 13);
             this.label10.TabIndex = 2;
             this.label10.Text = "Main Scale Range";
             // 
-            // textBox9
+            // AgMS_min1
             // 
-            this.textBox9.Location = new System.Drawing.Point(96, 56);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
-            this.textBox9.TabIndex = 1;
+            this.AgMS_min1.Location = new System.Drawing.Point(544, 50);
+            this.AgMS_min1.Name = "AgMS_min1";
+            this.AgMS_min1.Size = new System.Drawing.Size(100, 20);
+            this.AgMS_min1.TabIndex = 1;
+            this.AgMS_min1.Text = "-25";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(61, 59);
+            this.label9.Location = new System.Drawing.Point(509, 53);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(29, 13);
             this.label9.TabIndex = 0;
@@ -1123,15 +1336,92 @@ namespace AGaugeApp
             // 
             // St_Gauge2
             // 
+            this.St_Gauge2.Controls.Add(this.textBox4);
+            this.St_Gauge2.Controls.Add(this.label4);
+            this.St_Gauge2.Controls.Add(this.AgMS_max2);
+            this.St_Gauge2.Controls.Add(this.label21);
+            this.St_Gauge2.Controls.Add(this.label22);
+            this.St_Gauge2.Controls.Add(this.AgMS_min2);
+            this.St_Gauge2.Controls.Add(this.label23);
             this.St_Gauge2.Controls.Add(this.label17);
             this.St_Gauge2.Controls.Add(this.GsensorID2);
             this.St_Gauge2.Controls.Add(this.label13);
             this.St_Gauge2.Location = new System.Drawing.Point(4, 22);
             this.St_Gauge2.Name = "St_Gauge2";
-            this.St_Gauge2.Size = new System.Drawing.Size(797, 279);
+            this.St_Gauge2.Size = new System.Drawing.Size(797, 471);
             this.St_Gauge2.TabIndex = 3;
             this.St_Gauge2.Text = "Gauge2";
             this.St_Gauge2.UseVisualStyleBackColor = true;
+            // 
+            // textBox4
+            // 
+            this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::AGaugeApp.Properties.Settings.Default, "Gauge2_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.textBox4.Location = new System.Drawing.Point(202, 26);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(185, 20);
+            this.textBox4.TabIndex = 15;
+            this.textBox4.Text = global::AGaugeApp.Properties.Settings.Default.Gauge2_Label;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(122, 29);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(74, 13);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Gauge2 Label";
+            // 
+            // AgMS_max2
+            // 
+            this.AgMS_max2.Location = new System.Drawing.Point(685, 50);
+            this.AgMS_max2.Name = "AgMS_max2";
+            this.AgMS_max2.Size = new System.Drawing.Size(100, 20);
+            this.AgMS_max2.TabIndex = 14;
+            this.AgMS_max2.Text = "125";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(650, 53);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(34, 13);
+            this.label21.TabIndex = 13;
+            this.label21.Text = "Finish";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(393, 53);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(95, 13);
+            this.label22.TabIndex = 12;
+            this.label22.Text = "Main Scale Range";
+            // 
+            // AgMS_min2
+            // 
+            this.AgMS_min2.Location = new System.Drawing.Point(544, 50);
+            this.AgMS_min2.Name = "AgMS_min2";
+            this.AgMS_min2.Size = new System.Drawing.Size(100, 20);
+            this.AgMS_min2.TabIndex = 11;
+            this.AgMS_min2.Text = "125";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(509, 53);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(29, 13);
+            this.label23.TabIndex = 10;
+            this.label23.Text = "Start";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(430, 10);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(356, 13);
+            this.label17.TabIndex = 9;
+            this.label17.Text = "Enter sensor ID number in hex or Snumber  EG \"S2\" to auto detect hex ID";
             // 
             // GsensorID2
             // 
@@ -1153,15 +1443,90 @@ namespace AGaugeApp
             // 
             // St_Gauge3
             // 
+            this.St_Gauge3.Controls.Add(this.textBox5);
+            this.St_Gauge3.Controls.Add(this.label5);
+            this.St_Gauge3.Controls.Add(this.AgMS_max3);
+            this.St_Gauge3.Controls.Add(this.label24);
+            this.St_Gauge3.Controls.Add(this.label25);
+            this.St_Gauge3.Controls.Add(this.AgMS_min3);
+            this.St_Gauge3.Controls.Add(this.label26);
             this.St_Gauge3.Controls.Add(this.label18);
             this.St_Gauge3.Controls.Add(this.GsensorID3);
             this.St_Gauge3.Controls.Add(this.label14);
             this.St_Gauge3.Location = new System.Drawing.Point(4, 22);
             this.St_Gauge3.Name = "St_Gauge3";
-            this.St_Gauge3.Size = new System.Drawing.Size(797, 279);
+            this.St_Gauge3.Size = new System.Drawing.Size(797, 471);
             this.St_Gauge3.TabIndex = 4;
             this.St_Gauge3.Text = "Gauge3";
             this.St_Gauge3.UseVisualStyleBackColor = true;
+            // 
+            // textBox5
+            // 
+            this.textBox5.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::AGaugeApp.Properties.Settings.Default, "Gauge3_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.textBox5.Location = new System.Drawing.Point(202, 26);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(185, 20);
+            this.textBox5.TabIndex = 15;
+            this.textBox5.Text = global::AGaugeApp.Properties.Settings.Default.Gauge3_Label;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(122, 29);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(74, 13);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Gauge3 Label";
+            // 
+            // AgMS_max3
+            // 
+            this.AgMS_max3.Location = new System.Drawing.Point(685, 50);
+            this.AgMS_max3.Name = "AgMS_max3";
+            this.AgMS_max3.Size = new System.Drawing.Size(100, 20);
+            this.AgMS_max3.TabIndex = 14;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(650, 53);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(34, 13);
+            this.label24.TabIndex = 13;
+            this.label24.Text = "Finish";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(393, 53);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(95, 13);
+            this.label25.TabIndex = 12;
+            this.label25.Text = "Main Scale Range";
+            // 
+            // AgMS_min3
+            // 
+            this.AgMS_min3.Location = new System.Drawing.Point(544, 50);
+            this.AgMS_min3.Name = "AgMS_min3";
+            this.AgMS_min3.Size = new System.Drawing.Size(100, 20);
+            this.AgMS_min3.TabIndex = 11;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(509, 53);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(29, 13);
+            this.label26.TabIndex = 10;
+            this.label26.Text = "Start";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(430, 10);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(356, 13);
+            this.label18.TabIndex = 9;
+            this.label18.Text = "Enter sensor ID number in hex or Snumber  EG \"S3\" to auto detect hex ID";
             // 
             // GsensorID3
             // 
@@ -1183,15 +1548,90 @@ namespace AGaugeApp
             // 
             // St_Gauge4
             // 
+            this.St_Gauge4.Controls.Add(this.label6);
+            this.St_Gauge4.Controls.Add(this.textBox6);
+            this.St_Gauge4.Controls.Add(this.AgMS_max4);
+            this.St_Gauge4.Controls.Add(this.label27);
+            this.St_Gauge4.Controls.Add(this.label28);
+            this.St_Gauge4.Controls.Add(this.AgMS_min4);
+            this.St_Gauge4.Controls.Add(this.label29);
             this.St_Gauge4.Controls.Add(this.label19);
             this.St_Gauge4.Controls.Add(this.GsensorID4);
             this.St_Gauge4.Controls.Add(this.label15);
             this.St_Gauge4.Location = new System.Drawing.Point(4, 22);
             this.St_Gauge4.Name = "St_Gauge4";
-            this.St_Gauge4.Size = new System.Drawing.Size(797, 279);
+            this.St_Gauge4.Size = new System.Drawing.Size(797, 471);
             this.St_Gauge4.TabIndex = 5;
             this.St_Gauge4.Text = "Gauge4";
             this.St_Gauge4.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(122, 29);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(74, 13);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Gauge4 Label";
+            // 
+            // textBox6
+            // 
+            this.textBox6.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::AGaugeApp.Properties.Settings.Default, "Gauge4_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.textBox6.Location = new System.Drawing.Point(202, 26);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(185, 20);
+            this.textBox6.TabIndex = 15;
+            this.textBox6.Text = global::AGaugeApp.Properties.Settings.Default.Gauge4_Label;
+            // 
+            // AgMS_max4
+            // 
+            this.AgMS_max4.Location = new System.Drawing.Point(685, 50);
+            this.AgMS_max4.Name = "AgMS_max4";
+            this.AgMS_max4.Size = new System.Drawing.Size(100, 20);
+            this.AgMS_max4.TabIndex = 14;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(650, 53);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(34, 13);
+            this.label27.TabIndex = 13;
+            this.label27.Text = "Finish";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(393, 53);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(95, 13);
+            this.label28.TabIndex = 12;
+            this.label28.Text = "Main Scale Range";
+            // 
+            // AgMS_min4
+            // 
+            this.AgMS_min4.Location = new System.Drawing.Point(544, 50);
+            this.AgMS_min4.Name = "AgMS_min4";
+            this.AgMS_min4.Size = new System.Drawing.Size(100, 20);
+            this.AgMS_min4.TabIndex = 11;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(509, 53);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(29, 13);
+            this.label29.TabIndex = 10;
+            this.label29.Text = "Start";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(430, 10);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(356, 13);
+            this.label19.TabIndex = 9;
+            this.label19.Text = "Enter sensor ID number in hex or Snumber  EG \"S4\" to auto detect hex ID";
             // 
             // GsensorID4
             // 
@@ -1213,15 +1653,90 @@ namespace AGaugeApp
             // 
             // St_Gauge5
             // 
+            this.St_Gauge5.Controls.Add(this.label7);
+            this.St_Gauge5.Controls.Add(this.textBox7);
+            this.St_Gauge5.Controls.Add(this.AgMS_max5);
+            this.St_Gauge5.Controls.Add(this.label30);
+            this.St_Gauge5.Controls.Add(this.label31);
+            this.St_Gauge5.Controls.Add(this.AgMS_min5);
+            this.St_Gauge5.Controls.Add(this.label32);
             this.St_Gauge5.Controls.Add(this.label20);
             this.St_Gauge5.Controls.Add(this.GsensorID5);
             this.St_Gauge5.Controls.Add(this.label16);
             this.St_Gauge5.Location = new System.Drawing.Point(4, 22);
             this.St_Gauge5.Name = "St_Gauge5";
-            this.St_Gauge5.Size = new System.Drawing.Size(797, 279);
+            this.St_Gauge5.Size = new System.Drawing.Size(797, 471);
             this.St_Gauge5.TabIndex = 6;
             this.St_Gauge5.Text = "Gauge5";
             this.St_Gauge5.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(122, 29);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(74, 13);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Gauge5 Label";
+            // 
+            // textBox7
+            // 
+            this.textBox7.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::AGaugeApp.Properties.Settings.Default, "Gauge5_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.textBox7.Location = new System.Drawing.Point(202, 26);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(185, 20);
+            this.textBox7.TabIndex = 15;
+            this.textBox7.Text = global::AGaugeApp.Properties.Settings.Default.Gauge5_Label;
+            // 
+            // AgMS_max5
+            // 
+            this.AgMS_max5.Location = new System.Drawing.Point(685, 50);
+            this.AgMS_max5.Name = "AgMS_max5";
+            this.AgMS_max5.Size = new System.Drawing.Size(100, 20);
+            this.AgMS_max5.TabIndex = 14;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(650, 53);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(34, 13);
+            this.label30.TabIndex = 13;
+            this.label30.Text = "Finish";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(393, 53);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(95, 13);
+            this.label31.TabIndex = 12;
+            this.label31.Text = "Main Scale Range";
+            // 
+            // AgMS_min5
+            // 
+            this.AgMS_min5.Location = new System.Drawing.Point(544, 50);
+            this.AgMS_min5.Name = "AgMS_min5";
+            this.AgMS_min5.Size = new System.Drawing.Size(100, 20);
+            this.AgMS_min5.TabIndex = 11;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(509, 53);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(29, 13);
+            this.label32.TabIndex = 10;
+            this.label32.Text = "Start";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(430, 10);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(356, 13);
+            this.label20.TabIndex = 9;
+            this.label20.Text = "Enter sensor ID number in hex or Snumber  EG \"S5\" to auto detect hex ID";
             // 
             // GsensorID5
             // 
@@ -1248,57 +1763,12 @@ namespace AGaugeApp
             this.DserialPort1.ErrorReceived += new System.IO.Ports.SerialErrorReceivedEventHandler(this.DserialPort1_ErrorReceived);
             this.DserialPort1.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.DserialPort1_DataReceived);
             // 
-            // Ag1_idinfo
-            // 
-            this.Ag1_idinfo.AutoSize = true;
-            this.Ag1_idinfo.Location = new System.Drawing.Point(430, 10);
-            this.Ag1_idinfo.Name = "Ag1_idinfo";
-            this.Ag1_idinfo.Size = new System.Drawing.Size(356, 13);
-            this.Ag1_idinfo.TabIndex = 7;
-            this.Ag1_idinfo.Text = "Enter sensor ID number in hex or Snumber  EG \"S1\" to auto detect hex ID";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(430, 10);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(356, 13);
-            this.label17.TabIndex = 9;
-            this.label17.Text = "Enter sensor ID number in hex or Snumber  EG \"S2\" to auto detect hex ID";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(430, 10);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(356, 13);
-            this.label18.TabIndex = 9;
-            this.label18.Text = "Enter sensor ID number in hex or Snumber  EG \"S3\" to auto detect hex ID";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(430, 10);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(356, 13);
-            this.label19.TabIndex = 9;
-            this.label19.Text = "Enter sensor ID number in hex or Snumber  EG \"S4\" to auto detect hex ID";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(430, 10);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(356, 13);
-            this.label20.TabIndex = 9;
-            this.label20.Text = "Enter sensor ID number in hex or Snumber  EG \"S5\" to auto detect hex ID";
-            // 
             // PHeatingSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(819, 337);
+            this.ClientSize = new System.Drawing.Size(819, 529);
             this.Controls.Add(this.tabControl1);
             this.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::AGaugeApp.Properties.Settings.Default, "Program_Title", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.Name = "PHeatingSystem";
@@ -1359,16 +1829,6 @@ namespace AGaugeApp
         private System.Windows.Forms.TabControl SettingsTabs;
         private System.Windows.Forms.TabPage COM_PORTS;
         private System.Windows.Forms.TabPage Gauge_Basics;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TabPage St_Gauge1;
@@ -1378,10 +1838,10 @@ namespace AGaugeApp
         private System.Windows.Forms.TabPage St_Gauge5;
         private System.Windows.Forms.TextBox GsensorID1;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox AgMS_max1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox AgMS_min1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox GsensorID2;
         private System.Windows.Forms.Label label13;
@@ -1401,5 +1861,41 @@ namespace AGaugeApp
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox AgMS_max2;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox AgMS_min2;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox AgMS_max3;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox AgMS_min3;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox AgMS_max4;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.TextBox AgMS_min4;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox AgMS_max5;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.TextBox AgMS_min5;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private AGauge aGauge6;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private AGauge aGauge7;
+        private System.Windows.Forms.Label label36;
     }
 }

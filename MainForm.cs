@@ -124,6 +124,8 @@ namespace AGaugeApp
             aGauge3T -= 1;
             aGauge4T -= 1;
             aGauge5T -= 1;
+            aGauge6.Value = aGauge3.Value - aGauge2.Value;
+            aGauge7.Value = aGauge5.Value - aGauge4.Value;
             if (aGauge1T <= 0)
             {
                 aGauge1.Value = -125;

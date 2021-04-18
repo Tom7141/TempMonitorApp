@@ -37,7 +37,7 @@ namespace AGaugeApp.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("9600")]
+        [global::System.Configuration.DefaultSettingValueAttribute("115200")]
         public int BaudRate {
             get {
                 return ((int)(this["BaudRate"]));
@@ -49,7 +49,7 @@ namespace AGaugeApp.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("9600")]
+        [global::System.Configuration.DefaultSettingValueAttribute("115200")]
         public string baurdr {
             get {
                 return ((string)(this["baurdr"]));
@@ -61,7 +61,7 @@ namespace AGaugeApp.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Hotwater ReturnTemp")]
+        [global::System.Configuration.DefaultSettingValueAttribute("T5")]
         public string Gauge5_Label {
             get {
                 return ((string)(this["Gauge5_Label"]));
@@ -73,7 +73,7 @@ namespace AGaugeApp.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Hotwater Feed Temp")]
+        [global::System.Configuration.DefaultSettingValueAttribute("T4")]
         public string Gauge4_Label {
             get {
                 return ((string)(this["Gauge4_Label"]));
@@ -85,7 +85,7 @@ namespace AGaugeApp.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Heating Return Temp")]
+        [global::System.Configuration.DefaultSettingValueAttribute("T3")]
         public string Gauge3_Label {
             get {
                 return ((string)(this["Gauge3_Label"]));
@@ -97,7 +97,7 @@ namespace AGaugeApp.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Heating FeedTemp")]
+        [global::System.Configuration.DefaultSettingValueAttribute("T2")]
         public string Gauge2_Label {
             get {
                 return ((string)(this["Gauge2_Label"]));
@@ -109,7 +109,7 @@ namespace AGaugeApp.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Boiler Temp")]
+        [global::System.Configuration.DefaultSettingValueAttribute("T1")]
         public string Gauge1_Label {
             get {
                 return ((string)(this["Gauge1_Label"]));
@@ -121,7 +121,7 @@ namespace AGaugeApp.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Heating System Monitor")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Temp System Monitor")]
         public string Program_Title {
             get {
                 return ((string)(this["Program_Title"]));
@@ -133,7 +133,7 @@ namespace AGaugeApp.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("S1")]
         public string GsensorID1 {
             get {
                 return ((string)(this["GsensorID1"]));
@@ -145,7 +145,7 @@ namespace AGaugeApp.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("S2")]
         public string GsensorID5 {
             get {
                 return ((string)(this["GsensorID5"]));
@@ -157,7 +157,7 @@ namespace AGaugeApp.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("S3")]
         public string GsensorID4 {
             get {
                 return ((string)(this["GsensorID4"]));
@@ -169,7 +169,7 @@ namespace AGaugeApp.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("S4")]
         public string GsensorID3 {
             get {
                 return ((string)(this["GsensorID3"]));
@@ -181,13 +181,61 @@ namespace AGaugeApp.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("S5")]
         public string GsensorID2 {
             get {
                 return ((string)(this["GsensorID2"]));
             }
             set {
                 this["GsensorID2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("-25")]
+        public float AgMS_min1 {
+            get {
+                return ((float)(this["AgMS_min1"]));
+            }
+            set {
+                this["AgMS_min1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("125")]
+        public string AgMS_max1 {
+            get {
+                return ((string)(this["AgMS_max1"]));
+            }
+            set {
+                this["AgMS_max1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("-20")]
+        public string AgMS_min2 {
+            get {
+                return ((string)(this["AgMS_min2"]));
+            }
+            set {
+                this["AgMS_min2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("125")]
+        public string AgMS_max2 {
+            get {
+                return ((string)(this["AgMS_max2"]));
+            }
+            set {
+                this["AgMS_max2"] = value;
             }
         }
     }
