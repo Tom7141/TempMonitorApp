@@ -12,13 +12,14 @@ namespace AGaugeApp
 {
     public partial class PHeatingSystem : Form
     {
+        private const int V = 100;  // time vallue untill reset to -125
         bool isConnected = false;
         String[] ports;
-        int aGauge1T = 100;
-        int aGauge2T = 100;
-        int aGauge3T = 100;
-        int aGauge4T = 100;
-        int aGauge5T = 100;
+        int aGauge1T = V;
+        int aGauge2T = V;
+        int aGauge3T = V;
+        int aGauge4T = V;
+        int aGauge5T = V;
 
         public PHeatingSystem()
         {
@@ -155,20 +156,20 @@ namespace AGaugeApp
             }
 
 
-            if (aGauge3.Value >= 100)
+            if (aGauge3.Value >= V)
             {
 
             }
-            if (aGauge4.Value >= 100)
+            if (aGauge4.Value >= V)
             {
 
             }
 
-            if (aGauge5.Value >= 100)
+            if (aGauge5.Value >= V)
             {
 
             }
-            if (aGauge1.Value >= 100)
+            if (aGauge1.Value >= V)
             {
 
             }
@@ -235,7 +236,7 @@ namespace AGaugeApp
                         aGauge1.BeginInvoke(new Action(() => { aGauge1.Value = number2; }));
                     Agauge1_temp.BeginInvoke(new Action(() => { Agauge1_temp.Text = indata1[2]; }));
                     Tlabel0.BeginInvoke(new Action(() => { Tlabel0.Text = inputData; }));
-                    aGauge1T = 100;
+                    aGauge1T = V;
                 }
                 else if (Properties.Settings.Default.GsensorID2 == indata1[1])
                 {
@@ -244,7 +245,7 @@ namespace AGaugeApp
                         aGauge2.BeginInvoke(new Action(() => { aGauge2.Value = number2; }));
                     Agauge2_temp.BeginInvoke(new Action(() => { Agauge2_temp.Text = indata1[2]; }));
                     Tlabel1.BeginInvoke(new Action(() => { Tlabel1.Text = inputData; }));
-                    aGauge2T = 100;
+                    aGauge2T = V;
                 }
                 else if (Properties.Settings.Default.GsensorID3 == indata1[1])
                 {
@@ -253,7 +254,7 @@ namespace AGaugeApp
                         aGauge3.BeginInvoke(new Action(() => { aGauge3.Value = number2; }));
                     Agauge3_temp.BeginInvoke(new Action(() => { Agauge3_temp.Text = indata1[2]; }));
                     Tlabel2.BeginInvoke(new Action(() => { Tlabel2.Text = inputData; }));
-                    aGauge3T = 100;
+                    aGauge3T = V;
                 }
                 else if (Properties.Settings.Default.GsensorID4 == indata1[1])
                 {
@@ -262,7 +263,7 @@ namespace AGaugeApp
                         aGauge4.BeginInvoke(new Action(() => { aGauge4.Value = number2; }));
                     Agauge4_temp.BeginInvoke(new Action(() => { Agauge4_temp.Text = indata1[2]; }));
                     Tlabel3.BeginInvoke(new Action(() => { Tlabel3.Text = inputData; }));
-                    aGauge4T = 100;
+                    aGauge4T = V;
                 }
                 else if (Properties.Settings.Default.GsensorID5 == indata1[1])
                 {
@@ -271,7 +272,7 @@ namespace AGaugeApp
                         aGauge5.BeginInvoke(new Action(() => { aGauge5.Value = number2; }));
                     Agauge5_temp.BeginInvoke(new Action(() => { Agauge5_temp.Text = indata1[2]; }));
                     Tlabel4.BeginInvoke(new Action(() => { Tlabel4.Text = inputData; }));
-                    aGauge5T = 100;
+                    aGauge5T = V;
                 }
 
 
@@ -350,6 +351,5 @@ namespace AGaugeApp
         {
             DserialPort1.Close();
         }
-
     }
 }
