@@ -45,16 +45,34 @@
       <Value Profile="(Default)">S5</Value>
     </Setting>
     <Setting Name="AgMS_min1" Type="System.Single" Scope="User">
-      <Value Profile="(Default)">-25</Value>
-    </Setting>
-    <Setting Name="AgMS_max1" Type="System.String" Scope="User">
-      <Value Profile="(Default)">125</Value>
-    </Setting>
-    <Setting Name="AgMS_min2" Type="System.String" Scope="User">
       <Value Profile="(Default)">-20</Value>
     </Setting>
-    <Setting Name="AgMS_max2" Type="System.String" Scope="User">
+    <Setting Name="AgMS_max1" Type="System.Single" Scope="User">
       <Value Profile="(Default)">125</Value>
+    </Setting>
+    <Setting Name="AgMS_min2" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">-20</Value>
+    </Setting>
+    <Setting Name="AgMS_max2" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">125</Value>
+    </Setting>
+    <Setting Name="AgMS_max3" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">125</Value>
+    </Setting>
+    <Setting Name="AgMS_min3" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">-20</Value>
+    </Setting>
+    <Setting Name="AgMS_max4" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">125</Value>
+    </Setting>
+    <Setting Name="AgMS_min4" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">-20</Value>
+    </Setting>
+    <Setting Name="AgMS_max5" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">125</Value>
+    </Setting>
+    <Setting Name="AgMS_min5" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">-20</Value>
     </Setting>
   </Settings>
 </SettingsFile>

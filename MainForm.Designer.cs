@@ -125,6 +125,7 @@ namespace AGaugeApp
             this.GsensorID5 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.DserialPort1 = new System.IO.Ports.SerialPort(this.components);
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.tabControl1.SuspendLayout();
             this.Tabs1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -550,9 +551,11 @@ namespace AGaugeApp
             this.aGauge5.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge5_Label;
             this.aGauge5.Center = new System.Drawing.Point(70, 70);
             this.aGauge5.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge5_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge5.DataBindings.Add(new System.Windows.Forms.Binding("MaxValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_max5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge5.DataBindings.Add(new System.Windows.Forms.Binding("MinValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_min5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.aGauge5.Location = new System.Drawing.Point(632, 10);
-            this.aGauge5.MaxValue = 125F;
-            this.aGauge5.MinValue = -20F;
+            this.aGauge5.MaxValue = global::AGaugeApp.Properties.Settings.Default.AgMS_max5;
+            this.aGauge5.MinValue = global::AGaugeApp.Properties.Settings.Default.AgMS_min5;
             this.aGauge5.Name = "aGauge5";
             this.aGauge5.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
             this.aGauge5.NeedleColor2 = System.Drawing.Color.BurlyWood;
@@ -657,9 +660,11 @@ namespace AGaugeApp
             this.aGauge3.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge3_Label;
             this.aGauge3.Center = new System.Drawing.Point(70, 70);
             this.aGauge3.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge3_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge3.DataBindings.Add(new System.Windows.Forms.Binding("MaxValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_max3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge3.DataBindings.Add(new System.Windows.Forms.Binding("MinValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_min3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.aGauge3.Location = new System.Drawing.Point(320, 10);
-            this.aGauge3.MaxValue = 125F;
-            this.aGauge3.MinValue = -20F;
+            this.aGauge3.MaxValue = global::AGaugeApp.Properties.Settings.Default.AgMS_max3;
+            this.aGauge3.MinValue = global::AGaugeApp.Properties.Settings.Default.AgMS_min3;
             this.aGauge3.Name = "aGauge3";
             this.aGauge3.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
             this.aGauge3.NeedleColor2 = System.Drawing.Color.BurlyWood;
@@ -764,9 +769,11 @@ namespace AGaugeApp
             this.aGauge2.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge2_Label;
             this.aGauge2.Center = new System.Drawing.Point(70, 70);
             this.aGauge2.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge2_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge2.DataBindings.Add(new System.Windows.Forms.Binding("MinValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_min2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge2.DataBindings.Add(new System.Windows.Forms.Binding("MaxValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_max2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.aGauge2.Location = new System.Drawing.Point(164, 10);
-            this.aGauge2.MaxValue = 125F;
-            this.aGauge2.MinValue = -20F;
+            this.aGauge2.MaxValue = global::AGaugeApp.Properties.Settings.Default.AgMS_max2;
+            this.aGauge2.MinValue = global::AGaugeApp.Properties.Settings.Default.AgMS_min2;
             this.aGauge2.Name = "aGauge2";
             this.aGauge2.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
             this.aGauge2.NeedleColor2 = System.Drawing.Color.BurlyWood;
@@ -872,8 +879,9 @@ namespace AGaugeApp
             this.aGauge1.Center = new System.Drawing.Point(70, 70);
             this.aGauge1.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge1_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.aGauge1.DataBindings.Add(new System.Windows.Forms.Binding("MinValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_min1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge1.DataBindings.Add(new System.Windows.Forms.Binding("MaxValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_max1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.aGauge1.Location = new System.Drawing.Point(8, 10);
-            this.aGauge1.MaxValue = 125F;
+            this.aGauge1.MaxValue = global::AGaugeApp.Properties.Settings.Default.AgMS_max1;
             this.aGauge1.MinValue = global::AGaugeApp.Properties.Settings.Default.AgMS_min1;
             this.aGauge1.Name = "aGauge1";
             this.aGauge1.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
@@ -979,9 +987,11 @@ namespace AGaugeApp
             this.aGauge4.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge4_Label;
             this.aGauge4.Center = new System.Drawing.Point(70, 70);
             this.aGauge4.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge4_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge4.DataBindings.Add(new System.Windows.Forms.Binding("MaxValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_max4", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge4.DataBindings.Add(new System.Windows.Forms.Binding("MinValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_min4", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.aGauge4.Location = new System.Drawing.Point(476, 10);
-            this.aGauge4.MaxValue = 125F;
-            this.aGauge4.MinValue = -20F;
+            this.aGauge4.MaxValue = global::AGaugeApp.Properties.Settings.Default.AgMS_max4;
+            this.aGauge4.MinValue = global::AGaugeApp.Properties.Settings.Default.AgMS_min4;
             this.aGauge4.Name = "aGauge4";
             this.aGauge4.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
             this.aGauge4.NeedleColor2 = System.Drawing.Color.BurlyWood;
@@ -1292,12 +1302,11 @@ namespace AGaugeApp
             // 
             // AgMS_max1
             // 
-            this.AgMS_max1.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::AGaugeApp.Properties.Settings.Default, "AgMS_max1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.AgMS_max1.Location = new System.Drawing.Point(685, 50);
             this.AgMS_max1.Name = "AgMS_max1";
             this.AgMS_max1.Size = new System.Drawing.Size(100, 20);
             this.AgMS_max1.TabIndex = 4;
-            this.AgMS_max1.Text = global::AGaugeApp.Properties.Settings.Default.AgMS_max1;
+            this.AgMS_max1.Text = "125";
             // 
             // label11
             // 
@@ -1377,7 +1386,6 @@ namespace AGaugeApp
             this.AgMS_max2.Name = "AgMS_max2";
             this.AgMS_max2.Size = new System.Drawing.Size(100, 20);
             this.AgMS_max2.TabIndex = 14;
-            this.AgMS_max2.Text = "125";
             // 
             // label21
             // 
@@ -1403,7 +1411,6 @@ namespace AGaugeApp
             this.AgMS_min2.Name = "AgMS_min2";
             this.AgMS_min2.Size = new System.Drawing.Size(100, 20);
             this.AgMS_min2.TabIndex = 11;
-            this.AgMS_min2.Text = "125";
             // 
             // label23
             // 
@@ -1897,5 +1904,6 @@ namespace AGaugeApp
         private System.Windows.Forms.Label label35;
         private AGauge aGauge7;
         private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.ColorDialog colorDialog1;
     }
 }

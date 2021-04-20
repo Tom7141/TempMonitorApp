@@ -193,7 +193,7 @@ namespace AGaugeApp.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("-25")]
+        [global::System.Configuration.DefaultSettingValueAttribute("-20")]
         public float AgMS_min1 {
             get {
                 return ((float)(this["AgMS_min1"]));
@@ -206,9 +206,9 @@ namespace AGaugeApp.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("125")]
-        public string AgMS_max1 {
+        public float AgMS_max1 {
             get {
-                return ((string)(this["AgMS_max1"]));
+                return ((float)(this["AgMS_max1"]));
             }
             set {
                 this["AgMS_max1"] = value;
@@ -218,9 +218,9 @@ namespace AGaugeApp.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("-20")]
-        public string AgMS_min2 {
+        public float AgMS_min2 {
             get {
-                return ((string)(this["AgMS_min2"]));
+                return ((float)(this["AgMS_min2"]));
             }
             set {
                 this["AgMS_min2"] = value;
@@ -230,12 +230,84 @@ namespace AGaugeApp.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("125")]
-        public string AgMS_max2 {
+        public float AgMS_max2 {
             get {
-                return ((string)(this["AgMS_max2"]));
+                return ((float)(this["AgMS_max2"]));
             }
             set {
                 this["AgMS_max2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("125")]
+        public float AgMS_max3 {
+            get {
+                return ((float)(this["AgMS_max3"]));
+            }
+            set {
+                this["AgMS_max3"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("-20")]
+        public float AgMS_min3 {
+            get {
+                return ((float)(this["AgMS_min3"]));
+            }
+            set {
+                this["AgMS_min3"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("125")]
+        public float AgMS_max4 {
+            get {
+                return ((float)(this["AgMS_max4"]));
+            }
+            set {
+                this["AgMS_max4"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("-20")]
+        public float AgMS_min4 {
+            get {
+                return ((float)(this["AgMS_min4"]));
+            }
+            set {
+                this["AgMS_min4"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("125")]
+        public float AgMS_max5 {
+            get {
+                return ((float)(this["AgMS_max5"]));
+            }
+            set {
+                this["AgMS_max5"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("-20")]
+        public float AgMS_min5 {
+            get {
+                return ((float)(this["AgMS_min5"]));
+            }
+            set {
+                this["AgMS_min5"] = value;
             }
         }
     }
