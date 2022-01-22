@@ -12,7 +12,7 @@ namespace AGaugeApp.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.8.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.10.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -157,7 +157,7 @@ namespace AGaugeApp.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("S3")]
+        [global::System.Configuration.DefaultSettingValueAttribute("S4")]
         public string GsensorID4 {
             get {
                 return ((string)(this["GsensorID4"]));
@@ -169,7 +169,7 @@ namespace AGaugeApp.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("S4")]
+        [global::System.Configuration.DefaultSettingValueAttribute("S3")]
         public string GsensorID3 {
             get {
                 return ((string)(this["GsensorID3"]));
@@ -181,7 +181,7 @@ namespace AGaugeApp.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("S5")]
+        [global::System.Configuration.DefaultSettingValueAttribute("S2")]
         public string GsensorID2 {
             get {
                 return ((string)(this["GsensorID2"]));
@@ -313,7 +313,7 @@ namespace AGaugeApp.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("125")]
+        [global::System.Configuration.DefaultSettingValueAttribute("-20")]
         public float AgMS_max6 {
             get {
                 return ((float)(this["AgMS_max6"]));

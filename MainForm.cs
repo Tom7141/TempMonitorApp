@@ -128,8 +128,19 @@ namespace AGaugeApp
             aGauge4T -= 1;
             aGauge5T -= 1;
             aGauge6T -= 1;
-            aGaugeT2T3.Value = aGauge3.Value - aGauge2.Value;
-            aGaugeT4T5.Value = aGauge5.Value - aGauge4.Value;
+
+            //update comparitor gauges.... yah bro its here
+            aGaugeT1T2.Value = aGauge1.Value - aGauge2.Value;
+            aGaugeT2T3.Value = aGauge2.Value - aGauge3.Value;
+            aGaugeT3T4.Value = aGauge3.Value - aGauge4.Value;
+            aGaugeT4T5.Value = aGauge4.Value - aGauge5.Value;
+            aGaugeT5T6.Value = aGauge5.Value - aGauge6.Value;
+            //Agauge6_temp.Text = aGaugeT1T2.Value;
+
+
+            //Agauge6_temp.BeginInvoke(new Action(() => { Agauge6_temp.Text = aGaugeT1T2.Value; }));
+
+            aGaugeT4T5b.Value = aGauge5.Value - aGauge4.Value;
             if (aGauge1T <= 0)
             {
                 aGauge1.Value = -125;
@@ -287,7 +298,15 @@ namespace AGaugeApp
                    // Tlabel4.BeginInvoke(new Action(() => { Tlabel4.Text = inputData; }));
                     aGauge5T = V;
                 }
-
+                else if (Properties.Settings.Default.GsensorID6 == indata1[1])
+                {
+                    canConvert = float.TryParse(indata1[2], out float number2);
+                    if (canConvert == true)
+                        aGauge6.BeginInvoke(new Action(() => { aGauge6.Value = number2; }));
+                    Agauge6_temp.BeginInvoke(new Action(() => { Agauge6_temp.Text = indata1[2]; }));
+                    // Tlabel4.BeginInvoke(new Action(() => { Tlabel4.Text = inputData; }));
+                    aGauge6T = V;
+                }
 
 
             }

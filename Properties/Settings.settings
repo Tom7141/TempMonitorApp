@@ -36,13 +36,13 @@
       <Value Profile="(Default)">S6</Value>
     </Setting>
     <Setting Name="GsensorID4" Type="System.String" Scope="User">
-      <Value Profile="(Default)">S3</Value>
-    </Setting>
-    <Setting Name="GsensorID3" Type="System.String" Scope="User">
       <Value Profile="(Default)">S4</Value>
     </Setting>
+    <Setting Name="GsensorID3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">S3</Value>
+    </Setting>
     <Setting Name="GsensorID2" Type="System.String" Scope="User">
-      <Value Profile="(Default)">S5</Value>
+      <Value Profile="(Default)">S2</Value>
     </Setting>
     <Setting Name="AgMS_min1" Type="System.Single" Scope="User">
       <Value Profile="(Default)">-20</Value>
@@ -75,7 +75,7 @@
       <Value Profile="(Default)">-20</Value>
     </Setting>
     <Setting Name="AgMS_max6" Type="System.Single" Scope="User">
-      <Value Profile="(Default)">125</Value>
+      <Value Profile="(Default)">-20</Value>
     </Setting>
     <Setting Name="AgMS_min6" Type="System.Single" Scope="User">
       <Value Profile="(Default)">-20</Value>
