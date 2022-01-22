@@ -61,7 +61,7 @@ namespace AGaugeApp.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("T5")]
+        [global::System.Configuration.DefaultSettingValueAttribute("T6")]
         public string Gauge5_Label {
             get {
                 return ((string)(this["Gauge5_Label"]));
@@ -145,7 +145,7 @@ namespace AGaugeApp.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("S2")]
+        [global::System.Configuration.DefaultSettingValueAttribute("S6")]
         public string GsensorID5 {
             get {
                 return ((string)(this["GsensorID5"]));
@@ -308,6 +308,54 @@ namespace AGaugeApp.Properties {
             }
             set {
                 this["AgMS_min5"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("125")]
+        public float AgMS_max6 {
+            get {
+                return ((float)(this["AgMS_max6"]));
+            }
+            set {
+                this["AgMS_max6"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("-20")]
+        public float AgMS_min6 {
+            get {
+                return ((float)(this["AgMS_min6"]));
+            }
+            set {
+                this["AgMS_min6"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("S6")]
+        public string GsensorID6 {
+            get {
+                return ((string)(this["GsensorID6"]));
+            }
+            set {
+                this["GsensorID6"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("T6")]
+        public string Gauge6_Label {
+            get {
+                return ((string)(this["Gauge6_Label"]));
+            }
+            set {
+                this["Gauge6_Label"] = value;
             }
         }
     }

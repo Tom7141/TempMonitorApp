@@ -38,12 +38,23 @@ namespace AGaugeApp
             this.Ttimer1 = new System.Windows.Forms.Timer(this.components);
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Tabs1 = new System.Windows.Forms.TabPage();
-            this.label35 = new System.Windows.Forms.Label();
-            this.aGauge7 = new AGaugeApp.AGauge();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
+            this.Agauge6_temp = new System.Windows.Forms.Label();
             this.aGauge6 = new AGaugeApp.AGauge();
-            this.label34 = new System.Windows.Forms.Label();
+            this.Tlabel5 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.aGauge12 = new AGaugeApp.AGauge();
+            this.label43 = new System.Windows.Forms.Label();
+            this.aGauge11 = new AGaugeApp.AGauge();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.aGauge10 = new AGaugeApp.AGauge();
+            this.aGauge9 = new AGaugeApp.AGauge();
+            this.label37 = new System.Windows.Forms.Label();
+            this.aGauge8 = new AGaugeApp.AGauge();
+            this.label35 = new System.Windows.Forms.Label();
+            this.aGaugeT4T5 = new AGaugeApp.AGauge();
+            this.label33 = new System.Windows.Forms.Label();
+            this.aGaugeT2T3 = new AGaugeApp.AGauge();
             this.Agauge5_temp = new System.Windows.Forms.Label();
             this.Agauge4_temp = new System.Windows.Forms.Label();
             this.Agauge3_temp = new System.Windows.Forms.Label();
@@ -124,8 +135,18 @@ namespace AGaugeApp
             this.label20 = new System.Windows.Forms.Label();
             this.GsensorID5 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
+            this.Gauge6 = new System.Windows.Forms.TabPage();
+            this.label34 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.AgMS_max6 = new System.Windows.Forms.TextBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.AgMS_min6 = new System.Windows.Forms.TextBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.GsensorID6 = new System.Windows.Forms.TextBox();
+            this.label46 = new System.Windows.Forms.Label();
             this.DserialPort1 = new System.IO.Ports.SerialPort(this.components);
-            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.tabControl1.SuspendLayout();
             this.Tabs1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -138,6 +159,7 @@ namespace AGaugeApp
             this.St_Gauge3.SuspendLayout();
             this.St_Gauge4.SuspendLayout();
             this.St_Gauge5.SuspendLayout();
+            this.Gauge6.SuspendLayout();
             this.SuspendLayout();
             // 
             // Tlabel3
@@ -194,18 +216,29 @@ namespace AGaugeApp
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(819, 529);
+            this.tabControl1.Size = new System.Drawing.Size(951, 620);
             this.tabControl1.TabIndex = 34;
             // 
             // Tabs1
             // 
             this.Tabs1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.Tabs1.Controls.Add(this.label35);
-            this.Tabs1.Controls.Add(this.aGauge7);
-            this.Tabs1.Controls.Add(this.label36);
-            this.Tabs1.Controls.Add(this.label33);
+            this.Tabs1.Controls.Add(this.Agauge6_temp);
             this.Tabs1.Controls.Add(this.aGauge6);
-            this.Tabs1.Controls.Add(this.label34);
+            this.Tabs1.Controls.Add(this.Tlabel5);
+            this.Tabs1.Controls.Add(this.label45);
+            this.Tabs1.Controls.Add(this.aGauge12);
+            this.Tabs1.Controls.Add(this.label43);
+            this.Tabs1.Controls.Add(this.aGauge11);
+            this.Tabs1.Controls.Add(this.label41);
+            this.Tabs1.Controls.Add(this.label39);
+            this.Tabs1.Controls.Add(this.aGauge10);
+            this.Tabs1.Controls.Add(this.aGauge9);
+            this.Tabs1.Controls.Add(this.label37);
+            this.Tabs1.Controls.Add(this.aGauge8);
+            this.Tabs1.Controls.Add(this.label35);
+            this.Tabs1.Controls.Add(this.aGaugeT4T5);
+            this.Tabs1.Controls.Add(this.label33);
+            this.Tabs1.Controls.Add(this.aGaugeT2T3);
             this.Tabs1.Controls.Add(this.Agauge5_temp);
             this.Tabs1.Controls.Add(this.Agauge4_temp);
             this.Tabs1.Controls.Add(this.Agauge3_temp);
@@ -224,142 +257,19 @@ namespace AGaugeApp
             this.Tabs1.Location = new System.Drawing.Point(4, 22);
             this.Tabs1.Name = "Tabs1";
             this.Tabs1.Padding = new System.Windows.Forms.Padding(3);
-            this.Tabs1.Size = new System.Drawing.Size(811, 503);
+            this.Tabs1.Size = new System.Drawing.Size(943, 594);
             this.Tabs1.TabIndex = 0;
-            this.Tabs1.Text = "Main";
+            this.Tabs1.Text = "3\\";
             // 
-            // label35
+            // Agauge6_temp
             // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(655, 390);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(20, 13);
-            this.label35.TabIndex = 49;
-            this.label35.Text = "T5";
-            // 
-            // aGauge7
-            // 
-            this.aGauge7.BaseArcColor = System.Drawing.Color.Indigo;
-            this.aGauge7.BaseArcRadius = 40;
-            this.aGauge7.BaseArcStart = 180;
-            this.aGauge7.BaseArcSweep = 330;
-            this.aGauge7.BaseArcWidth = 2;
-            this.aGauge7.Cap_Idx = ((byte)(1));
-            this.aGauge7.CapColors = new System.Drawing.Color[] {
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black};
-            this.aGauge7.CapPosition = new System.Drawing.Point(20, 140);
-            this.aGauge7.CapsPosition = new System.Drawing.Point[] {
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(20, 140),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10)};
-            this.aGauge7.CapsText = new string[] {
-        "",
-        "T5",
-        "",
-        "",
-        ""};
-            this.aGauge7.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge5_Label;
-            this.aGauge7.Center = new System.Drawing.Point(70, 70);
-            this.aGauge7.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge5_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.aGauge7.Location = new System.Drawing.Point(547, 235);
-            this.aGauge7.MaxValue = 50F;
-            this.aGauge7.MinValue = -20F;
-            this.aGauge7.Name = "aGauge7";
-            this.aGauge7.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
-            this.aGauge7.NeedleColor2 = System.Drawing.Color.BurlyWood;
-            this.aGauge7.NeedleRadius = 45;
-            this.aGauge7.NeedleType = 0;
-            this.aGauge7.NeedleWidth = 3;
-            this.aGauge7.Range_Idx = ((byte)(2));
-            this.aGauge7.RangeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.aGauge7.RangeEnabled = true;
-            this.aGauge7.RangeEndValue = 20F;
-            this.aGauge7.RangeInnerRadius = 30;
-            this.aGauge7.RangeOuterRadius = 40;
-            this.aGauge7.RangesColor = new System.Drawing.Color[] {
-        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
-        System.Drawing.Color.DarkTurquoise,
-        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
-        System.Drawing.Color.LawnGreen,
-        System.Drawing.Color.Red};
-            this.aGauge7.RangesEnabled = new bool[] {
-        true,
-        true,
-        true,
-        true,
-        true};
-            this.aGauge7.RangesEndValue = new float[] {
-        -10F,
-        50F,
-        20F,
-        5F,
-        50F};
-            this.aGauge7.RangesInnerRadius = new int[] {
-        30,
-        30,
-        30,
-        30,
-        30};
-            this.aGauge7.RangesOuterRadius = new int[] {
-        50,
-        40,
-        40,
-        40,
-        50};
-            this.aGauge7.RangesStartValue = new float[] {
-        -20F,
-        20F,
-        -10F,
-        -5F,
-        20F};
-            this.aGauge7.RangeStartValue = -10F;
-            this.aGauge7.ScaleLinesInterColor = System.Drawing.Color.Black;
-            this.aGauge7.ScaleLinesInterInnerRadius = 42;
-            this.aGauge7.ScaleLinesInterOuterRadius = 50;
-            this.aGauge7.ScaleLinesInterWidth = 1;
-            this.aGauge7.ScaleLinesMajorColor = System.Drawing.Color.Black;
-            this.aGauge7.ScaleLinesMajorInnerRadius = 40;
-            this.aGauge7.ScaleLinesMajorOuterRadius = 50;
-            this.aGauge7.ScaleLinesMajorStepValue = 10F;
-            this.aGauge7.ScaleLinesMajorWidth = 2;
-            this.aGauge7.ScaleLinesMinorColor = System.Drawing.Color.Gray;
-            this.aGauge7.ScaleLinesMinorInnerRadius = 43;
-            this.aGauge7.ScaleLinesMinorNumOf = 1;
-            this.aGauge7.ScaleLinesMinorOuterRadius = 50;
-            this.aGauge7.ScaleLinesMinorWidth = 1;
-            this.aGauge7.ScaleNumbersColor = System.Drawing.Color.Black;
-            this.aGauge7.ScaleNumbersFormat = null;
-            this.aGauge7.ScaleNumbersRadius = 62;
-            this.aGauge7.ScaleNumbersRotation = 0;
-            this.aGauge7.ScaleNumbersStartScaleLine = 1;
-            this.aGauge7.ScaleNumbersStepScaleLines = 2;
-            this.aGauge7.Size = new System.Drawing.Size(150, 169);
-            this.aGauge7.TabIndex = 48;
-            this.aGauge7.Text = "AGauge4";
-            this.aGauge7.Value = 0F;
-            // 
-            // label36
-            // 
-            this.label36.Location = new System.Drawing.Point(544, 407);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(153, 62);
-            this.label36.TabIndex = 47;
-            this.label36.Text = "label36";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(335, 390);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(20, 13);
-            this.label33.TabIndex = 46;
-            this.label33.Text = "T5";
+            this.Agauge6_temp.AutoSize = true;
+            this.Agauge6_temp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Agauge6_temp.Location = new System.Drawing.Point(893, 165);
+            this.Agauge6_temp.Name = "Agauge6_temp";
+            this.Agauge6_temp.Size = new System.Drawing.Size(27, 20);
+            this.Agauge6_temp.TabIndex = 64;
+            this.Agauge6_temp.Text = "T6";
             // 
             // aGauge6
             // 
@@ -384,28 +294,30 @@ namespace AGaugeApp
         new System.Drawing.Point(10, 10)};
             this.aGauge6.CapsText = new string[] {
         "",
-        "T5",
+        "T6",
         "",
         "",
         ""};
             this.aGauge6.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge5_Label;
             this.aGauge6.Center = new System.Drawing.Point(70, 70);
             this.aGauge6.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge5_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.aGauge6.Location = new System.Drawing.Point(227, 235);
-            this.aGauge6.MaxValue = 50F;
-            this.aGauge6.MinValue = -20F;
+            this.aGauge6.DataBindings.Add(new System.Windows.Forms.Binding("MaxValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_max5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge6.DataBindings.Add(new System.Windows.Forms.Binding("MinValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_min5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge6.Location = new System.Drawing.Point(785, 10);
+            this.aGauge6.MaxValue = global::AGaugeApp.Properties.Settings.Default.AgMS_max5;
+            this.aGauge6.MinValue = global::AGaugeApp.Properties.Settings.Default.AgMS_min5;
             this.aGauge6.Name = "aGauge6";
             this.aGauge6.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
             this.aGauge6.NeedleColor2 = System.Drawing.Color.BurlyWood;
             this.aGauge6.NeedleRadius = 45;
             this.aGauge6.NeedleType = 0;
             this.aGauge6.NeedleWidth = 3;
-            this.aGauge6.Range_Idx = ((byte)(2));
-            this.aGauge6.RangeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.aGauge6.Range_Idx = ((byte)(4));
+            this.aGauge6.RangeColor = System.Drawing.Color.Red;
             this.aGauge6.RangeEnabled = true;
-            this.aGauge6.RangeEndValue = 20F;
+            this.aGauge6.RangeEndValue = 125F;
             this.aGauge6.RangeInnerRadius = 30;
-            this.aGauge6.RangeOuterRadius = 40;
+            this.aGauge6.RangeOuterRadius = 50;
             this.aGauge6.RangesColor = new System.Drawing.Color[] {
         System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
         System.Drawing.Color.DarkTurquoise,
@@ -419,11 +331,11 @@ namespace AGaugeApp
         true,
         true};
             this.aGauge6.RangesEndValue = new float[] {
-        -10F,
-        50F,
-        20F,
         5F,
-        50F};
+        50F,
+        90F,
+        85F,
+        125F};
             this.aGauge6.RangesInnerRadius = new int[] {
         30,
         30,
@@ -439,10 +351,10 @@ namespace AGaugeApp
             this.aGauge6.RangesStartValue = new float[] {
         -20F,
         20F,
-        -10F,
-        -5F,
-        20F};
-            this.aGauge6.RangeStartValue = -10F;
+        50F,
+        60F,
+        90F};
+            this.aGauge6.RangeStartValue = 90F;
             this.aGauge6.ScaleLinesInterColor = System.Drawing.Color.Black;
             this.aGauge6.ScaleLinesInterInnerRadius = 42;
             this.aGauge6.ScaleLinesInterOuterRadius = 50;
@@ -464,60 +376,877 @@ namespace AGaugeApp
             this.aGauge6.ScaleNumbersStartScaleLine = 1;
             this.aGauge6.ScaleNumbersStepScaleLines = 2;
             this.aGauge6.Size = new System.Drawing.Size(150, 169);
-            this.aGauge6.TabIndex = 45;
+            this.aGauge6.TabIndex = 63;
             this.aGauge6.Text = "AGauge6";
             this.aGauge6.Value = 0F;
             // 
-            // label34
+            // Tlabel5
             // 
-            this.label34.Location = new System.Drawing.Point(224, 407);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(153, 62);
-            this.label34.TabIndex = 44;
-            this.label34.Text = "label34";
+            this.Tlabel5.Location = new System.Drawing.Point(782, 182);
+            this.Tlabel5.Name = "Tlabel5";
+            this.Tlabel5.Size = new System.Drawing.Size(153, 62);
+            this.Tlabel5.TabIndex = 62;
+            this.Tlabel5.Text = "Tlabel5";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(893, 351);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(20, 13);
+            this.label45.TabIndex = 61;
+            this.label45.Text = "T5";
+            // 
+            // aGauge12
+            // 
+            this.aGauge12.BaseArcColor = System.Drawing.Color.Indigo;
+            this.aGauge12.BaseArcRadius = 40;
+            this.aGauge12.BaseArcStart = 180;
+            this.aGauge12.BaseArcSweep = 330;
+            this.aGauge12.BaseArcWidth = 2;
+            this.aGauge12.Cap_Idx = ((byte)(1));
+            this.aGauge12.CapColors = new System.Drawing.Color[] {
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black};
+            this.aGauge12.CapPosition = new System.Drawing.Point(20, 140);
+            this.aGauge12.CapsPosition = new System.Drawing.Point[] {
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(20, 140),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10)};
+            this.aGauge12.CapsText = new string[] {
+        "",
+        "T6",
+        "",
+        "",
+        ""};
+            this.aGauge12.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge5_Label;
+            this.aGauge12.Center = new System.Drawing.Point(70, 70);
+            this.aGauge12.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge5_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge12.Location = new System.Drawing.Point(785, 196);
+            this.aGauge12.MaxValue = 50F;
+            this.aGauge12.MinValue = -20F;
+            this.aGauge12.Name = "aGauge12";
+            this.aGauge12.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
+            this.aGauge12.NeedleColor2 = System.Drawing.Color.BurlyWood;
+            this.aGauge12.NeedleRadius = 45;
+            this.aGauge12.NeedleType = 0;
+            this.aGauge12.NeedleWidth = 3;
+            this.aGauge12.Range_Idx = ((byte)(2));
+            this.aGauge12.RangeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.aGauge12.RangeEnabled = true;
+            this.aGauge12.RangeEndValue = 20F;
+            this.aGauge12.RangeInnerRadius = 30;
+            this.aGauge12.RangeOuterRadius = 40;
+            this.aGauge12.RangesColor = new System.Drawing.Color[] {
+        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
+        System.Drawing.Color.DarkTurquoise,
+        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
+        System.Drawing.Color.LawnGreen,
+        System.Drawing.Color.Red};
+            this.aGauge12.RangesEnabled = new bool[] {
+        true,
+        true,
+        true,
+        true,
+        true};
+            this.aGauge12.RangesEndValue = new float[] {
+        -10F,
+        50F,
+        20F,
+        5F,
+        50F};
+            this.aGauge12.RangesInnerRadius = new int[] {
+        30,
+        30,
+        30,
+        30,
+        30};
+            this.aGauge12.RangesOuterRadius = new int[] {
+        50,
+        40,
+        40,
+        40,
+        50};
+            this.aGauge12.RangesStartValue = new float[] {
+        -20F,
+        20F,
+        -10F,
+        -5F,
+        20F};
+            this.aGauge12.RangeStartValue = -10F;
+            this.aGauge12.ScaleLinesInterColor = System.Drawing.Color.Black;
+            this.aGauge12.ScaleLinesInterInnerRadius = 42;
+            this.aGauge12.ScaleLinesInterOuterRadius = 50;
+            this.aGauge12.ScaleLinesInterWidth = 1;
+            this.aGauge12.ScaleLinesMajorColor = System.Drawing.Color.Black;
+            this.aGauge12.ScaleLinesMajorInnerRadius = 40;
+            this.aGauge12.ScaleLinesMajorOuterRadius = 50;
+            this.aGauge12.ScaleLinesMajorStepValue = 10F;
+            this.aGauge12.ScaleLinesMajorWidth = 2;
+            this.aGauge12.ScaleLinesMinorColor = System.Drawing.Color.Gray;
+            this.aGauge12.ScaleLinesMinorInnerRadius = 43;
+            this.aGauge12.ScaleLinesMinorNumOf = 1;
+            this.aGauge12.ScaleLinesMinorOuterRadius = 50;
+            this.aGauge12.ScaleLinesMinorWidth = 1;
+            this.aGauge12.ScaleNumbersColor = System.Drawing.Color.Black;
+            this.aGauge12.ScaleNumbersFormat = null;
+            this.aGauge12.ScaleNumbersRadius = 62;
+            this.aGauge12.ScaleNumbersRotation = 0;
+            this.aGauge12.ScaleNumbersStartScaleLine = 1;
+            this.aGauge12.ScaleNumbersStepScaleLines = 2;
+            this.aGauge12.Size = new System.Drawing.Size(150, 169);
+            this.aGauge12.TabIndex = 60;
+            this.aGauge12.Text = "AGauge4";
+            this.aGauge12.Value = 0F;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(737, 351);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(20, 13);
+            this.label43.TabIndex = 58;
+            this.label43.Text = "T5";
+            // 
+            // aGauge11
+            // 
+            this.aGauge11.BaseArcColor = System.Drawing.Color.Indigo;
+            this.aGauge11.BaseArcRadius = 40;
+            this.aGauge11.BaseArcStart = 180;
+            this.aGauge11.BaseArcSweep = 330;
+            this.aGauge11.BaseArcWidth = 2;
+            this.aGauge11.Cap_Idx = ((byte)(1));
+            this.aGauge11.CapColors = new System.Drawing.Color[] {
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black};
+            this.aGauge11.CapPosition = new System.Drawing.Point(20, 140);
+            this.aGauge11.CapsPosition = new System.Drawing.Point[] {
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(20, 140),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10)};
+            this.aGauge11.CapsText = new string[] {
+        "",
+        "T6",
+        "",
+        "",
+        ""};
+            this.aGauge11.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge5_Label;
+            this.aGauge11.Center = new System.Drawing.Point(70, 70);
+            this.aGauge11.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge5_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge11.Location = new System.Drawing.Point(629, 196);
+            this.aGauge11.MaxValue = 50F;
+            this.aGauge11.MinValue = -20F;
+            this.aGauge11.Name = "aGauge11";
+            this.aGauge11.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
+            this.aGauge11.NeedleColor2 = System.Drawing.Color.BurlyWood;
+            this.aGauge11.NeedleRadius = 45;
+            this.aGauge11.NeedleType = 0;
+            this.aGauge11.NeedleWidth = 3;
+            this.aGauge11.Range_Idx = ((byte)(2));
+            this.aGauge11.RangeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.aGauge11.RangeEnabled = true;
+            this.aGauge11.RangeEndValue = 20F;
+            this.aGauge11.RangeInnerRadius = 30;
+            this.aGauge11.RangeOuterRadius = 40;
+            this.aGauge11.RangesColor = new System.Drawing.Color[] {
+        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
+        System.Drawing.Color.DarkTurquoise,
+        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
+        System.Drawing.Color.LawnGreen,
+        System.Drawing.Color.Red};
+            this.aGauge11.RangesEnabled = new bool[] {
+        true,
+        true,
+        true,
+        true,
+        true};
+            this.aGauge11.RangesEndValue = new float[] {
+        -10F,
+        50F,
+        20F,
+        5F,
+        50F};
+            this.aGauge11.RangesInnerRadius = new int[] {
+        30,
+        30,
+        30,
+        30,
+        30};
+            this.aGauge11.RangesOuterRadius = new int[] {
+        50,
+        40,
+        40,
+        40,
+        50};
+            this.aGauge11.RangesStartValue = new float[] {
+        -20F,
+        20F,
+        -10F,
+        -5F,
+        20F};
+            this.aGauge11.RangeStartValue = -10F;
+            this.aGauge11.ScaleLinesInterColor = System.Drawing.Color.Black;
+            this.aGauge11.ScaleLinesInterInnerRadius = 42;
+            this.aGauge11.ScaleLinesInterOuterRadius = 50;
+            this.aGauge11.ScaleLinesInterWidth = 1;
+            this.aGauge11.ScaleLinesMajorColor = System.Drawing.Color.Black;
+            this.aGauge11.ScaleLinesMajorInnerRadius = 40;
+            this.aGauge11.ScaleLinesMajorOuterRadius = 50;
+            this.aGauge11.ScaleLinesMajorStepValue = 10F;
+            this.aGauge11.ScaleLinesMajorWidth = 2;
+            this.aGauge11.ScaleLinesMinorColor = System.Drawing.Color.Gray;
+            this.aGauge11.ScaleLinesMinorInnerRadius = 43;
+            this.aGauge11.ScaleLinesMinorNumOf = 1;
+            this.aGauge11.ScaleLinesMinorOuterRadius = 50;
+            this.aGauge11.ScaleLinesMinorWidth = 1;
+            this.aGauge11.ScaleNumbersColor = System.Drawing.Color.Black;
+            this.aGauge11.ScaleNumbersFormat = null;
+            this.aGauge11.ScaleNumbersRadius = 62;
+            this.aGauge11.ScaleNumbersRotation = 0;
+            this.aGauge11.ScaleNumbersStartScaleLine = 1;
+            this.aGauge11.ScaleNumbersStepScaleLines = 2;
+            this.aGauge11.Size = new System.Drawing.Size(150, 169);
+            this.aGauge11.TabIndex = 57;
+            this.aGauge11.Text = "AGauge4";
+            this.aGauge11.Value = 0F;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(581, 351);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(20, 13);
+            this.label41.TabIndex = 52;
+            this.label41.Text = "T5";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(425, 356);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(20, 13);
+            this.label39.TabIndex = 55;
+            this.label39.Text = "T5";
+            // 
+            // aGauge10
+            // 
+            this.aGauge10.BaseArcColor = System.Drawing.Color.Indigo;
+            this.aGauge10.BaseArcRadius = 40;
+            this.aGauge10.BaseArcStart = 180;
+            this.aGauge10.BaseArcSweep = 330;
+            this.aGauge10.BaseArcWidth = 2;
+            this.aGauge10.Cap_Idx = ((byte)(1));
+            this.aGauge10.CapColors = new System.Drawing.Color[] {
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black};
+            this.aGauge10.CapPosition = new System.Drawing.Point(20, 140);
+            this.aGauge10.CapsPosition = new System.Drawing.Point[] {
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(20, 140),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10)};
+            this.aGauge10.CapsText = new string[] {
+        "",
+        "T6",
+        "",
+        "",
+        ""};
+            this.aGauge10.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge5_Label;
+            this.aGauge10.Center = new System.Drawing.Point(70, 70);
+            this.aGauge10.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge5_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge10.Location = new System.Drawing.Point(473, 196);
+            this.aGauge10.MaxValue = 50F;
+            this.aGauge10.MinValue = -20F;
+            this.aGauge10.Name = "aGauge10";
+            this.aGauge10.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
+            this.aGauge10.NeedleColor2 = System.Drawing.Color.BurlyWood;
+            this.aGauge10.NeedleRadius = 45;
+            this.aGauge10.NeedleType = 0;
+            this.aGauge10.NeedleWidth = 3;
+            this.aGauge10.Range_Idx = ((byte)(2));
+            this.aGauge10.RangeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.aGauge10.RangeEnabled = true;
+            this.aGauge10.RangeEndValue = 20F;
+            this.aGauge10.RangeInnerRadius = 30;
+            this.aGauge10.RangeOuterRadius = 40;
+            this.aGauge10.RangesColor = new System.Drawing.Color[] {
+        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
+        System.Drawing.Color.DarkTurquoise,
+        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
+        System.Drawing.Color.LawnGreen,
+        System.Drawing.Color.Red};
+            this.aGauge10.RangesEnabled = new bool[] {
+        true,
+        true,
+        true,
+        true,
+        true};
+            this.aGauge10.RangesEndValue = new float[] {
+        -10F,
+        50F,
+        20F,
+        5F,
+        50F};
+            this.aGauge10.RangesInnerRadius = new int[] {
+        30,
+        30,
+        30,
+        30,
+        30};
+            this.aGauge10.RangesOuterRadius = new int[] {
+        50,
+        40,
+        40,
+        40,
+        50};
+            this.aGauge10.RangesStartValue = new float[] {
+        -20F,
+        20F,
+        -10F,
+        -5F,
+        20F};
+            this.aGauge10.RangeStartValue = -10F;
+            this.aGauge10.ScaleLinesInterColor = System.Drawing.Color.Black;
+            this.aGauge10.ScaleLinesInterInnerRadius = 42;
+            this.aGauge10.ScaleLinesInterOuterRadius = 50;
+            this.aGauge10.ScaleLinesInterWidth = 1;
+            this.aGauge10.ScaleLinesMajorColor = System.Drawing.Color.Black;
+            this.aGauge10.ScaleLinesMajorInnerRadius = 40;
+            this.aGauge10.ScaleLinesMajorOuterRadius = 50;
+            this.aGauge10.ScaleLinesMajorStepValue = 10F;
+            this.aGauge10.ScaleLinesMajorWidth = 2;
+            this.aGauge10.ScaleLinesMinorColor = System.Drawing.Color.Gray;
+            this.aGauge10.ScaleLinesMinorInnerRadius = 43;
+            this.aGauge10.ScaleLinesMinorNumOf = 1;
+            this.aGauge10.ScaleLinesMinorOuterRadius = 50;
+            this.aGauge10.ScaleLinesMinorWidth = 1;
+            this.aGauge10.ScaleNumbersColor = System.Drawing.Color.Black;
+            this.aGauge10.ScaleNumbersFormat = null;
+            this.aGauge10.ScaleNumbersRadius = 62;
+            this.aGauge10.ScaleNumbersRotation = 0;
+            this.aGauge10.ScaleNumbersStartScaleLine = 1;
+            this.aGauge10.ScaleNumbersStepScaleLines = 2;
+            this.aGauge10.Size = new System.Drawing.Size(150, 169);
+            this.aGauge10.TabIndex = 51;
+            this.aGauge10.Text = "AGauge4";
+            this.aGauge10.Value = 0F;
+            // 
+            // aGauge9
+            // 
+            this.aGauge9.BaseArcColor = System.Drawing.Color.Indigo;
+            this.aGauge9.BaseArcRadius = 40;
+            this.aGauge9.BaseArcStart = 180;
+            this.aGauge9.BaseArcSweep = 330;
+            this.aGauge9.BaseArcWidth = 2;
+            this.aGauge9.Cap_Idx = ((byte)(1));
+            this.aGauge9.CapColors = new System.Drawing.Color[] {
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black};
+            this.aGauge9.CapPosition = new System.Drawing.Point(20, 140);
+            this.aGauge9.CapsPosition = new System.Drawing.Point[] {
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(20, 140),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10)};
+            this.aGauge9.CapsText = new string[] {
+        "",
+        "T6",
+        "",
+        "",
+        ""};
+            this.aGauge9.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge5_Label;
+            this.aGauge9.Center = new System.Drawing.Point(70, 70);
+            this.aGauge9.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge5_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge9.Location = new System.Drawing.Point(317, 196);
+            this.aGauge9.MaxValue = 50F;
+            this.aGauge9.MinValue = -20F;
+            this.aGauge9.Name = "aGauge9";
+            this.aGauge9.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
+            this.aGauge9.NeedleColor2 = System.Drawing.Color.BurlyWood;
+            this.aGauge9.NeedleRadius = 45;
+            this.aGauge9.NeedleType = 0;
+            this.aGauge9.NeedleWidth = 3;
+            this.aGauge9.Range_Idx = ((byte)(2));
+            this.aGauge9.RangeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.aGauge9.RangeEnabled = true;
+            this.aGauge9.RangeEndValue = 20F;
+            this.aGauge9.RangeInnerRadius = 30;
+            this.aGauge9.RangeOuterRadius = 40;
+            this.aGauge9.RangesColor = new System.Drawing.Color[] {
+        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
+        System.Drawing.Color.DarkTurquoise,
+        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
+        System.Drawing.Color.LawnGreen,
+        System.Drawing.Color.Red};
+            this.aGauge9.RangesEnabled = new bool[] {
+        true,
+        true,
+        true,
+        true,
+        true};
+            this.aGauge9.RangesEndValue = new float[] {
+        -10F,
+        50F,
+        20F,
+        5F,
+        50F};
+            this.aGauge9.RangesInnerRadius = new int[] {
+        30,
+        30,
+        30,
+        30,
+        30};
+            this.aGauge9.RangesOuterRadius = new int[] {
+        50,
+        40,
+        40,
+        40,
+        50};
+            this.aGauge9.RangesStartValue = new float[] {
+        -20F,
+        20F,
+        -10F,
+        -5F,
+        20F};
+            this.aGauge9.RangeStartValue = -10F;
+            this.aGauge9.ScaleLinesInterColor = System.Drawing.Color.Black;
+            this.aGauge9.ScaleLinesInterInnerRadius = 42;
+            this.aGauge9.ScaleLinesInterOuterRadius = 50;
+            this.aGauge9.ScaleLinesInterWidth = 1;
+            this.aGauge9.ScaleLinesMajorColor = System.Drawing.Color.Black;
+            this.aGauge9.ScaleLinesMajorInnerRadius = 40;
+            this.aGauge9.ScaleLinesMajorOuterRadius = 50;
+            this.aGauge9.ScaleLinesMajorStepValue = 10F;
+            this.aGauge9.ScaleLinesMajorWidth = 2;
+            this.aGauge9.ScaleLinesMinorColor = System.Drawing.Color.Gray;
+            this.aGauge9.ScaleLinesMinorInnerRadius = 43;
+            this.aGauge9.ScaleLinesMinorNumOf = 1;
+            this.aGauge9.ScaleLinesMinorOuterRadius = 50;
+            this.aGauge9.ScaleLinesMinorWidth = 1;
+            this.aGauge9.ScaleNumbersColor = System.Drawing.Color.Black;
+            this.aGauge9.ScaleNumbersFormat = null;
+            this.aGauge9.ScaleNumbersRadius = 62;
+            this.aGauge9.ScaleNumbersRotation = 0;
+            this.aGauge9.ScaleNumbersStartScaleLine = 1;
+            this.aGauge9.ScaleNumbersStepScaleLines = 2;
+            this.aGauge9.Size = new System.Drawing.Size(150, 169);
+            this.aGauge9.TabIndex = 54;
+            this.aGauge9.Text = "AGauge4";
+            this.aGauge9.Value = 0F;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(269, 351);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(20, 13);
+            this.label37.TabIndex = 52;
+            this.label37.Text = "T5";
+            // 
+            // aGauge8
+            // 
+            this.aGauge8.BaseArcColor = System.Drawing.Color.Indigo;
+            this.aGauge8.BaseArcRadius = 40;
+            this.aGauge8.BaseArcStart = 180;
+            this.aGauge8.BaseArcSweep = 330;
+            this.aGauge8.BaseArcWidth = 2;
+            this.aGauge8.Cap_Idx = ((byte)(1));
+            this.aGauge8.CapColors = new System.Drawing.Color[] {
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black};
+            this.aGauge8.CapPosition = new System.Drawing.Point(20, 140);
+            this.aGauge8.CapsPosition = new System.Drawing.Point[] {
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(20, 140),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10)};
+            this.aGauge8.CapsText = new string[] {
+        "",
+        "T6",
+        "",
+        "",
+        ""};
+            this.aGauge8.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge5_Label;
+            this.aGauge8.Center = new System.Drawing.Point(70, 70);
+            this.aGauge8.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge5_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge8.Location = new System.Drawing.Point(161, 196);
+            this.aGauge8.MaxValue = 50F;
+            this.aGauge8.MinValue = -20F;
+            this.aGauge8.Name = "aGauge8";
+            this.aGauge8.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
+            this.aGauge8.NeedleColor2 = System.Drawing.Color.BurlyWood;
+            this.aGauge8.NeedleRadius = 45;
+            this.aGauge8.NeedleType = 0;
+            this.aGauge8.NeedleWidth = 3;
+            this.aGauge8.Range_Idx = ((byte)(2));
+            this.aGauge8.RangeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.aGauge8.RangeEnabled = true;
+            this.aGauge8.RangeEndValue = 20F;
+            this.aGauge8.RangeInnerRadius = 30;
+            this.aGauge8.RangeOuterRadius = 40;
+            this.aGauge8.RangesColor = new System.Drawing.Color[] {
+        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
+        System.Drawing.Color.DarkTurquoise,
+        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
+        System.Drawing.Color.LawnGreen,
+        System.Drawing.Color.Red};
+            this.aGauge8.RangesEnabled = new bool[] {
+        true,
+        true,
+        true,
+        true,
+        true};
+            this.aGauge8.RangesEndValue = new float[] {
+        -10F,
+        50F,
+        20F,
+        5F,
+        50F};
+            this.aGauge8.RangesInnerRadius = new int[] {
+        30,
+        30,
+        30,
+        30,
+        30};
+            this.aGauge8.RangesOuterRadius = new int[] {
+        50,
+        40,
+        40,
+        40,
+        50};
+            this.aGauge8.RangesStartValue = new float[] {
+        -20F,
+        20F,
+        -10F,
+        -5F,
+        20F};
+            this.aGauge8.RangeStartValue = -10F;
+            this.aGauge8.ScaleLinesInterColor = System.Drawing.Color.Black;
+            this.aGauge8.ScaleLinesInterInnerRadius = 42;
+            this.aGauge8.ScaleLinesInterOuterRadius = 50;
+            this.aGauge8.ScaleLinesInterWidth = 1;
+            this.aGauge8.ScaleLinesMajorColor = System.Drawing.Color.Black;
+            this.aGauge8.ScaleLinesMajorInnerRadius = 40;
+            this.aGauge8.ScaleLinesMajorOuterRadius = 50;
+            this.aGauge8.ScaleLinesMajorStepValue = 10F;
+            this.aGauge8.ScaleLinesMajorWidth = 2;
+            this.aGauge8.ScaleLinesMinorColor = System.Drawing.Color.Gray;
+            this.aGauge8.ScaleLinesMinorInnerRadius = 43;
+            this.aGauge8.ScaleLinesMinorNumOf = 1;
+            this.aGauge8.ScaleLinesMinorOuterRadius = 50;
+            this.aGauge8.ScaleLinesMinorWidth = 1;
+            this.aGauge8.ScaleNumbersColor = System.Drawing.Color.Black;
+            this.aGauge8.ScaleNumbersFormat = null;
+            this.aGauge8.ScaleNumbersRadius = 62;
+            this.aGauge8.ScaleNumbersRotation = 0;
+            this.aGauge8.ScaleNumbersStartScaleLine = 1;
+            this.aGauge8.ScaleNumbersStepScaleLines = 2;
+            this.aGauge8.Size = new System.Drawing.Size(150, 112);
+            this.aGauge8.TabIndex = 51;
+            this.aGauge8.Text = "AGauge4";
+            this.aGauge8.Value = 0F;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(647, 539);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(20, 13);
+            this.label35.TabIndex = 49;
+            this.label35.Text = "T5";
+            // 
+            // aGaugeT4T5
+            // 
+            this.aGaugeT4T5.BaseArcColor = System.Drawing.Color.Indigo;
+            this.aGaugeT4T5.BaseArcRadius = 40;
+            this.aGaugeT4T5.BaseArcStart = 180;
+            this.aGaugeT4T5.BaseArcSweep = 330;
+            this.aGaugeT4T5.BaseArcWidth = 2;
+            this.aGaugeT4T5.Cap_Idx = ((byte)(1));
+            this.aGaugeT4T5.CapColors = new System.Drawing.Color[] {
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black};
+            this.aGaugeT4T5.CapPosition = new System.Drawing.Point(20, 140);
+            this.aGaugeT4T5.CapsPosition = new System.Drawing.Point[] {
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(20, 140),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10)};
+            this.aGaugeT4T5.CapsText = new string[] {
+        "",
+        "T6",
+        "",
+        "",
+        ""};
+            this.aGaugeT4T5.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge5_Label;
+            this.aGaugeT4T5.Center = new System.Drawing.Point(70, 70);
+            this.aGaugeT4T5.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge5_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGaugeT4T5.Location = new System.Drawing.Point(564, 394);
+            this.aGaugeT4T5.MaxValue = 50F;
+            this.aGaugeT4T5.MinValue = -20F;
+            this.aGaugeT4T5.Name = "aGaugeT4T5";
+            this.aGaugeT4T5.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
+            this.aGaugeT4T5.NeedleColor2 = System.Drawing.Color.BurlyWood;
+            this.aGaugeT4T5.NeedleRadius = 45;
+            this.aGaugeT4T5.NeedleType = 0;
+            this.aGaugeT4T5.NeedleWidth = 3;
+            this.aGaugeT4T5.Range_Idx = ((byte)(2));
+            this.aGaugeT4T5.RangeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.aGaugeT4T5.RangeEnabled = true;
+            this.aGaugeT4T5.RangeEndValue = 20F;
+            this.aGaugeT4T5.RangeInnerRadius = 30;
+            this.aGaugeT4T5.RangeOuterRadius = 40;
+            this.aGaugeT4T5.RangesColor = new System.Drawing.Color[] {
+        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
+        System.Drawing.Color.DarkTurquoise,
+        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
+        System.Drawing.Color.LawnGreen,
+        System.Drawing.Color.Red};
+            this.aGaugeT4T5.RangesEnabled = new bool[] {
+        true,
+        true,
+        true,
+        true,
+        true};
+            this.aGaugeT4T5.RangesEndValue = new float[] {
+        -10F,
+        50F,
+        20F,
+        5F,
+        50F};
+            this.aGaugeT4T5.RangesInnerRadius = new int[] {
+        30,
+        30,
+        30,
+        30,
+        30};
+            this.aGaugeT4T5.RangesOuterRadius = new int[] {
+        50,
+        40,
+        40,
+        40,
+        50};
+            this.aGaugeT4T5.RangesStartValue = new float[] {
+        -20F,
+        20F,
+        -10F,
+        -5F,
+        20F};
+            this.aGaugeT4T5.RangeStartValue = -10F;
+            this.aGaugeT4T5.ScaleLinesInterColor = System.Drawing.Color.Black;
+            this.aGaugeT4T5.ScaleLinesInterInnerRadius = 42;
+            this.aGaugeT4T5.ScaleLinesInterOuterRadius = 50;
+            this.aGaugeT4T5.ScaleLinesInterWidth = 1;
+            this.aGaugeT4T5.ScaleLinesMajorColor = System.Drawing.Color.Black;
+            this.aGaugeT4T5.ScaleLinesMajorInnerRadius = 40;
+            this.aGaugeT4T5.ScaleLinesMajorOuterRadius = 50;
+            this.aGaugeT4T5.ScaleLinesMajorStepValue = 10F;
+            this.aGaugeT4T5.ScaleLinesMajorWidth = 2;
+            this.aGaugeT4T5.ScaleLinesMinorColor = System.Drawing.Color.Gray;
+            this.aGaugeT4T5.ScaleLinesMinorInnerRadius = 43;
+            this.aGaugeT4T5.ScaleLinesMinorNumOf = 1;
+            this.aGaugeT4T5.ScaleLinesMinorOuterRadius = 50;
+            this.aGaugeT4T5.ScaleLinesMinorWidth = 1;
+            this.aGaugeT4T5.ScaleNumbersColor = System.Drawing.Color.Black;
+            this.aGaugeT4T5.ScaleNumbersFormat = null;
+            this.aGaugeT4T5.ScaleNumbersRadius = 62;
+            this.aGaugeT4T5.ScaleNumbersRotation = 0;
+            this.aGaugeT4T5.ScaleNumbersStartScaleLine = 1;
+            this.aGaugeT4T5.ScaleNumbersStepScaleLines = 2;
+            this.aGaugeT4T5.Size = new System.Drawing.Size(150, 169);
+            this.aGaugeT4T5.TabIndex = 48;
+            this.aGaugeT4T5.Text = "AGauge4";
+            this.aGaugeT4T5.Value = 0F;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(302, 541);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(20, 13);
+            this.label33.TabIndex = 46;
+            this.label33.Text = "T5";
+            // 
+            // aGaugeT2T3
+            // 
+            this.aGaugeT2T3.BaseArcColor = System.Drawing.Color.Indigo;
+            this.aGaugeT2T3.BaseArcRadius = 40;
+            this.aGaugeT2T3.BaseArcStart = 180;
+            this.aGaugeT2T3.BaseArcSweep = 330;
+            this.aGaugeT2T3.BaseArcWidth = 2;
+            this.aGaugeT2T3.Cap_Idx = ((byte)(1));
+            this.aGaugeT2T3.CapColors = new System.Drawing.Color[] {
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black};
+            this.aGaugeT2T3.CapPosition = new System.Drawing.Point(20, 140);
+            this.aGaugeT2T3.CapsPosition = new System.Drawing.Point[] {
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(20, 140),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10)};
+            this.aGaugeT2T3.CapsText = new string[] {
+        "",
+        "T6",
+        "",
+        "",
+        ""};
+            this.aGaugeT2T3.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge5_Label;
+            this.aGaugeT2T3.Center = new System.Drawing.Point(70, 70);
+            this.aGaugeT2T3.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge5_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGaugeT2T3.Location = new System.Drawing.Point(225, 394);
+            this.aGaugeT2T3.MaxValue = 50F;
+            this.aGaugeT2T3.MinValue = -20F;
+            this.aGaugeT2T3.Name = "aGaugeT2T3";
+            this.aGaugeT2T3.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
+            this.aGaugeT2T3.NeedleColor2 = System.Drawing.Color.BurlyWood;
+            this.aGaugeT2T3.NeedleRadius = 45;
+            this.aGaugeT2T3.NeedleType = 0;
+            this.aGaugeT2T3.NeedleWidth = 3;
+            this.aGaugeT2T3.Range_Idx = ((byte)(2));
+            this.aGaugeT2T3.RangeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.aGaugeT2T3.RangeEnabled = true;
+            this.aGaugeT2T3.RangeEndValue = 20F;
+            this.aGaugeT2T3.RangeInnerRadius = 30;
+            this.aGaugeT2T3.RangeOuterRadius = 40;
+            this.aGaugeT2T3.RangesColor = new System.Drawing.Color[] {
+        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
+        System.Drawing.Color.DarkTurquoise,
+        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
+        System.Drawing.Color.LawnGreen,
+        System.Drawing.Color.Red};
+            this.aGaugeT2T3.RangesEnabled = new bool[] {
+        true,
+        true,
+        true,
+        true,
+        true};
+            this.aGaugeT2T3.RangesEndValue = new float[] {
+        -10F,
+        50F,
+        20F,
+        5F,
+        50F};
+            this.aGaugeT2T3.RangesInnerRadius = new int[] {
+        30,
+        30,
+        30,
+        30,
+        30};
+            this.aGaugeT2T3.RangesOuterRadius = new int[] {
+        50,
+        40,
+        40,
+        40,
+        50};
+            this.aGaugeT2T3.RangesStartValue = new float[] {
+        -20F,
+        20F,
+        -10F,
+        -5F,
+        20F};
+            this.aGaugeT2T3.RangeStartValue = -10F;
+            this.aGaugeT2T3.ScaleLinesInterColor = System.Drawing.Color.Black;
+            this.aGaugeT2T3.ScaleLinesInterInnerRadius = 42;
+            this.aGaugeT2T3.ScaleLinesInterOuterRadius = 50;
+            this.aGaugeT2T3.ScaleLinesInterWidth = 1;
+            this.aGaugeT2T3.ScaleLinesMajorColor = System.Drawing.Color.Black;
+            this.aGaugeT2T3.ScaleLinesMajorInnerRadius = 40;
+            this.aGaugeT2T3.ScaleLinesMajorOuterRadius = 50;
+            this.aGaugeT2T3.ScaleLinesMajorStepValue = 10F;
+            this.aGaugeT2T3.ScaleLinesMajorWidth = 2;
+            this.aGaugeT2T3.ScaleLinesMinorColor = System.Drawing.Color.Gray;
+            this.aGaugeT2T3.ScaleLinesMinorInnerRadius = 43;
+            this.aGaugeT2T3.ScaleLinesMinorNumOf = 1;
+            this.aGaugeT2T3.ScaleLinesMinorOuterRadius = 50;
+            this.aGaugeT2T3.ScaleLinesMinorWidth = 1;
+            this.aGaugeT2T3.ScaleNumbersColor = System.Drawing.Color.Black;
+            this.aGaugeT2T3.ScaleNumbersFormat = null;
+            this.aGaugeT2T3.ScaleNumbersRadius = 62;
+            this.aGaugeT2T3.ScaleNumbersRotation = 0;
+            this.aGaugeT2T3.ScaleNumbersStartScaleLine = 1;
+            this.aGaugeT2T3.ScaleNumbersStepScaleLines = 2;
+            this.aGaugeT2T3.Size = new System.Drawing.Size(150, 169);
+            this.aGaugeT2T3.TabIndex = 45;
+            this.aGaugeT2T3.Text = "AGauge6";
+            this.aGaugeT2T3.Value = 0F;
             // 
             // Agauge5_temp
             // 
             this.Agauge5_temp.AutoSize = true;
+            this.Agauge5_temp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Agauge5_temp.Location = new System.Drawing.Point(740, 165);
             this.Agauge5_temp.Name = "Agauge5_temp";
-            this.Agauge5_temp.Size = new System.Drawing.Size(20, 13);
+            this.Agauge5_temp.Size = new System.Drawing.Size(27, 20);
             this.Agauge5_temp.TabIndex = 43;
             this.Agauge5_temp.Text = "T5";
             // 
             // Agauge4_temp
             // 
             this.Agauge4_temp.AutoSize = true;
+            this.Agauge4_temp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Agauge4_temp.Location = new System.Drawing.Point(572, 165);
             this.Agauge4_temp.Name = "Agauge4_temp";
-            this.Agauge4_temp.Size = new System.Drawing.Size(20, 13);
+            this.Agauge4_temp.Size = new System.Drawing.Size(27, 20);
             this.Agauge4_temp.TabIndex = 42;
             this.Agauge4_temp.Text = "T4";
             // 
             // Agauge3_temp
             // 
             this.Agauge3_temp.AutoSize = true;
+            this.Agauge3_temp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Agauge3_temp.Location = new System.Drawing.Point(428, 166);
             this.Agauge3_temp.Name = "Agauge3_temp";
-            this.Agauge3_temp.Size = new System.Drawing.Size(20, 13);
+            this.Agauge3_temp.Size = new System.Drawing.Size(27, 20);
             this.Agauge3_temp.TabIndex = 41;
             this.Agauge3_temp.Text = "T3";
             // 
             // Agauge2_temp
             // 
             this.Agauge2_temp.AutoSize = true;
+            this.Agauge2_temp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Agauge2_temp.Location = new System.Drawing.Point(272, 166);
             this.Agauge2_temp.Name = "Agauge2_temp";
-            this.Agauge2_temp.Size = new System.Drawing.Size(20, 13);
+            this.Agauge2_temp.Size = new System.Drawing.Size(27, 20);
             this.Agauge2_temp.TabIndex = 40;
             this.Agauge2_temp.Text = "T2";
             // 
             // Agauge1_temp
             // 
             this.Agauge1_temp.AutoSize = true;
+            this.Agauge1_temp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Agauge1_temp.Location = new System.Drawing.Point(101, 166);
             this.Agauge1_temp.Name = "Agauge1_temp";
-            this.Agauge1_temp.Size = new System.Drawing.Size(20, 13);
+            this.Agauge1_temp.Size = new System.Drawing.Size(27, 20);
             this.Agauge1_temp.TabIndex = 39;
             this.Agauge1_temp.Text = "T1";
             // 
@@ -544,7 +1273,7 @@ namespace AGaugeApp
         new System.Drawing.Point(10, 10)};
             this.aGauge5.CapsText = new string[] {
         "",
-        "T5",
+        "T6",
         "",
         "",
         ""};
@@ -627,7 +1356,7 @@ namespace AGaugeApp
             this.aGauge5.ScaleNumbersStepScaleLines = 2;
             this.aGauge5.Size = new System.Drawing.Size(150, 169);
             this.aGauge5.TabIndex = 38;
-            this.aGauge5.Text = "AGauge4";
+            this.aGauge5.Text = "AGauge5";
             this.aGauge5.Value = 0F;
             // 
             // aGauge3
@@ -736,7 +1465,7 @@ namespace AGaugeApp
             this.aGauge3.ScaleNumbersStepScaleLines = 2;
             this.aGauge3.Size = new System.Drawing.Size(150, 169);
             this.aGauge3.TabIndex = 37;
-            this.aGauge3.Text = "AGauge4";
+            this.aGauge3.Text = "AGauge3";
             this.aGauge3.Value = 0F;
             // 
             // aGauge2
@@ -845,7 +1574,7 @@ namespace AGaugeApp
             this.aGauge2.ScaleNumbersStepScaleLines = 2;
             this.aGauge2.Size = new System.Drawing.Size(150, 169);
             this.aGauge2.TabIndex = 36;
-            this.aGauge2.Text = "AGauge4";
+            this.aGauge2.Text = "AGauge2";
             this.aGauge2.Value = 0F;
             // 
             // aGauge1
@@ -954,7 +1683,7 @@ namespace AGaugeApp
             this.aGauge1.ScaleNumbersStepScaleLines = 2;
             this.aGauge1.Size = new System.Drawing.Size(150, 169);
             this.aGauge1.TabIndex = 35;
-            this.aGauge1.Text = "AGauge4";
+            this.aGauge1.Text = "AGauge1";
             this.aGauge1.Value = 0F;
             // 
             // aGauge4
@@ -1074,7 +1803,7 @@ namespace AGaugeApp
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(811, 503);
+            this.tabPage2.Size = new System.Drawing.Size(943, 594);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Settings";
             // 
@@ -1087,11 +1816,12 @@ namespace AGaugeApp
             this.SettingsTabs.Controls.Add(this.St_Gauge3);
             this.SettingsTabs.Controls.Add(this.St_Gauge4);
             this.SettingsTabs.Controls.Add(this.St_Gauge5);
+            this.SettingsTabs.Controls.Add(this.Gauge6);
             this.SettingsTabs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.SettingsTabs.Location = new System.Drawing.Point(3, 3);
             this.SettingsTabs.Name = "SettingsTabs";
             this.SettingsTabs.SelectedIndex = 0;
-            this.SettingsTabs.Size = new System.Drawing.Size(805, 497);
+            this.SettingsTabs.Size = new System.Drawing.Size(937, 588);
             this.SettingsTabs.TabIndex = 13;
             // 
             // COM_PORTS
@@ -1101,7 +1831,7 @@ namespace AGaugeApp
             this.COM_PORTS.Location = new System.Drawing.Point(4, 22);
             this.COM_PORTS.Name = "COM_PORTS";
             this.COM_PORTS.Padding = new System.Windows.Forms.Padding(3);
-            this.COM_PORTS.Size = new System.Drawing.Size(797, 471);
+            this.COM_PORTS.Size = new System.Drawing.Size(929, 562);
             this.COM_PORTS.TabIndex = 0;
             this.COM_PORTS.Text = "COM PORTS";
             this.COM_PORTS.UseVisualStyleBackColor = true;
@@ -1213,7 +1943,7 @@ namespace AGaugeApp
             this.Gauge_Basics.Location = new System.Drawing.Point(4, 22);
             this.Gauge_Basics.Name = "Gauge_Basics";
             this.Gauge_Basics.Padding = new System.Windows.Forms.Padding(3);
-            this.Gauge_Basics.Size = new System.Drawing.Size(797, 471);
+            this.Gauge_Basics.Size = new System.Drawing.Size(929, 562);
             this.Gauge_Basics.TabIndex = 1;
             this.Gauge_Basics.Text = "Gauge Basics";
             this.Gauge_Basics.UseVisualStyleBackColor = true;
@@ -1250,7 +1980,7 @@ namespace AGaugeApp
             this.St_Gauge1.Controls.Add(this.label9);
             this.St_Gauge1.Location = new System.Drawing.Point(4, 22);
             this.St_Gauge1.Name = "St_Gauge1";
-            this.St_Gauge1.Size = new System.Drawing.Size(797, 471);
+            this.St_Gauge1.Size = new System.Drawing.Size(929, 562);
             this.St_Gauge1.TabIndex = 2;
             this.St_Gauge1.Text = "Gauge1";
             this.St_Gauge1.UseVisualStyleBackColor = true;
@@ -1357,7 +2087,7 @@ namespace AGaugeApp
             this.St_Gauge2.Controls.Add(this.label13);
             this.St_Gauge2.Location = new System.Drawing.Point(4, 22);
             this.St_Gauge2.Name = "St_Gauge2";
-            this.St_Gauge2.Size = new System.Drawing.Size(797, 471);
+            this.St_Gauge2.Size = new System.Drawing.Size(929, 562);
             this.St_Gauge2.TabIndex = 3;
             this.St_Gauge2.Text = "Gauge2";
             this.St_Gauge2.UseVisualStyleBackColor = true;
@@ -1462,7 +2192,7 @@ namespace AGaugeApp
             this.St_Gauge3.Controls.Add(this.label14);
             this.St_Gauge3.Location = new System.Drawing.Point(4, 22);
             this.St_Gauge3.Name = "St_Gauge3";
-            this.St_Gauge3.Size = new System.Drawing.Size(797, 471);
+            this.St_Gauge3.Size = new System.Drawing.Size(929, 562);
             this.St_Gauge3.TabIndex = 4;
             this.St_Gauge3.Text = "Gauge3";
             this.St_Gauge3.UseVisualStyleBackColor = true;
@@ -1567,7 +2297,7 @@ namespace AGaugeApp
             this.St_Gauge4.Controls.Add(this.label15);
             this.St_Gauge4.Location = new System.Drawing.Point(4, 22);
             this.St_Gauge4.Name = "St_Gauge4";
-            this.St_Gauge4.Size = new System.Drawing.Size(797, 471);
+            this.St_Gauge4.Size = new System.Drawing.Size(929, 562);
             this.St_Gauge4.TabIndex = 5;
             this.St_Gauge4.Text = "Gauge4";
             this.St_Gauge4.UseVisualStyleBackColor = true;
@@ -1672,7 +2402,7 @@ namespace AGaugeApp
             this.St_Gauge5.Controls.Add(this.label16);
             this.St_Gauge5.Location = new System.Drawing.Point(4, 22);
             this.St_Gauge5.Name = "St_Gauge5";
-            this.St_Gauge5.Size = new System.Drawing.Size(797, 471);
+            this.St_Gauge5.Size = new System.Drawing.Size(929, 562);
             this.St_Gauge5.TabIndex = 6;
             this.St_Gauge5.Text = "Gauge5";
             this.St_Gauge5.UseVisualStyleBackColor = true;
@@ -1763,6 +2493,112 @@ namespace AGaugeApp
             this.label16.TabIndex = 7;
             this.label16.Text = "Sensor ID";
             // 
+            // Gauge6
+            // 
+            this.Gauge6.Controls.Add(this.label34);
+            this.Gauge6.Controls.Add(this.textBox2);
+            this.Gauge6.Controls.Add(this.AgMS_max6);
+            this.Gauge6.Controls.Add(this.label38);
+            this.Gauge6.Controls.Add(this.label40);
+            this.Gauge6.Controls.Add(this.AgMS_min6);
+            this.Gauge6.Controls.Add(this.label42);
+            this.Gauge6.Controls.Add(this.label44);
+            this.Gauge6.Controls.Add(this.GsensorID6);
+            this.Gauge6.Controls.Add(this.label46);
+            this.Gauge6.Location = new System.Drawing.Point(4, 22);
+            this.Gauge6.Name = "Gauge6";
+            this.Gauge6.Padding = new System.Windows.Forms.Padding(3);
+            this.Gauge6.Size = new System.Drawing.Size(929, 562);
+            this.Gauge6.TabIndex = 7;
+            this.Gauge6.Text = "St_Gauge6";
+            this.Gauge6.UseVisualStyleBackColor = true;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(147, 28);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(74, 13);
+            this.label34.TabIndex = 26;
+            this.label34.Text = "Gauge5 Label";
+            // 
+            // textBox2
+            // 
+            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::AGaugeApp.Properties.Settings.Default, "Gauge5_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.textBox2.Location = new System.Drawing.Point(227, 25);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(185, 20);
+            this.textBox2.TabIndex = 25;
+            this.textBox2.Text = global::AGaugeApp.Properties.Settings.Default.Gauge5_Label;
+            // 
+            // AgMS_max6
+            // 
+            this.AgMS_max6.Location = new System.Drawing.Point(710, 49);
+            this.AgMS_max6.Name = "AgMS_max6";
+            this.AgMS_max6.Size = new System.Drawing.Size(100, 20);
+            this.AgMS_max6.TabIndex = 24;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(675, 52);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(34, 13);
+            this.label38.TabIndex = 23;
+            this.label38.Text = "Finish";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(418, 52);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(95, 13);
+            this.label40.TabIndex = 22;
+            this.label40.Text = "Main Scale Range";
+            // 
+            // AgMS_min6
+            // 
+            this.AgMS_min6.Location = new System.Drawing.Point(569, 49);
+            this.AgMS_min6.Name = "AgMS_min6";
+            this.AgMS_min6.Size = new System.Drawing.Size(100, 20);
+            this.AgMS_min6.TabIndex = 21;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(534, 52);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(29, 13);
+            this.label42.TabIndex = 20;
+            this.label42.Text = "Start";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(455, 9);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(356, 13);
+            this.label44.TabIndex = 19;
+            this.label44.Text = "Enter sensor ID number in hex or Snumber  EG \"S5\" to auto detect hex ID";
+            // 
+            // GsensorID6
+            // 
+            this.GsensorID6.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::AGaugeApp.Properties.Settings.Default, "GsensorID5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.GsensorID6.Location = new System.Drawing.Point(478, 25);
+            this.GsensorID6.Name = "GsensorID6";
+            this.GsensorID6.Size = new System.Drawing.Size(333, 20);
+            this.GsensorID6.TabIndex = 18;
+            this.GsensorID6.Text = global::AGaugeApp.Properties.Settings.Default.GsensorID5;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(418, 28);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(54, 13);
+            this.label46.TabIndex = 17;
+            this.label46.Text = "Sensor ID";
+            // 
             // DserialPort1
             // 
             this.DserialPort1.BaudRate = global::AGaugeApp.Properties.Settings.Default.BaudRate;
@@ -1775,7 +2611,7 @@ namespace AGaugeApp
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(819, 529);
+            this.ClientSize = new System.Drawing.Size(951, 620);
             this.Controls.Add(this.tabControl1);
             this.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::AGaugeApp.Properties.Settings.Default, "Program_Title", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.Name = "PHeatingSystem";
@@ -1804,6 +2640,8 @@ namespace AGaugeApp
             this.St_Gauge4.PerformLayout();
             this.St_Gauge5.ResumeLayout(false);
             this.St_Gauge5.PerformLayout();
+            this.Gauge6.ResumeLayout(false);
+            this.Gauge6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1899,11 +2737,32 @@ namespace AGaugeApp
         private System.Windows.Forms.TextBox AgMS_min5;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
-        private AGauge aGauge6;
-        private System.Windows.Forms.Label label34;
+        private AGauge aGaugeT2T3;
         private System.Windows.Forms.Label label35;
-        private AGauge aGauge7;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.ColorDialog colorDialog1;
+        private AGauge aGaugeT4T5;
+        private System.Windows.Forms.Label label45;
+        private AGauge aGauge12;
+        private System.Windows.Forms.Label label43;
+        private AGauge aGauge11;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label39;
+        private AGauge aGauge10;
+        private AGauge aGauge9;
+        private System.Windows.Forms.Label label37;
+        private AGauge aGauge8;
+        private System.Windows.Forms.Label Agauge6_temp;
+        private AGauge aGauge6;
+        private System.Windows.Forms.Label Tlabel5;
+        private System.Windows.Forms.TabPage Gauge6;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox AgMS_max6;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.TextBox AgMS_min6;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.TextBox GsensorID6;
+        private System.Windows.Forms.Label label46;
     }
 }

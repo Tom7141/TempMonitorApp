@@ -12,7 +12,7 @@
       <Value Profile="(Default)">115200</Value>
     </Setting>
     <Setting Name="Gauge5_Label" Type="System.String" Scope="User">
-      <Value Profile="(Default)">T5</Value>
+      <Value Profile="(Default)">T6</Value>
     </Setting>
     <Setting Name="Gauge4_Label" Type="System.String" Scope="User">
       <Value Profile="(Default)">T4</Value>
@@ -33,7 +33,7 @@
       <Value Profile="(Default)">S1</Value>
     </Setting>
     <Setting Name="GsensorID5" Type="System.String" Scope="User">
-      <Value Profile="(Default)">S2</Value>
+      <Value Profile="(Default)">S6</Value>
     </Setting>
     <Setting Name="GsensorID4" Type="System.String" Scope="User">
       <Value Profile="(Default)">S3</Value>
@@ -73,6 +73,18 @@
     </Setting>
     <Setting Name="AgMS_min5" Type="System.Single" Scope="User">
       <Value Profile="(Default)">-20</Value>
+    </Setting>
+    <Setting Name="AgMS_max6" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">125</Value>
+    </Setting>
+    <Setting Name="AgMS_min6" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">-20</Value>
+    </Setting>
+    <Setting Name="GsensorID6" Type="System.String" Scope="User">
+      <Value Profile="(Default)">S6</Value>
+    </Setting>
+    <Setting Name="Gauge6_Label" Type="System.String" Scope="User">
+      <Value Profile="(Default)">T6</Value>
     </Setting>
   </Settings>
 </SettingsFile>

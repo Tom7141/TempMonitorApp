@@ -20,6 +20,7 @@ namespace AGaugeApp
         int aGauge3T = V;
         int aGauge4T = V;
         int aGauge5T = V;
+        int aGauge6T = V;
 
         public PHeatingSystem()
         {
@@ -126,8 +127,9 @@ namespace AGaugeApp
             aGauge3T -= 1;
             aGauge4T -= 1;
             aGauge5T -= 1;
-            aGauge6.Value = aGauge3.Value - aGauge2.Value;
-            aGauge7.Value = aGauge5.Value - aGauge4.Value;
+            aGauge6T -= 1;
+            aGaugeT2T3.Value = aGauge3.Value - aGauge2.Value;
+            aGaugeT4T5.Value = aGauge5.Value - aGauge4.Value;
             if (aGauge1T <= 0)
             {
                 aGauge1.Value = -125;
@@ -155,6 +157,11 @@ namespace AGaugeApp
                 aGauge5.Value = -125;
                 Agauge5_temp.Text = "-125";
             }
+            if (aGauge6T <= 0)
+            {
+                aGauge6.Value = -125;
+                Agauge6_temp.Text = "-125";
+            }
 
             Vdosettingupdate("AgMS_min1", -20);
             Vdosettingupdate("AgMS_max1", 125);
@@ -171,6 +178,8 @@ namespace AGaugeApp
             Vdosettingupdate("AgMS_min5", -20);
             Vdosettingupdate("AgMS_max5", 125);
 
+            Vdosettingupdate("AgMS_min6", -20);
+            Vdosettingupdate("AgMS_max6", 125);
 
         }
         private void Bscanports_Click(object sender, EventArgs e)
@@ -200,7 +209,7 @@ namespace AGaugeApp
                 //textBox1.BeginInvoke(new Action(() => { textBox1.Text += "\n\r"; }));
                 bool canConvert;
                 string[] indata1 = inputData.Split(':');
-
+                //well i forgot but i think this inputs the data from the module
                 if (Properties.Settings.Default.GsensorID1 == indata1[0])
                 {
                     Properties.Settings.Default.GsensorID1 = indata1[1];
@@ -225,6 +234,11 @@ namespace AGaugeApp
                 {
                     Properties.Settings.Default.GsensorID5 = indata1[1];
                     GsensorID5.BeginInvoke(new Action(() => { GsensorID5.Text = indata1[1]; }));
+                }
+                if (Properties.Settings.Default.GsensorID6 == indata1[0])
+                {
+                    Properties.Settings.Default.GsensorID6 = indata1[1];
+                    GsensorID6.BeginInvoke(new Action(() => { GsensorID6.Text = indata1[1]; }));
                 }
 
                 // code for gauge update
