@@ -39,18 +39,31 @@ namespace AGaugeApp
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Tabs1 = new System.Windows.Forms.TabPage();
             this.Agauge6_temp = new System.Windows.Forms.Label();
+            this.aGauge6 = new AGaugeApp.AGauge();
             this.AgaugeT5T6_temp = new System.Windows.Forms.Label();
+            this.aGaugeT5T6 = new AGaugeApp.AGauge();
             this.AgaugeT4T5_temp = new System.Windows.Forms.Label();
+            this.aGaugeT4T5 = new AGaugeApp.AGauge();
             this.AgaugeT3T4_temp = new System.Windows.Forms.Label();
             this.AgaugeT2T3_temp = new System.Windows.Forms.Label();
+            this.aGaugeT3T4 = new AGaugeApp.AGauge();
+            this.aGaugeT2T3 = new AGaugeApp.AGauge();
             this.AgaugeT1T2_temp = new System.Windows.Forms.Label();
+            this.aGaugeT1T2 = new AGaugeApp.AGauge();
             this.label35 = new System.Windows.Forms.Label();
+            this.aGaugeT4T5b = new AGaugeApp.AGauge();
             this.label33 = new System.Windows.Forms.Label();
+            this.aGaugeT2T1 = new AGaugeApp.AGauge();
             this.Agauge5_temp = new System.Windows.Forms.Label();
             this.Agauge4_temp = new System.Windows.Forms.Label();
             this.Agauge3_temp = new System.Windows.Forms.Label();
             this.Agauge2_temp = new System.Windows.Forms.Label();
             this.Agauge1_temp = new System.Windows.Forms.Label();
+            this.aGauge5 = new AGaugeApp.AGauge();
+            this.aGauge3 = new AGaugeApp.AGauge();
+            this.aGauge2 = new AGaugeApp.AGauge();
+            this.aGauge1 = new AGaugeApp.AGauge();
+            this.aGauge4 = new AGaugeApp.AGauge();
             this.Tlabel5 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.SettingsTabs = new System.Windows.Forms.TabControl();
@@ -134,19 +147,6 @@ namespace AGaugeApp
             this.GsensorID6 = new System.Windows.Forms.TextBox();
             this.label46 = new System.Windows.Forms.Label();
             this.DserialPort1 = new System.IO.Ports.SerialPort(this.components);
-            this.aGauge6 = new AGaugeApp.AGauge();
-            this.aGaugeT5T6 = new AGaugeApp.AGauge();
-            this.aGaugeT4T5 = new AGaugeApp.AGauge();
-            this.aGaugeT3T4 = new AGaugeApp.AGauge();
-            this.aGaugeT2T3 = new AGaugeApp.AGauge();
-            this.aGaugeT1T2 = new AGaugeApp.AGauge();
-            this.aGaugeT4T5b = new AGaugeApp.AGauge();
-            this.aGaugeT2T1 = new AGaugeApp.AGauge();
-            this.aGauge5 = new AGaugeApp.AGauge();
-            this.aGauge3 = new AGaugeApp.AGauge();
-            this.aGauge2 = new AGaugeApp.AGauge();
-            this.aGauge1 = new AGaugeApp.AGauge();
-            this.aGauge4 = new AGaugeApp.AGauge();
             this.tabControl1.SuspendLayout();
             this.Tabs1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -271,6 +271,115 @@ namespace AGaugeApp
             this.Agauge6_temp.TabIndex = 64;
             this.Agauge6_temp.Text = "T6";
             // 
+            // aGauge6
+            // 
+            this.aGauge6.BaseArcColor = System.Drawing.Color.Indigo;
+            this.aGauge6.BaseArcRadius = 40;
+            this.aGauge6.BaseArcStart = 180;
+            this.aGauge6.BaseArcSweep = 330;
+            this.aGauge6.BaseArcWidth = 2;
+            this.aGauge6.Cap_Idx = ((byte)(1));
+            this.aGauge6.CapColors = new System.Drawing.Color[] {
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black};
+            this.aGauge6.CapPosition = new System.Drawing.Point(20, 140);
+            this.aGauge6.CapsPosition = new System.Drawing.Point[] {
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(20, 140),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10)};
+            this.aGauge6.CapsText = new string[] {
+        "",
+        "T6",
+        "",
+        "",
+        ""};
+            this.aGauge6.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge6_Label;
+            this.aGauge6.Center = new System.Drawing.Point(70, 70);
+            this.aGauge6.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge6_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge6.DataBindings.Add(new System.Windows.Forms.Binding("MaxValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_max6", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge6.DataBindings.Add(new System.Windows.Forms.Binding("MinValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_min6", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge6.Location = new System.Drawing.Point(785, 10);
+            this.aGauge6.MaxValue = global::AGaugeApp.Properties.Settings.Default.AgMS_max6;
+            this.aGauge6.MinValue = global::AGaugeApp.Properties.Settings.Default.AgMS_min6;
+            this.aGauge6.Name = "aGauge6";
+            this.aGauge6.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
+            this.aGauge6.NeedleColor2 = System.Drawing.Color.BurlyWood;
+            this.aGauge6.NeedleRadius = 45;
+            this.aGauge6.NeedleType = 0;
+            this.aGauge6.NeedleWidth = 3;
+            this.aGauge6.Range_Idx = ((byte)(4));
+            this.aGauge6.RangeColor = System.Drawing.Color.Red;
+            this.aGauge6.RangeEnabled = true;
+            this.aGauge6.RangeEndValue = 125F;
+            this.aGauge6.RangeInnerRadius = 30;
+            this.aGauge6.RangeOuterRadius = 50;
+            this.aGauge6.RangesColor = new System.Drawing.Color[] {
+        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
+        System.Drawing.Color.DarkTurquoise,
+        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
+        System.Drawing.Color.LawnGreen,
+        System.Drawing.Color.Red};
+            this.aGauge6.RangesEnabled = new bool[] {
+        true,
+        true,
+        true,
+        true,
+        true};
+            this.aGauge6.RangesEndValue = new float[] {
+        5F,
+        50F,
+        90F,
+        85F,
+        125F};
+            this.aGauge6.RangesInnerRadius = new int[] {
+        30,
+        30,
+        30,
+        30,
+        30};
+            this.aGauge6.RangesOuterRadius = new int[] {
+        50,
+        40,
+        40,
+        40,
+        50};
+            this.aGauge6.RangesStartValue = new float[] {
+        -20F,
+        20F,
+        50F,
+        60F,
+        90F};
+            this.aGauge6.RangeStartValue = 90F;
+            this.aGauge6.ScaleLinesInterColor = System.Drawing.Color.Black;
+            this.aGauge6.ScaleLinesInterInnerRadius = 42;
+            this.aGauge6.ScaleLinesInterOuterRadius = 50;
+            this.aGauge6.ScaleLinesInterWidth = 1;
+            this.aGauge6.ScaleLinesMajorColor = System.Drawing.Color.Black;
+            this.aGauge6.ScaleLinesMajorInnerRadius = 40;
+            this.aGauge6.ScaleLinesMajorOuterRadius = 50;
+            this.aGauge6.ScaleLinesMajorStepValue = 10F;
+            this.aGauge6.ScaleLinesMajorWidth = 2;
+            this.aGauge6.ScaleLinesMinorColor = System.Drawing.Color.Gray;
+            this.aGauge6.ScaleLinesMinorInnerRadius = 43;
+            this.aGauge6.ScaleLinesMinorNumOf = 1;
+            this.aGauge6.ScaleLinesMinorOuterRadius = 50;
+            this.aGauge6.ScaleLinesMinorWidth = 1;
+            this.aGauge6.ScaleNumbersColor = System.Drawing.Color.Black;
+            this.aGauge6.ScaleNumbersFormat = null;
+            this.aGauge6.ScaleNumbersRadius = 62;
+            this.aGauge6.ScaleNumbersRotation = 0;
+            this.aGauge6.ScaleNumbersStartScaleLine = 1;
+            this.aGauge6.ScaleNumbersStepScaleLines = 2;
+            this.aGauge6.Size = new System.Drawing.Size(150, 169);
+            this.aGauge6.TabIndex = 63;
+            this.aGauge6.Text = "AGauge6";
+            this.aGauge6.Value = 0F;
+            // 
             // AgaugeT5T6_temp
             // 
             this.AgaugeT5T6_temp.AutoSize = true;
@@ -280,6 +389,113 @@ namespace AGaugeApp
             this.AgaugeT5T6_temp.TabIndex = 61;
             this.AgaugeT5T6_temp.Text = "T5";
             // 
+            // aGaugeT5T6
+            // 
+            this.aGaugeT5T6.BaseArcColor = System.Drawing.Color.Indigo;
+            this.aGaugeT5T6.BaseArcRadius = 40;
+            this.aGaugeT5T6.BaseArcStart = 180;
+            this.aGaugeT5T6.BaseArcSweep = 330;
+            this.aGaugeT5T6.BaseArcWidth = 2;
+            this.aGaugeT5T6.Cap_Idx = ((byte)(1));
+            this.aGaugeT5T6.CapColors = new System.Drawing.Color[] {
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black};
+            this.aGaugeT5T6.CapPosition = new System.Drawing.Point(20, 140);
+            this.aGaugeT5T6.CapsPosition = new System.Drawing.Point[] {
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(20, 140),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10)};
+            this.aGaugeT5T6.CapsText = new string[] {
+        "",
+        "T6",
+        "",
+        "",
+        ""};
+            this.aGaugeT5T6.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge5_Label;
+            this.aGaugeT5T6.Center = new System.Drawing.Point(70, 70);
+            this.aGaugeT5T6.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge5_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGaugeT5T6.Location = new System.Drawing.Point(716, 215);
+            this.aGaugeT5T6.MaxValue = 50F;
+            this.aGaugeT5T6.MinValue = -20F;
+            this.aGaugeT5T6.Name = "aGaugeT5T6";
+            this.aGaugeT5T6.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
+            this.aGaugeT5T6.NeedleColor2 = System.Drawing.Color.BurlyWood;
+            this.aGaugeT5T6.NeedleRadius = 45;
+            this.aGaugeT5T6.NeedleType = 0;
+            this.aGaugeT5T6.NeedleWidth = 3;
+            this.aGaugeT5T6.Range_Idx = ((byte)(2));
+            this.aGaugeT5T6.RangeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.aGaugeT5T6.RangeEnabled = true;
+            this.aGaugeT5T6.RangeEndValue = 20F;
+            this.aGaugeT5T6.RangeInnerRadius = 30;
+            this.aGaugeT5T6.RangeOuterRadius = 40;
+            this.aGaugeT5T6.RangesColor = new System.Drawing.Color[] {
+        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
+        System.Drawing.Color.DarkTurquoise,
+        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
+        System.Drawing.Color.LawnGreen,
+        System.Drawing.Color.Red};
+            this.aGaugeT5T6.RangesEnabled = new bool[] {
+        true,
+        true,
+        true,
+        true,
+        true};
+            this.aGaugeT5T6.RangesEndValue = new float[] {
+        -10F,
+        50F,
+        20F,
+        5F,
+        50F};
+            this.aGaugeT5T6.RangesInnerRadius = new int[] {
+        30,
+        30,
+        30,
+        30,
+        30};
+            this.aGaugeT5T6.RangesOuterRadius = new int[] {
+        50,
+        40,
+        40,
+        40,
+        50};
+            this.aGaugeT5T6.RangesStartValue = new float[] {
+        -20F,
+        20F,
+        -10F,
+        -5F,
+        20F};
+            this.aGaugeT5T6.RangeStartValue = -10F;
+            this.aGaugeT5T6.ScaleLinesInterColor = System.Drawing.Color.Black;
+            this.aGaugeT5T6.ScaleLinesInterInnerRadius = 42;
+            this.aGaugeT5T6.ScaleLinesInterOuterRadius = 50;
+            this.aGaugeT5T6.ScaleLinesInterWidth = 1;
+            this.aGaugeT5T6.ScaleLinesMajorColor = System.Drawing.Color.Black;
+            this.aGaugeT5T6.ScaleLinesMajorInnerRadius = 40;
+            this.aGaugeT5T6.ScaleLinesMajorOuterRadius = 50;
+            this.aGaugeT5T6.ScaleLinesMajorStepValue = 10F;
+            this.aGaugeT5T6.ScaleLinesMajorWidth = 2;
+            this.aGaugeT5T6.ScaleLinesMinorColor = System.Drawing.Color.Gray;
+            this.aGaugeT5T6.ScaleLinesMinorInnerRadius = 43;
+            this.aGaugeT5T6.ScaleLinesMinorNumOf = 1;
+            this.aGaugeT5T6.ScaleLinesMinorOuterRadius = 50;
+            this.aGaugeT5T6.ScaleLinesMinorWidth = 1;
+            this.aGaugeT5T6.ScaleNumbersColor = System.Drawing.Color.Black;
+            this.aGaugeT5T6.ScaleNumbersFormat = null;
+            this.aGaugeT5T6.ScaleNumbersRadius = 62;
+            this.aGaugeT5T6.ScaleNumbersRotation = 0;
+            this.aGaugeT5T6.ScaleNumbersStartScaleLine = 1;
+            this.aGaugeT5T6.ScaleNumbersStepScaleLines = 2;
+            this.aGaugeT5T6.Size = new System.Drawing.Size(150, 169);
+            this.aGaugeT5T6.TabIndex = 60;
+            this.aGaugeT5T6.Text = "AGauge4";
+            this.aGaugeT5T6.Value = 0F;
+            // 
             // AgaugeT4T5_temp
             // 
             this.AgaugeT4T5_temp.AutoSize = true;
@@ -288,6 +504,113 @@ namespace AGaugeApp
             this.AgaugeT4T5_temp.Size = new System.Drawing.Size(20, 13);
             this.AgaugeT4T5_temp.TabIndex = 58;
             this.AgaugeT4T5_temp.Text = "T5";
+            // 
+            // aGaugeT4T5
+            // 
+            this.aGaugeT4T5.BaseArcColor = System.Drawing.Color.Indigo;
+            this.aGaugeT4T5.BaseArcRadius = 40;
+            this.aGaugeT4T5.BaseArcStart = 180;
+            this.aGaugeT4T5.BaseArcSweep = 330;
+            this.aGaugeT4T5.BaseArcWidth = 2;
+            this.aGaugeT4T5.Cap_Idx = ((byte)(1));
+            this.aGaugeT4T5.CapColors = new System.Drawing.Color[] {
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black};
+            this.aGaugeT4T5.CapPosition = new System.Drawing.Point(20, 140);
+            this.aGaugeT4T5.CapsPosition = new System.Drawing.Point[] {
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(20, 140),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10)};
+            this.aGaugeT4T5.CapsText = new string[] {
+        "",
+        "T6",
+        "",
+        "",
+        ""};
+            this.aGaugeT4T5.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge5_Label;
+            this.aGaugeT4T5.Center = new System.Drawing.Point(70, 70);
+            this.aGaugeT4T5.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge5_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGaugeT4T5.Location = new System.Drawing.Point(560, 215);
+            this.aGaugeT4T5.MaxValue = 50F;
+            this.aGaugeT4T5.MinValue = -20F;
+            this.aGaugeT4T5.Name = "aGaugeT4T5";
+            this.aGaugeT4T5.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
+            this.aGaugeT4T5.NeedleColor2 = System.Drawing.Color.BurlyWood;
+            this.aGaugeT4T5.NeedleRadius = 45;
+            this.aGaugeT4T5.NeedleType = 0;
+            this.aGaugeT4T5.NeedleWidth = 3;
+            this.aGaugeT4T5.Range_Idx = ((byte)(2));
+            this.aGaugeT4T5.RangeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.aGaugeT4T5.RangeEnabled = true;
+            this.aGaugeT4T5.RangeEndValue = 20F;
+            this.aGaugeT4T5.RangeInnerRadius = 30;
+            this.aGaugeT4T5.RangeOuterRadius = 40;
+            this.aGaugeT4T5.RangesColor = new System.Drawing.Color[] {
+        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
+        System.Drawing.Color.DarkTurquoise,
+        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
+        System.Drawing.Color.LawnGreen,
+        System.Drawing.Color.Red};
+            this.aGaugeT4T5.RangesEnabled = new bool[] {
+        true,
+        true,
+        true,
+        true,
+        true};
+            this.aGaugeT4T5.RangesEndValue = new float[] {
+        -10F,
+        50F,
+        20F,
+        5F,
+        50F};
+            this.aGaugeT4T5.RangesInnerRadius = new int[] {
+        30,
+        30,
+        30,
+        30,
+        30};
+            this.aGaugeT4T5.RangesOuterRadius = new int[] {
+        50,
+        40,
+        40,
+        40,
+        50};
+            this.aGaugeT4T5.RangesStartValue = new float[] {
+        -20F,
+        20F,
+        -10F,
+        -5F,
+        20F};
+            this.aGaugeT4T5.RangeStartValue = -10F;
+            this.aGaugeT4T5.ScaleLinesInterColor = System.Drawing.Color.Black;
+            this.aGaugeT4T5.ScaleLinesInterInnerRadius = 42;
+            this.aGaugeT4T5.ScaleLinesInterOuterRadius = 50;
+            this.aGaugeT4T5.ScaleLinesInterWidth = 1;
+            this.aGaugeT4T5.ScaleLinesMajorColor = System.Drawing.Color.Black;
+            this.aGaugeT4T5.ScaleLinesMajorInnerRadius = 40;
+            this.aGaugeT4T5.ScaleLinesMajorOuterRadius = 50;
+            this.aGaugeT4T5.ScaleLinesMajorStepValue = 10F;
+            this.aGaugeT4T5.ScaleLinesMajorWidth = 2;
+            this.aGaugeT4T5.ScaleLinesMinorColor = System.Drawing.Color.Gray;
+            this.aGaugeT4T5.ScaleLinesMinorInnerRadius = 43;
+            this.aGaugeT4T5.ScaleLinesMinorNumOf = 1;
+            this.aGaugeT4T5.ScaleLinesMinorOuterRadius = 50;
+            this.aGaugeT4T5.ScaleLinesMinorWidth = 1;
+            this.aGaugeT4T5.ScaleNumbersColor = System.Drawing.Color.Black;
+            this.aGaugeT4T5.ScaleNumbersFormat = null;
+            this.aGaugeT4T5.ScaleNumbersRadius = 62;
+            this.aGaugeT4T5.ScaleNumbersRotation = 0;
+            this.aGaugeT4T5.ScaleNumbersStartScaleLine = 1;
+            this.aGaugeT4T5.ScaleNumbersStepScaleLines = 2;
+            this.aGaugeT4T5.Size = new System.Drawing.Size(150, 169);
+            this.aGaugeT4T5.TabIndex = 57;
+            this.aGaugeT4T5.Text = "AGauge4";
+            this.aGaugeT4T5.Value = 0F;
             // 
             // AgaugeT3T4_temp
             // 
@@ -307,6 +630,220 @@ namespace AGaugeApp
             this.AgaugeT2T3_temp.TabIndex = 55;
             this.AgaugeT2T3_temp.Text = "T5";
             // 
+            // aGaugeT3T4
+            // 
+            this.aGaugeT3T4.BaseArcColor = System.Drawing.Color.Indigo;
+            this.aGaugeT3T4.BaseArcRadius = 40;
+            this.aGaugeT3T4.BaseArcStart = 180;
+            this.aGaugeT3T4.BaseArcSweep = 330;
+            this.aGaugeT3T4.BaseArcWidth = 2;
+            this.aGaugeT3T4.Cap_Idx = ((byte)(1));
+            this.aGaugeT3T4.CapColors = new System.Drawing.Color[] {
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black};
+            this.aGaugeT3T4.CapPosition = new System.Drawing.Point(20, 140);
+            this.aGaugeT3T4.CapsPosition = new System.Drawing.Point[] {
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(20, 140),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10)};
+            this.aGaugeT3T4.CapsText = new string[] {
+        "",
+        "T6",
+        "",
+        "",
+        ""};
+            this.aGaugeT3T4.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge5_Label;
+            this.aGaugeT3T4.Center = new System.Drawing.Point(70, 70);
+            this.aGaugeT3T4.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge5_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGaugeT3T4.Location = new System.Drawing.Point(404, 215);
+            this.aGaugeT3T4.MaxValue = 50F;
+            this.aGaugeT3T4.MinValue = -20F;
+            this.aGaugeT3T4.Name = "aGaugeT3T4";
+            this.aGaugeT3T4.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
+            this.aGaugeT3T4.NeedleColor2 = System.Drawing.Color.BurlyWood;
+            this.aGaugeT3T4.NeedleRadius = 45;
+            this.aGaugeT3T4.NeedleType = 0;
+            this.aGaugeT3T4.NeedleWidth = 3;
+            this.aGaugeT3T4.Range_Idx = ((byte)(2));
+            this.aGaugeT3T4.RangeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.aGaugeT3T4.RangeEnabled = true;
+            this.aGaugeT3T4.RangeEndValue = 20F;
+            this.aGaugeT3T4.RangeInnerRadius = 30;
+            this.aGaugeT3T4.RangeOuterRadius = 40;
+            this.aGaugeT3T4.RangesColor = new System.Drawing.Color[] {
+        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
+        System.Drawing.Color.DarkTurquoise,
+        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
+        System.Drawing.Color.LawnGreen,
+        System.Drawing.Color.Red};
+            this.aGaugeT3T4.RangesEnabled = new bool[] {
+        true,
+        true,
+        true,
+        true,
+        true};
+            this.aGaugeT3T4.RangesEndValue = new float[] {
+        -10F,
+        50F,
+        20F,
+        5F,
+        50F};
+            this.aGaugeT3T4.RangesInnerRadius = new int[] {
+        30,
+        30,
+        30,
+        30,
+        30};
+            this.aGaugeT3T4.RangesOuterRadius = new int[] {
+        50,
+        40,
+        40,
+        40,
+        50};
+            this.aGaugeT3T4.RangesStartValue = new float[] {
+        -20F,
+        20F,
+        -10F,
+        -5F,
+        20F};
+            this.aGaugeT3T4.RangeStartValue = -10F;
+            this.aGaugeT3T4.ScaleLinesInterColor = System.Drawing.Color.Black;
+            this.aGaugeT3T4.ScaleLinesInterInnerRadius = 42;
+            this.aGaugeT3T4.ScaleLinesInterOuterRadius = 50;
+            this.aGaugeT3T4.ScaleLinesInterWidth = 1;
+            this.aGaugeT3T4.ScaleLinesMajorColor = System.Drawing.Color.Black;
+            this.aGaugeT3T4.ScaleLinesMajorInnerRadius = 40;
+            this.aGaugeT3T4.ScaleLinesMajorOuterRadius = 50;
+            this.aGaugeT3T4.ScaleLinesMajorStepValue = 10F;
+            this.aGaugeT3T4.ScaleLinesMajorWidth = 2;
+            this.aGaugeT3T4.ScaleLinesMinorColor = System.Drawing.Color.Gray;
+            this.aGaugeT3T4.ScaleLinesMinorInnerRadius = 43;
+            this.aGaugeT3T4.ScaleLinesMinorNumOf = 1;
+            this.aGaugeT3T4.ScaleLinesMinorOuterRadius = 50;
+            this.aGaugeT3T4.ScaleLinesMinorWidth = 1;
+            this.aGaugeT3T4.ScaleNumbersColor = System.Drawing.Color.Black;
+            this.aGaugeT3T4.ScaleNumbersFormat = null;
+            this.aGaugeT3T4.ScaleNumbersRadius = 62;
+            this.aGaugeT3T4.ScaleNumbersRotation = 0;
+            this.aGaugeT3T4.ScaleNumbersStartScaleLine = 1;
+            this.aGaugeT3T4.ScaleNumbersStepScaleLines = 2;
+            this.aGaugeT3T4.Size = new System.Drawing.Size(150, 169);
+            this.aGaugeT3T4.TabIndex = 51;
+            this.aGaugeT3T4.Text = "AGauge4";
+            this.aGaugeT3T4.Value = 0F;
+            // 
+            // aGaugeT2T3
+            // 
+            this.aGaugeT2T3.BaseArcColor = System.Drawing.Color.Indigo;
+            this.aGaugeT2T3.BaseArcRadius = 40;
+            this.aGaugeT2T3.BaseArcStart = 180;
+            this.aGaugeT2T3.BaseArcSweep = 330;
+            this.aGaugeT2T3.BaseArcWidth = 2;
+            this.aGaugeT2T3.Cap_Idx = ((byte)(1));
+            this.aGaugeT2T3.CapColors = new System.Drawing.Color[] {
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black};
+            this.aGaugeT2T3.CapPosition = new System.Drawing.Point(20, 140);
+            this.aGaugeT2T3.CapsPosition = new System.Drawing.Point[] {
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(20, 140),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10)};
+            this.aGaugeT2T3.CapsText = new string[] {
+        "",
+        "T6",
+        "",
+        "",
+        ""};
+            this.aGaugeT2T3.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge5_Label;
+            this.aGaugeT2T3.Center = new System.Drawing.Point(70, 70);
+            this.aGaugeT2T3.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge5_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGaugeT2T3.Location = new System.Drawing.Point(249, 215);
+            this.aGaugeT2T3.MaxValue = 50F;
+            this.aGaugeT2T3.MinValue = -20F;
+            this.aGaugeT2T3.Name = "aGaugeT2T3";
+            this.aGaugeT2T3.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
+            this.aGaugeT2T3.NeedleColor2 = System.Drawing.Color.BurlyWood;
+            this.aGaugeT2T3.NeedleRadius = 45;
+            this.aGaugeT2T3.NeedleType = 0;
+            this.aGaugeT2T3.NeedleWidth = 3;
+            this.aGaugeT2T3.Range_Idx = ((byte)(2));
+            this.aGaugeT2T3.RangeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.aGaugeT2T3.RangeEnabled = true;
+            this.aGaugeT2T3.RangeEndValue = 20F;
+            this.aGaugeT2T3.RangeInnerRadius = 30;
+            this.aGaugeT2T3.RangeOuterRadius = 40;
+            this.aGaugeT2T3.RangesColor = new System.Drawing.Color[] {
+        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
+        System.Drawing.Color.DarkTurquoise,
+        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
+        System.Drawing.Color.LawnGreen,
+        System.Drawing.Color.Red};
+            this.aGaugeT2T3.RangesEnabled = new bool[] {
+        true,
+        true,
+        true,
+        true,
+        true};
+            this.aGaugeT2T3.RangesEndValue = new float[] {
+        -10F,
+        50F,
+        20F,
+        5F,
+        50F};
+            this.aGaugeT2T3.RangesInnerRadius = new int[] {
+        30,
+        30,
+        30,
+        30,
+        30};
+            this.aGaugeT2T3.RangesOuterRadius = new int[] {
+        50,
+        40,
+        40,
+        40,
+        50};
+            this.aGaugeT2T3.RangesStartValue = new float[] {
+        -20F,
+        20F,
+        -10F,
+        -5F,
+        20F};
+            this.aGaugeT2T3.RangeStartValue = -10F;
+            this.aGaugeT2T3.ScaleLinesInterColor = System.Drawing.Color.Black;
+            this.aGaugeT2T3.ScaleLinesInterInnerRadius = 42;
+            this.aGaugeT2T3.ScaleLinesInterOuterRadius = 50;
+            this.aGaugeT2T3.ScaleLinesInterWidth = 1;
+            this.aGaugeT2T3.ScaleLinesMajorColor = System.Drawing.Color.Black;
+            this.aGaugeT2T3.ScaleLinesMajorInnerRadius = 40;
+            this.aGaugeT2T3.ScaleLinesMajorOuterRadius = 50;
+            this.aGaugeT2T3.ScaleLinesMajorStepValue = 10F;
+            this.aGaugeT2T3.ScaleLinesMajorWidth = 2;
+            this.aGaugeT2T3.ScaleLinesMinorColor = System.Drawing.Color.Gray;
+            this.aGaugeT2T3.ScaleLinesMinorInnerRadius = 43;
+            this.aGaugeT2T3.ScaleLinesMinorNumOf = 1;
+            this.aGaugeT2T3.ScaleLinesMinorOuterRadius = 50;
+            this.aGaugeT2T3.ScaleLinesMinorWidth = 1;
+            this.aGaugeT2T3.ScaleNumbersColor = System.Drawing.Color.Black;
+            this.aGaugeT2T3.ScaleNumbersFormat = null;
+            this.aGaugeT2T3.ScaleNumbersRadius = 62;
+            this.aGaugeT2T3.ScaleNumbersRotation = 0;
+            this.aGaugeT2T3.ScaleNumbersStartScaleLine = 1;
+            this.aGaugeT2T3.ScaleNumbersStepScaleLines = 2;
+            this.aGaugeT2T3.Size = new System.Drawing.Size(150, 169);
+            this.aGaugeT2T3.TabIndex = 54;
+            this.aGaugeT2T3.Text = "AGauge4";
+            this.aGaugeT2T3.Value = 0F;
+            // 
             // AgaugeT1T2_temp
             // 
             this.AgaugeT1T2_temp.AutoSize = true;
@@ -315,6 +852,113 @@ namespace AGaugeApp
             this.AgaugeT1T2_temp.Size = new System.Drawing.Size(20, 13);
             this.AgaugeT1T2_temp.TabIndex = 52;
             this.AgaugeT1T2_temp.Text = "T5";
+            // 
+            // aGaugeT1T2
+            // 
+            this.aGaugeT1T2.BaseArcColor = System.Drawing.Color.Indigo;
+            this.aGaugeT1T2.BaseArcRadius = 40;
+            this.aGaugeT1T2.BaseArcStart = 180;
+            this.aGaugeT1T2.BaseArcSweep = 330;
+            this.aGaugeT1T2.BaseArcWidth = 2;
+            this.aGaugeT1T2.Cap_Idx = ((byte)(1));
+            this.aGaugeT1T2.CapColors = new System.Drawing.Color[] {
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black};
+            this.aGaugeT1T2.CapPosition = new System.Drawing.Point(20, 140);
+            this.aGaugeT1T2.CapsPosition = new System.Drawing.Point[] {
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(20, 140),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10)};
+            this.aGaugeT1T2.CapsText = new string[] {
+        "",
+        "T6",
+        "",
+        "",
+        ""};
+            this.aGaugeT1T2.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge5_Label;
+            this.aGaugeT1T2.Center = new System.Drawing.Point(70, 70);
+            this.aGaugeT1T2.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge5_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGaugeT1T2.Location = new System.Drawing.Point(92, 215);
+            this.aGaugeT1T2.MaxValue = 50F;
+            this.aGaugeT1T2.MinValue = -20F;
+            this.aGaugeT1T2.Name = "aGaugeT1T2";
+            this.aGaugeT1T2.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
+            this.aGaugeT1T2.NeedleColor2 = System.Drawing.Color.BurlyWood;
+            this.aGaugeT1T2.NeedleRadius = 45;
+            this.aGaugeT1T2.NeedleType = 0;
+            this.aGaugeT1T2.NeedleWidth = 3;
+            this.aGaugeT1T2.Range_Idx = ((byte)(2));
+            this.aGaugeT1T2.RangeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.aGaugeT1T2.RangeEnabled = true;
+            this.aGaugeT1T2.RangeEndValue = 20F;
+            this.aGaugeT1T2.RangeInnerRadius = 30;
+            this.aGaugeT1T2.RangeOuterRadius = 40;
+            this.aGaugeT1T2.RangesColor = new System.Drawing.Color[] {
+        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
+        System.Drawing.Color.DarkTurquoise,
+        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
+        System.Drawing.Color.LawnGreen,
+        System.Drawing.Color.Red};
+            this.aGaugeT1T2.RangesEnabled = new bool[] {
+        true,
+        true,
+        true,
+        true,
+        true};
+            this.aGaugeT1T2.RangesEndValue = new float[] {
+        -10F,
+        50F,
+        20F,
+        5F,
+        50F};
+            this.aGaugeT1T2.RangesInnerRadius = new int[] {
+        30,
+        30,
+        30,
+        30,
+        30};
+            this.aGaugeT1T2.RangesOuterRadius = new int[] {
+        50,
+        40,
+        40,
+        40,
+        50};
+            this.aGaugeT1T2.RangesStartValue = new float[] {
+        -20F,
+        20F,
+        -10F,
+        -5F,
+        20F};
+            this.aGaugeT1T2.RangeStartValue = -10F;
+            this.aGaugeT1T2.ScaleLinesInterColor = System.Drawing.Color.Black;
+            this.aGaugeT1T2.ScaleLinesInterInnerRadius = 42;
+            this.aGaugeT1T2.ScaleLinesInterOuterRadius = 50;
+            this.aGaugeT1T2.ScaleLinesInterWidth = 1;
+            this.aGaugeT1T2.ScaleLinesMajorColor = System.Drawing.Color.Black;
+            this.aGaugeT1T2.ScaleLinesMajorInnerRadius = 40;
+            this.aGaugeT1T2.ScaleLinesMajorOuterRadius = 50;
+            this.aGaugeT1T2.ScaleLinesMajorStepValue = 10F;
+            this.aGaugeT1T2.ScaleLinesMajorWidth = 2;
+            this.aGaugeT1T2.ScaleLinesMinorColor = System.Drawing.Color.Gray;
+            this.aGaugeT1T2.ScaleLinesMinorInnerRadius = 43;
+            this.aGaugeT1T2.ScaleLinesMinorNumOf = 1;
+            this.aGaugeT1T2.ScaleLinesMinorOuterRadius = 50;
+            this.aGaugeT1T2.ScaleLinesMinorWidth = 1;
+            this.aGaugeT1T2.ScaleNumbersColor = System.Drawing.Color.Black;
+            this.aGaugeT1T2.ScaleNumbersFormat = null;
+            this.aGaugeT1T2.ScaleNumbersRadius = 62;
+            this.aGaugeT1T2.ScaleNumbersRotation = 0;
+            this.aGaugeT1T2.ScaleNumbersStartScaleLine = 1;
+            this.aGaugeT1T2.ScaleNumbersStepScaleLines = 2;
+            this.aGaugeT1T2.Size = new System.Drawing.Size(150, 168);
+            this.aGaugeT1T2.TabIndex = 51;
+            this.aGaugeT1T2.Text = "AGauge4";
+            this.aGaugeT1T2.Value = 0F;
             // 
             // label35
             // 
@@ -325,6 +969,113 @@ namespace AGaugeApp
             this.label35.TabIndex = 49;
             this.label35.Text = "T5";
             // 
+            // aGaugeT4T5b
+            // 
+            this.aGaugeT4T5b.BaseArcColor = System.Drawing.Color.Indigo;
+            this.aGaugeT4T5b.BaseArcRadius = 40;
+            this.aGaugeT4T5b.BaseArcStart = 180;
+            this.aGaugeT4T5b.BaseArcSweep = 330;
+            this.aGaugeT4T5b.BaseArcWidth = 2;
+            this.aGaugeT4T5b.Cap_Idx = ((byte)(1));
+            this.aGaugeT4T5b.CapColors = new System.Drawing.Color[] {
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black};
+            this.aGaugeT4T5b.CapPosition = new System.Drawing.Point(20, 140);
+            this.aGaugeT4T5b.CapsPosition = new System.Drawing.Point[] {
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(20, 140),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10)};
+            this.aGaugeT4T5b.CapsText = new string[] {
+        "",
+        "T6",
+        "",
+        "",
+        ""};
+            this.aGaugeT4T5b.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge5_Label;
+            this.aGaugeT4T5b.Center = new System.Drawing.Point(70, 70);
+            this.aGaugeT4T5b.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge5_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGaugeT4T5b.Location = new System.Drawing.Point(564, 394);
+            this.aGaugeT4T5b.MaxValue = 50F;
+            this.aGaugeT4T5b.MinValue = -20F;
+            this.aGaugeT4T5b.Name = "aGaugeT4T5b";
+            this.aGaugeT4T5b.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
+            this.aGaugeT4T5b.NeedleColor2 = System.Drawing.Color.BurlyWood;
+            this.aGaugeT4T5b.NeedleRadius = 45;
+            this.aGaugeT4T5b.NeedleType = 0;
+            this.aGaugeT4T5b.NeedleWidth = 3;
+            this.aGaugeT4T5b.Range_Idx = ((byte)(2));
+            this.aGaugeT4T5b.RangeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.aGaugeT4T5b.RangeEnabled = true;
+            this.aGaugeT4T5b.RangeEndValue = 20F;
+            this.aGaugeT4T5b.RangeInnerRadius = 30;
+            this.aGaugeT4T5b.RangeOuterRadius = 40;
+            this.aGaugeT4T5b.RangesColor = new System.Drawing.Color[] {
+        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
+        System.Drawing.Color.DarkTurquoise,
+        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
+        System.Drawing.Color.LawnGreen,
+        System.Drawing.Color.Red};
+            this.aGaugeT4T5b.RangesEnabled = new bool[] {
+        true,
+        true,
+        true,
+        true,
+        true};
+            this.aGaugeT4T5b.RangesEndValue = new float[] {
+        -10F,
+        50F,
+        20F,
+        5F,
+        50F};
+            this.aGaugeT4T5b.RangesInnerRadius = new int[] {
+        30,
+        30,
+        30,
+        30,
+        30};
+            this.aGaugeT4T5b.RangesOuterRadius = new int[] {
+        50,
+        40,
+        40,
+        40,
+        50};
+            this.aGaugeT4T5b.RangesStartValue = new float[] {
+        -20F,
+        20F,
+        -10F,
+        -5F,
+        20F};
+            this.aGaugeT4T5b.RangeStartValue = -10F;
+            this.aGaugeT4T5b.ScaleLinesInterColor = System.Drawing.Color.Black;
+            this.aGaugeT4T5b.ScaleLinesInterInnerRadius = 42;
+            this.aGaugeT4T5b.ScaleLinesInterOuterRadius = 50;
+            this.aGaugeT4T5b.ScaleLinesInterWidth = 1;
+            this.aGaugeT4T5b.ScaleLinesMajorColor = System.Drawing.Color.Black;
+            this.aGaugeT4T5b.ScaleLinesMajorInnerRadius = 40;
+            this.aGaugeT4T5b.ScaleLinesMajorOuterRadius = 50;
+            this.aGaugeT4T5b.ScaleLinesMajorStepValue = 10F;
+            this.aGaugeT4T5b.ScaleLinesMajorWidth = 2;
+            this.aGaugeT4T5b.ScaleLinesMinorColor = System.Drawing.Color.Gray;
+            this.aGaugeT4T5b.ScaleLinesMinorInnerRadius = 43;
+            this.aGaugeT4T5b.ScaleLinesMinorNumOf = 1;
+            this.aGaugeT4T5b.ScaleLinesMinorOuterRadius = 50;
+            this.aGaugeT4T5b.ScaleLinesMinorWidth = 1;
+            this.aGaugeT4T5b.ScaleNumbersColor = System.Drawing.Color.Black;
+            this.aGaugeT4T5b.ScaleNumbersFormat = null;
+            this.aGaugeT4T5b.ScaleNumbersRadius = 62;
+            this.aGaugeT4T5b.ScaleNumbersRotation = 0;
+            this.aGaugeT4T5b.ScaleNumbersStartScaleLine = 1;
+            this.aGaugeT4T5b.ScaleNumbersStepScaleLines = 2;
+            this.aGaugeT4T5b.Size = new System.Drawing.Size(150, 169);
+            this.aGaugeT4T5b.TabIndex = 48;
+            this.aGaugeT4T5b.Text = "AGauge4";
+            this.aGaugeT4T5b.Value = 0F;
+            // 
             // label33
             // 
             this.label33.AutoSize = true;
@@ -333,6 +1084,113 @@ namespace AGaugeApp
             this.label33.Size = new System.Drawing.Size(20, 13);
             this.label33.TabIndex = 46;
             this.label33.Text = "T5";
+            // 
+            // aGaugeT2T1
+            // 
+            this.aGaugeT2T1.BaseArcColor = System.Drawing.Color.Indigo;
+            this.aGaugeT2T1.BaseArcRadius = 40;
+            this.aGaugeT2T1.BaseArcStart = 180;
+            this.aGaugeT2T1.BaseArcSweep = 330;
+            this.aGaugeT2T1.BaseArcWidth = 2;
+            this.aGaugeT2T1.Cap_Idx = ((byte)(1));
+            this.aGaugeT2T1.CapColors = new System.Drawing.Color[] {
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black};
+            this.aGaugeT2T1.CapPosition = new System.Drawing.Point(20, 140);
+            this.aGaugeT2T1.CapsPosition = new System.Drawing.Point[] {
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(20, 140),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10)};
+            this.aGaugeT2T1.CapsText = new string[] {
+        "",
+        "T6",
+        "",
+        "",
+        ""};
+            this.aGaugeT2T1.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge5_Label;
+            this.aGaugeT2T1.Center = new System.Drawing.Point(70, 70);
+            this.aGaugeT2T1.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge5_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGaugeT2T1.Location = new System.Drawing.Point(225, 394);
+            this.aGaugeT2T1.MaxValue = 50F;
+            this.aGaugeT2T1.MinValue = -20F;
+            this.aGaugeT2T1.Name = "aGaugeT2T1";
+            this.aGaugeT2T1.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
+            this.aGaugeT2T1.NeedleColor2 = System.Drawing.Color.BurlyWood;
+            this.aGaugeT2T1.NeedleRadius = 45;
+            this.aGaugeT2T1.NeedleType = 0;
+            this.aGaugeT2T1.NeedleWidth = 3;
+            this.aGaugeT2T1.Range_Idx = ((byte)(2));
+            this.aGaugeT2T1.RangeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.aGaugeT2T1.RangeEnabled = true;
+            this.aGaugeT2T1.RangeEndValue = 20F;
+            this.aGaugeT2T1.RangeInnerRadius = 30;
+            this.aGaugeT2T1.RangeOuterRadius = 40;
+            this.aGaugeT2T1.RangesColor = new System.Drawing.Color[] {
+        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
+        System.Drawing.Color.DarkTurquoise,
+        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
+        System.Drawing.Color.LawnGreen,
+        System.Drawing.Color.Red};
+            this.aGaugeT2T1.RangesEnabled = new bool[] {
+        true,
+        true,
+        true,
+        true,
+        true};
+            this.aGaugeT2T1.RangesEndValue = new float[] {
+        -10F,
+        50F,
+        20F,
+        5F,
+        50F};
+            this.aGaugeT2T1.RangesInnerRadius = new int[] {
+        30,
+        30,
+        30,
+        30,
+        30};
+            this.aGaugeT2T1.RangesOuterRadius = new int[] {
+        50,
+        40,
+        40,
+        40,
+        50};
+            this.aGaugeT2T1.RangesStartValue = new float[] {
+        -20F,
+        20F,
+        -10F,
+        -5F,
+        20F};
+            this.aGaugeT2T1.RangeStartValue = -10F;
+            this.aGaugeT2T1.ScaleLinesInterColor = System.Drawing.Color.Black;
+            this.aGaugeT2T1.ScaleLinesInterInnerRadius = 42;
+            this.aGaugeT2T1.ScaleLinesInterOuterRadius = 50;
+            this.aGaugeT2T1.ScaleLinesInterWidth = 1;
+            this.aGaugeT2T1.ScaleLinesMajorColor = System.Drawing.Color.Black;
+            this.aGaugeT2T1.ScaleLinesMajorInnerRadius = 40;
+            this.aGaugeT2T1.ScaleLinesMajorOuterRadius = 50;
+            this.aGaugeT2T1.ScaleLinesMajorStepValue = 10F;
+            this.aGaugeT2T1.ScaleLinesMajorWidth = 2;
+            this.aGaugeT2T1.ScaleLinesMinorColor = System.Drawing.Color.Gray;
+            this.aGaugeT2T1.ScaleLinesMinorInnerRadius = 43;
+            this.aGaugeT2T1.ScaleLinesMinorNumOf = 1;
+            this.aGaugeT2T1.ScaleLinesMinorOuterRadius = 50;
+            this.aGaugeT2T1.ScaleLinesMinorWidth = 1;
+            this.aGaugeT2T1.ScaleNumbersColor = System.Drawing.Color.Black;
+            this.aGaugeT2T1.ScaleNumbersFormat = null;
+            this.aGaugeT2T1.ScaleNumbersRadius = 62;
+            this.aGaugeT2T1.ScaleNumbersRotation = 0;
+            this.aGaugeT2T1.ScaleNumbersStartScaleLine = 1;
+            this.aGaugeT2T1.ScaleNumbersStepScaleLines = 2;
+            this.aGaugeT2T1.Size = new System.Drawing.Size(150, 169);
+            this.aGaugeT2T1.TabIndex = 45;
+            this.aGaugeT2T1.Text = "AGauge6";
+            this.aGaugeT2T1.Value = 0F;
             // 
             // Agauge5_temp
             // 
@@ -383,6 +1241,552 @@ namespace AGaugeApp
             this.Agauge1_temp.Size = new System.Drawing.Size(27, 20);
             this.Agauge1_temp.TabIndex = 39;
             this.Agauge1_temp.Text = "T1";
+            // 
+            // aGauge5
+            // 
+            this.aGauge5.BaseArcColor = System.Drawing.Color.Indigo;
+            this.aGauge5.BaseArcRadius = 40;
+            this.aGauge5.BaseArcStart = 180;
+            this.aGauge5.BaseArcSweep = 330;
+            this.aGauge5.BaseArcWidth = 2;
+            this.aGauge5.Cap_Idx = ((byte)(1));
+            this.aGauge5.CapColors = new System.Drawing.Color[] {
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black};
+            this.aGauge5.CapPosition = new System.Drawing.Point(20, 140);
+            this.aGauge5.CapsPosition = new System.Drawing.Point[] {
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(20, 140),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10)};
+            this.aGauge5.CapsText = new string[] {
+        "",
+        "T6",
+        "",
+        "",
+        ""};
+            this.aGauge5.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge5_Label;
+            this.aGauge5.Center = new System.Drawing.Point(70, 70);
+            this.aGauge5.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge5_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge5.DataBindings.Add(new System.Windows.Forms.Binding("MaxValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_max5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge5.DataBindings.Add(new System.Windows.Forms.Binding("MinValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_min5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge5.Location = new System.Drawing.Point(632, 10);
+            this.aGauge5.MaxValue = global::AGaugeApp.Properties.Settings.Default.AgMS_max5;
+            this.aGauge5.MinValue = global::AGaugeApp.Properties.Settings.Default.AgMS_min5;
+            this.aGauge5.Name = "aGauge5";
+            this.aGauge5.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
+            this.aGauge5.NeedleColor2 = System.Drawing.Color.BurlyWood;
+            this.aGauge5.NeedleRadius = 45;
+            this.aGauge5.NeedleType = 0;
+            this.aGauge5.NeedleWidth = 3;
+            this.aGauge5.Range_Idx = ((byte)(4));
+            this.aGauge5.RangeColor = System.Drawing.Color.Red;
+            this.aGauge5.RangeEnabled = true;
+            this.aGauge5.RangeEndValue = 125F;
+            this.aGauge5.RangeInnerRadius = 30;
+            this.aGauge5.RangeOuterRadius = 50;
+            this.aGauge5.RangesColor = new System.Drawing.Color[] {
+        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
+        System.Drawing.Color.DarkTurquoise,
+        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
+        System.Drawing.Color.LawnGreen,
+        System.Drawing.Color.Red};
+            this.aGauge5.RangesEnabled = new bool[] {
+        true,
+        true,
+        true,
+        true,
+        true};
+            this.aGauge5.RangesEndValue = new float[] {
+        5F,
+        50F,
+        90F,
+        85F,
+        125F};
+            this.aGauge5.RangesInnerRadius = new int[] {
+        30,
+        30,
+        30,
+        30,
+        30};
+            this.aGauge5.RangesOuterRadius = new int[] {
+        50,
+        40,
+        40,
+        40,
+        50};
+            this.aGauge5.RangesStartValue = new float[] {
+        -20F,
+        20F,
+        50F,
+        60F,
+        90F};
+            this.aGauge5.RangeStartValue = 90F;
+            this.aGauge5.ScaleLinesInterColor = System.Drawing.Color.Black;
+            this.aGauge5.ScaleLinesInterInnerRadius = 42;
+            this.aGauge5.ScaleLinesInterOuterRadius = 50;
+            this.aGauge5.ScaleLinesInterWidth = 1;
+            this.aGauge5.ScaleLinesMajorColor = System.Drawing.Color.Black;
+            this.aGauge5.ScaleLinesMajorInnerRadius = 40;
+            this.aGauge5.ScaleLinesMajorOuterRadius = 50;
+            this.aGauge5.ScaleLinesMajorStepValue = 10F;
+            this.aGauge5.ScaleLinesMajorWidth = 2;
+            this.aGauge5.ScaleLinesMinorColor = System.Drawing.Color.Gray;
+            this.aGauge5.ScaleLinesMinorInnerRadius = 43;
+            this.aGauge5.ScaleLinesMinorNumOf = 1;
+            this.aGauge5.ScaleLinesMinorOuterRadius = 50;
+            this.aGauge5.ScaleLinesMinorWidth = 1;
+            this.aGauge5.ScaleNumbersColor = System.Drawing.Color.Black;
+            this.aGauge5.ScaleNumbersFormat = null;
+            this.aGauge5.ScaleNumbersRadius = 62;
+            this.aGauge5.ScaleNumbersRotation = 0;
+            this.aGauge5.ScaleNumbersStartScaleLine = 1;
+            this.aGauge5.ScaleNumbersStepScaleLines = 2;
+            this.aGauge5.Size = new System.Drawing.Size(150, 169);
+            this.aGauge5.TabIndex = 38;
+            this.aGauge5.Text = "AGauge5";
+            this.aGauge5.Value = 0F;
+            // 
+            // aGauge3
+            // 
+            this.aGauge3.BaseArcColor = System.Drawing.Color.Indigo;
+            this.aGauge3.BaseArcRadius = 40;
+            this.aGauge3.BaseArcStart = 180;
+            this.aGauge3.BaseArcSweep = 330;
+            this.aGauge3.BaseArcWidth = 2;
+            this.aGauge3.Cap_Idx = ((byte)(1));
+            this.aGauge3.CapColors = new System.Drawing.Color[] {
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black};
+            this.aGauge3.CapPosition = new System.Drawing.Point(20, 140);
+            this.aGauge3.CapsPosition = new System.Drawing.Point[] {
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(20, 140),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10)};
+            this.aGauge3.CapsText = new string[] {
+        "",
+        "T3",
+        "",
+        "",
+        ""};
+            this.aGauge3.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge3_Label;
+            this.aGauge3.Center = new System.Drawing.Point(70, 70);
+            this.aGauge3.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge3_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge3.DataBindings.Add(new System.Windows.Forms.Binding("MaxValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_max3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge3.DataBindings.Add(new System.Windows.Forms.Binding("MinValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_min3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge3.Location = new System.Drawing.Point(320, 10);
+            this.aGauge3.MaxValue = global::AGaugeApp.Properties.Settings.Default.AgMS_max3;
+            this.aGauge3.MinValue = global::AGaugeApp.Properties.Settings.Default.AgMS_min3;
+            this.aGauge3.Name = "aGauge3";
+            this.aGauge3.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
+            this.aGauge3.NeedleColor2 = System.Drawing.Color.BurlyWood;
+            this.aGauge3.NeedleRadius = 45;
+            this.aGauge3.NeedleType = 0;
+            this.aGauge3.NeedleWidth = 3;
+            this.aGauge3.Range_Idx = ((byte)(4));
+            this.aGauge3.RangeColor = System.Drawing.Color.Red;
+            this.aGauge3.RangeEnabled = true;
+            this.aGauge3.RangeEndValue = 125F;
+            this.aGauge3.RangeInnerRadius = 30;
+            this.aGauge3.RangeOuterRadius = 50;
+            this.aGauge3.RangesColor = new System.Drawing.Color[] {
+        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
+        System.Drawing.Color.DarkTurquoise,
+        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
+        System.Drawing.Color.LawnGreen,
+        System.Drawing.Color.Red};
+            this.aGauge3.RangesEnabled = new bool[] {
+        true,
+        true,
+        true,
+        true,
+        true};
+            this.aGauge3.RangesEndValue = new float[] {
+        5F,
+        50F,
+        90F,
+        85F,
+        125F};
+            this.aGauge3.RangesInnerRadius = new int[] {
+        30,
+        30,
+        30,
+        30,
+        30};
+            this.aGauge3.RangesOuterRadius = new int[] {
+        50,
+        40,
+        40,
+        40,
+        50};
+            this.aGauge3.RangesStartValue = new float[] {
+        -20F,
+        20F,
+        50F,
+        60F,
+        90F};
+            this.aGauge3.RangeStartValue = 90F;
+            this.aGauge3.ScaleLinesInterColor = System.Drawing.Color.Black;
+            this.aGauge3.ScaleLinesInterInnerRadius = 42;
+            this.aGauge3.ScaleLinesInterOuterRadius = 50;
+            this.aGauge3.ScaleLinesInterWidth = 1;
+            this.aGauge3.ScaleLinesMajorColor = System.Drawing.Color.Black;
+            this.aGauge3.ScaleLinesMajorInnerRadius = 40;
+            this.aGauge3.ScaleLinesMajorOuterRadius = 50;
+            this.aGauge3.ScaleLinesMajorStepValue = 10F;
+            this.aGauge3.ScaleLinesMajorWidth = 2;
+            this.aGauge3.ScaleLinesMinorColor = System.Drawing.Color.Gray;
+            this.aGauge3.ScaleLinesMinorInnerRadius = 43;
+            this.aGauge3.ScaleLinesMinorNumOf = 1;
+            this.aGauge3.ScaleLinesMinorOuterRadius = 50;
+            this.aGauge3.ScaleLinesMinorWidth = 1;
+            this.aGauge3.ScaleNumbersColor = System.Drawing.Color.Black;
+            this.aGauge3.ScaleNumbersFormat = null;
+            this.aGauge3.ScaleNumbersRadius = 62;
+            this.aGauge3.ScaleNumbersRotation = 0;
+            this.aGauge3.ScaleNumbersStartScaleLine = 1;
+            this.aGauge3.ScaleNumbersStepScaleLines = 2;
+            this.aGauge3.Size = new System.Drawing.Size(150, 169);
+            this.aGauge3.TabIndex = 37;
+            this.aGauge3.Text = "AGauge3";
+            this.aGauge3.Value = 0F;
+            // 
+            // aGauge2
+            // 
+            this.aGauge2.BaseArcColor = System.Drawing.Color.Indigo;
+            this.aGauge2.BaseArcRadius = 40;
+            this.aGauge2.BaseArcStart = 180;
+            this.aGauge2.BaseArcSweep = 330;
+            this.aGauge2.BaseArcWidth = 2;
+            this.aGauge2.Cap_Idx = ((byte)(1));
+            this.aGauge2.CapColors = new System.Drawing.Color[] {
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black};
+            this.aGauge2.CapPosition = new System.Drawing.Point(20, 140);
+            this.aGauge2.CapsPosition = new System.Drawing.Point[] {
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(20, 140),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10)};
+            this.aGauge2.CapsText = new string[] {
+        "",
+        "T2",
+        "",
+        "",
+        ""};
+            this.aGauge2.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge2_Label;
+            this.aGauge2.Center = new System.Drawing.Point(70, 70);
+            this.aGauge2.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge2_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge2.DataBindings.Add(new System.Windows.Forms.Binding("MinValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_min2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge2.DataBindings.Add(new System.Windows.Forms.Binding("MaxValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_max2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge2.Location = new System.Drawing.Point(164, 10);
+            this.aGauge2.MaxValue = global::AGaugeApp.Properties.Settings.Default.AgMS_max2;
+            this.aGauge2.MinValue = global::AGaugeApp.Properties.Settings.Default.AgMS_min2;
+            this.aGauge2.Name = "aGauge2";
+            this.aGauge2.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
+            this.aGauge2.NeedleColor2 = System.Drawing.Color.BurlyWood;
+            this.aGauge2.NeedleRadius = 45;
+            this.aGauge2.NeedleType = 0;
+            this.aGauge2.NeedleWidth = 3;
+            this.aGauge2.Range_Idx = ((byte)(4));
+            this.aGauge2.RangeColor = System.Drawing.Color.Red;
+            this.aGauge2.RangeEnabled = true;
+            this.aGauge2.RangeEndValue = 125F;
+            this.aGauge2.RangeInnerRadius = 30;
+            this.aGauge2.RangeOuterRadius = 50;
+            this.aGauge2.RangesColor = new System.Drawing.Color[] {
+        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
+        System.Drawing.Color.DarkTurquoise,
+        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
+        System.Drawing.Color.LawnGreen,
+        System.Drawing.Color.Red};
+            this.aGauge2.RangesEnabled = new bool[] {
+        true,
+        true,
+        true,
+        true,
+        true};
+            this.aGauge2.RangesEndValue = new float[] {
+        5F,
+        50F,
+        90F,
+        85F,
+        125F};
+            this.aGauge2.RangesInnerRadius = new int[] {
+        30,
+        30,
+        30,
+        30,
+        30};
+            this.aGauge2.RangesOuterRadius = new int[] {
+        50,
+        40,
+        40,
+        40,
+        50};
+            this.aGauge2.RangesStartValue = new float[] {
+        -20F,
+        20F,
+        50F,
+        60F,
+        90F};
+            this.aGauge2.RangeStartValue = 90F;
+            this.aGauge2.ScaleLinesInterColor = System.Drawing.Color.Black;
+            this.aGauge2.ScaleLinesInterInnerRadius = 42;
+            this.aGauge2.ScaleLinesInterOuterRadius = 50;
+            this.aGauge2.ScaleLinesInterWidth = 1;
+            this.aGauge2.ScaleLinesMajorColor = System.Drawing.Color.Black;
+            this.aGauge2.ScaleLinesMajorInnerRadius = 40;
+            this.aGauge2.ScaleLinesMajorOuterRadius = 50;
+            this.aGauge2.ScaleLinesMajorStepValue = 10F;
+            this.aGauge2.ScaleLinesMajorWidth = 2;
+            this.aGauge2.ScaleLinesMinorColor = System.Drawing.Color.Gray;
+            this.aGauge2.ScaleLinesMinorInnerRadius = 43;
+            this.aGauge2.ScaleLinesMinorNumOf = 1;
+            this.aGauge2.ScaleLinesMinorOuterRadius = 50;
+            this.aGauge2.ScaleLinesMinorWidth = 1;
+            this.aGauge2.ScaleNumbersColor = System.Drawing.Color.Black;
+            this.aGauge2.ScaleNumbersFormat = null;
+            this.aGauge2.ScaleNumbersRadius = 62;
+            this.aGauge2.ScaleNumbersRotation = 0;
+            this.aGauge2.ScaleNumbersStartScaleLine = 1;
+            this.aGauge2.ScaleNumbersStepScaleLines = 2;
+            this.aGauge2.Size = new System.Drawing.Size(150, 169);
+            this.aGauge2.TabIndex = 36;
+            this.aGauge2.Text = "AGauge2";
+            this.aGauge2.Value = 0F;
+            // 
+            // aGauge1
+            // 
+            this.aGauge1.BaseArcColor = System.Drawing.Color.Indigo;
+            this.aGauge1.BaseArcRadius = 40;
+            this.aGauge1.BaseArcStart = 180;
+            this.aGauge1.BaseArcSweep = 330;
+            this.aGauge1.BaseArcWidth = 2;
+            this.aGauge1.Cap_Idx = ((byte)(1));
+            this.aGauge1.CapColors = new System.Drawing.Color[] {
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black};
+            this.aGauge1.CapPosition = new System.Drawing.Point(20, 140);
+            this.aGauge1.CapsPosition = new System.Drawing.Point[] {
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(20, 140),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10)};
+            this.aGauge1.CapsText = new string[] {
+        "",
+        "T1",
+        "",
+        "",
+        ""};
+            this.aGauge1.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge1_Label;
+            this.aGauge1.Center = new System.Drawing.Point(70, 70);
+            this.aGauge1.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge1_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge1.DataBindings.Add(new System.Windows.Forms.Binding("MinValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_min1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge1.DataBindings.Add(new System.Windows.Forms.Binding("MaxValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_max1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge1.Location = new System.Drawing.Point(8, 10);
+            this.aGauge1.MaxValue = global::AGaugeApp.Properties.Settings.Default.AgMS_max1;
+            this.aGauge1.MinValue = global::AGaugeApp.Properties.Settings.Default.AgMS_min1;
+            this.aGauge1.Name = "aGauge1";
+            this.aGauge1.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
+            this.aGauge1.NeedleColor2 = System.Drawing.Color.BurlyWood;
+            this.aGauge1.NeedleRadius = 45;
+            this.aGauge1.NeedleType = 0;
+            this.aGauge1.NeedleWidth = 3;
+            this.aGauge1.Range_Idx = ((byte)(1));
+            this.aGauge1.RangeColor = System.Drawing.Color.DarkTurquoise;
+            this.aGauge1.RangeEnabled = true;
+            this.aGauge1.RangeEndValue = 50F;
+            this.aGauge1.RangeInnerRadius = 30;
+            this.aGauge1.RangeOuterRadius = 40;
+            this.aGauge1.RangesColor = new System.Drawing.Color[] {
+        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
+        System.Drawing.Color.DarkTurquoise,
+        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
+        System.Drawing.Color.LawnGreen,
+        System.Drawing.Color.Red};
+            this.aGauge1.RangesEnabled = new bool[] {
+        true,
+        true,
+        true,
+        true,
+        true};
+            this.aGauge1.RangesEndValue = new float[] {
+        5F,
+        50F,
+        90F,
+        85F,
+        125F};
+            this.aGauge1.RangesInnerRadius = new int[] {
+        30,
+        30,
+        30,
+        30,
+        30};
+            this.aGauge1.RangesOuterRadius = new int[] {
+        50,
+        40,
+        40,
+        40,
+        50};
+            this.aGauge1.RangesStartValue = new float[] {
+        -20F,
+        20F,
+        50F,
+        60F,
+        90F};
+            this.aGauge1.RangeStartValue = 20F;
+            this.aGauge1.ScaleLinesInterColor = System.Drawing.Color.Black;
+            this.aGauge1.ScaleLinesInterInnerRadius = 42;
+            this.aGauge1.ScaleLinesInterOuterRadius = 50;
+            this.aGauge1.ScaleLinesInterWidth = 1;
+            this.aGauge1.ScaleLinesMajorColor = System.Drawing.Color.Black;
+            this.aGauge1.ScaleLinesMajorInnerRadius = 40;
+            this.aGauge1.ScaleLinesMajorOuterRadius = 50;
+            this.aGauge1.ScaleLinesMajorStepValue = 10F;
+            this.aGauge1.ScaleLinesMajorWidth = 2;
+            this.aGauge1.ScaleLinesMinorColor = System.Drawing.Color.Gray;
+            this.aGauge1.ScaleLinesMinorInnerRadius = 43;
+            this.aGauge1.ScaleLinesMinorNumOf = 1;
+            this.aGauge1.ScaleLinesMinorOuterRadius = 50;
+            this.aGauge1.ScaleLinesMinorWidth = 1;
+            this.aGauge1.ScaleNumbersColor = System.Drawing.Color.Black;
+            this.aGauge1.ScaleNumbersFormat = null;
+            this.aGauge1.ScaleNumbersRadius = 62;
+            this.aGauge1.ScaleNumbersRotation = 0;
+            this.aGauge1.ScaleNumbersStartScaleLine = 1;
+            this.aGauge1.ScaleNumbersStepScaleLines = 2;
+            this.aGauge1.Size = new System.Drawing.Size(150, 169);
+            this.aGauge1.TabIndex = 35;
+            this.aGauge1.Text = "AGauge1";
+            this.aGauge1.Value = 0F;
+            // 
+            // aGauge4
+            // 
+            this.aGauge4.BaseArcColor = System.Drawing.Color.Indigo;
+            this.aGauge4.BaseArcRadius = 40;
+            this.aGauge4.BaseArcStart = 180;
+            this.aGauge4.BaseArcSweep = 330;
+            this.aGauge4.BaseArcWidth = 2;
+            this.aGauge4.Cap_Idx = ((byte)(1));
+            this.aGauge4.CapColors = new System.Drawing.Color[] {
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black};
+            this.aGauge4.CapPosition = new System.Drawing.Point(20, 140);
+            this.aGauge4.CapsPosition = new System.Drawing.Point[] {
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(20, 140),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10),
+        new System.Drawing.Point(10, 10)};
+            this.aGauge4.CapsText = new string[] {
+        "",
+        "T4",
+        "",
+        "",
+        ""};
+            this.aGauge4.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge4_Label;
+            this.aGauge4.Center = new System.Drawing.Point(70, 70);
+            this.aGauge4.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge4_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge4.DataBindings.Add(new System.Windows.Forms.Binding("MaxValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_max4", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge4.DataBindings.Add(new System.Windows.Forms.Binding("MinValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_min4", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.aGauge4.Location = new System.Drawing.Point(476, 10);
+            this.aGauge4.MaxValue = global::AGaugeApp.Properties.Settings.Default.AgMS_max4;
+            this.aGauge4.MinValue = global::AGaugeApp.Properties.Settings.Default.AgMS_min4;
+            this.aGauge4.Name = "aGauge4";
+            this.aGauge4.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
+            this.aGauge4.NeedleColor2 = System.Drawing.Color.BurlyWood;
+            this.aGauge4.NeedleRadius = 45;
+            this.aGauge4.NeedleType = 0;
+            this.aGauge4.NeedleWidth = 3;
+            this.aGauge4.Range_Idx = ((byte)(4));
+            this.aGauge4.RangeColor = System.Drawing.Color.Red;
+            this.aGauge4.RangeEnabled = true;
+            this.aGauge4.RangeEndValue = 125F;
+            this.aGauge4.RangeInnerRadius = 30;
+            this.aGauge4.RangeOuterRadius = 50;
+            this.aGauge4.RangesColor = new System.Drawing.Color[] {
+        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
+        System.Drawing.Color.DarkTurquoise,
+        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
+        System.Drawing.Color.LawnGreen,
+        System.Drawing.Color.Red};
+            this.aGauge4.RangesEnabled = new bool[] {
+        true,
+        true,
+        true,
+        true,
+        true};
+            this.aGauge4.RangesEndValue = new float[] {
+        5F,
+        50F,
+        90F,
+        85F,
+        125F};
+            this.aGauge4.RangesInnerRadius = new int[] {
+        30,
+        30,
+        30,
+        30,
+        30};
+            this.aGauge4.RangesOuterRadius = new int[] {
+        50,
+        40,
+        40,
+        40,
+        50};
+            this.aGauge4.RangesStartValue = new float[] {
+        -20F,
+        20F,
+        50F,
+        60F,
+        90F};
+            this.aGauge4.RangeStartValue = 90F;
+            this.aGauge4.ScaleLinesInterColor = System.Drawing.Color.Black;
+            this.aGauge4.ScaleLinesInterInnerRadius = 42;
+            this.aGauge4.ScaleLinesInterOuterRadius = 50;
+            this.aGauge4.ScaleLinesInterWidth = 1;
+            this.aGauge4.ScaleLinesMajorColor = System.Drawing.Color.Black;
+            this.aGauge4.ScaleLinesMajorInnerRadius = 40;
+            this.aGauge4.ScaleLinesMajorOuterRadius = 50;
+            this.aGauge4.ScaleLinesMajorStepValue = 10F;
+            this.aGauge4.ScaleLinesMajorWidth = 2;
+            this.aGauge4.ScaleLinesMinorColor = System.Drawing.Color.Gray;
+            this.aGauge4.ScaleLinesMinorInnerRadius = 43;
+            this.aGauge4.ScaleLinesMinorNumOf = 1;
+            this.aGauge4.ScaleLinesMinorOuterRadius = 50;
+            this.aGauge4.ScaleLinesMinorWidth = 1;
+            this.aGauge4.ScaleNumbersColor = System.Drawing.Color.Black;
+            this.aGauge4.ScaleNumbersFormat = null;
+            this.aGauge4.ScaleNumbersRadius = 62;
+            this.aGauge4.ScaleNumbersRotation = 0;
+            this.aGauge4.ScaleNumbersStartScaleLine = 1;
+            this.aGauge4.ScaleNumbersStepScaleLines = 2;
+            this.aGauge4.Size = new System.Drawing.Size(150, 169);
+            this.aGauge4.TabIndex = 27;
+            this.aGauge4.Text = "AGauge4";
+            this.aGauge4.Value = 0F;
+            this.aGauge4.ValueInRangeChanged += new AGaugeApp.AGauge.ValueInRangeChangedDelegate(this.AGauge4_ValueInRangeChanged);
             // 
             // Tlabel5
             // 
@@ -1201,1410 +2605,6 @@ namespace AGaugeApp
             this.DserialPort1.PortName = global::AGaugeApp.Properties.Settings.Default.ComPort;
             this.DserialPort1.ErrorReceived += new System.IO.Ports.SerialErrorReceivedEventHandler(this.DserialPort1_ErrorReceived);
             this.DserialPort1.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.DserialPort1_DataReceived);
-            // 
-            // aGauge6
-            // 
-            this.aGauge6.BaseArcColor = System.Drawing.Color.Indigo;
-            this.aGauge6.BaseArcRadius = 40;
-            this.aGauge6.BaseArcStart = 180;
-            this.aGauge6.BaseArcSweep = 330;
-            this.aGauge6.BaseArcWidth = 2;
-            this.aGauge6.Cap_Idx = ((byte)(1));
-            this.aGauge6.CapColors = new System.Drawing.Color[] {
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black};
-            this.aGauge6.CapPosition = new System.Drawing.Point(20, 140);
-            this.aGauge6.CapsPosition = new System.Drawing.Point[] {
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(20, 140),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10)};
-            this.aGauge6.CapsText = new string[] {
-        "",
-        "T6",
-        "",
-        "",
-        ""};
-            this.aGauge6.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge6_Label;
-            this.aGauge6.Center = new System.Drawing.Point(70, 70);
-            this.aGauge6.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge6_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.aGauge6.DataBindings.Add(new System.Windows.Forms.Binding("MaxValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_max6", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.aGauge6.DataBindings.Add(new System.Windows.Forms.Binding("MinValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_max6", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.aGauge6.Location = new System.Drawing.Point(785, 10);
-            this.aGauge6.MaxValue = global::AGaugeApp.Properties.Settings.Default.AgMS_max6;
-            this.aGauge6.MinValue = global::AGaugeApp.Properties.Settings.Default.AgMS_max6;
-            this.aGauge6.Name = "aGauge6";
-            this.aGauge6.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
-            this.aGauge6.NeedleColor2 = System.Drawing.Color.BurlyWood;
-            this.aGauge6.NeedleRadius = 45;
-            this.aGauge6.NeedleType = 0;
-            this.aGauge6.NeedleWidth = 3;
-            this.aGauge6.Range_Idx = ((byte)(4));
-            this.aGauge6.RangeColor = System.Drawing.Color.Red;
-            this.aGauge6.RangeEnabled = true;
-            this.aGauge6.RangeEndValue = 125F;
-            this.aGauge6.RangeInnerRadius = 30;
-            this.aGauge6.RangeOuterRadius = 50;
-            this.aGauge6.RangesColor = new System.Drawing.Color[] {
-        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
-        System.Drawing.Color.DarkTurquoise,
-        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
-        System.Drawing.Color.LawnGreen,
-        System.Drawing.Color.Red};
-            this.aGauge6.RangesEnabled = new bool[] {
-        true,
-        true,
-        true,
-        true,
-        true};
-            this.aGauge6.RangesEndValue = new float[] {
-        5F,
-        50F,
-        90F,
-        85F,
-        125F};
-            this.aGauge6.RangesInnerRadius = new int[] {
-        30,
-        30,
-        30,
-        30,
-        30};
-            this.aGauge6.RangesOuterRadius = new int[] {
-        50,
-        40,
-        40,
-        40,
-        50};
-            this.aGauge6.RangesStartValue = new float[] {
-        -20F,
-        20F,
-        50F,
-        60F,
-        90F};
-            this.aGauge6.RangeStartValue = 90F;
-            this.aGauge6.ScaleLinesInterColor = System.Drawing.Color.Black;
-            this.aGauge6.ScaleLinesInterInnerRadius = 42;
-            this.aGauge6.ScaleLinesInterOuterRadius = 50;
-            this.aGauge6.ScaleLinesInterWidth = 1;
-            this.aGauge6.ScaleLinesMajorColor = System.Drawing.Color.Black;
-            this.aGauge6.ScaleLinesMajorInnerRadius = 40;
-            this.aGauge6.ScaleLinesMajorOuterRadius = 50;
-            this.aGauge6.ScaleLinesMajorStepValue = 10F;
-            this.aGauge6.ScaleLinesMajorWidth = 2;
-            this.aGauge6.ScaleLinesMinorColor = System.Drawing.Color.Gray;
-            this.aGauge6.ScaleLinesMinorInnerRadius = 43;
-            this.aGauge6.ScaleLinesMinorNumOf = 1;
-            this.aGauge6.ScaleLinesMinorOuterRadius = 50;
-            this.aGauge6.ScaleLinesMinorWidth = 1;
-            this.aGauge6.ScaleNumbersColor = System.Drawing.Color.Black;
-            this.aGauge6.ScaleNumbersFormat = null;
-            this.aGauge6.ScaleNumbersRadius = 62;
-            this.aGauge6.ScaleNumbersRotation = 0;
-            this.aGauge6.ScaleNumbersStartScaleLine = 1;
-            this.aGauge6.ScaleNumbersStepScaleLines = 2;
-            this.aGauge6.Size = new System.Drawing.Size(150, 169);
-            this.aGauge6.TabIndex = 63;
-            this.aGauge6.Text = "AGauge6";
-            this.aGauge6.Value = 0F;
-            // 
-            // aGaugeT5T6
-            // 
-            this.aGaugeT5T6.BaseArcColor = System.Drawing.Color.Indigo;
-            this.aGaugeT5T6.BaseArcRadius = 40;
-            this.aGaugeT5T6.BaseArcStart = 180;
-            this.aGaugeT5T6.BaseArcSweep = 330;
-            this.aGaugeT5T6.BaseArcWidth = 2;
-            this.aGaugeT5T6.Cap_Idx = ((byte)(1));
-            this.aGaugeT5T6.CapColors = new System.Drawing.Color[] {
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black};
-            this.aGaugeT5T6.CapPosition = new System.Drawing.Point(20, 140);
-            this.aGaugeT5T6.CapsPosition = new System.Drawing.Point[] {
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(20, 140),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10)};
-            this.aGaugeT5T6.CapsText = new string[] {
-        "",
-        "T6",
-        "",
-        "",
-        ""};
-            this.aGaugeT5T6.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge5_Label;
-            this.aGaugeT5T6.Center = new System.Drawing.Point(70, 70);
-            this.aGaugeT5T6.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge5_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.aGaugeT5T6.Location = new System.Drawing.Point(716, 215);
-            this.aGaugeT5T6.MaxValue = 50F;
-            this.aGaugeT5T6.MinValue = -20F;
-            this.aGaugeT5T6.Name = "aGaugeT5T6";
-            this.aGaugeT5T6.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
-            this.aGaugeT5T6.NeedleColor2 = System.Drawing.Color.BurlyWood;
-            this.aGaugeT5T6.NeedleRadius = 45;
-            this.aGaugeT5T6.NeedleType = 0;
-            this.aGaugeT5T6.NeedleWidth = 3;
-            this.aGaugeT5T6.Range_Idx = ((byte)(2));
-            this.aGaugeT5T6.RangeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.aGaugeT5T6.RangeEnabled = true;
-            this.aGaugeT5T6.RangeEndValue = 20F;
-            this.aGaugeT5T6.RangeInnerRadius = 30;
-            this.aGaugeT5T6.RangeOuterRadius = 40;
-            this.aGaugeT5T6.RangesColor = new System.Drawing.Color[] {
-        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
-        System.Drawing.Color.DarkTurquoise,
-        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
-        System.Drawing.Color.LawnGreen,
-        System.Drawing.Color.Red};
-            this.aGaugeT5T6.RangesEnabled = new bool[] {
-        true,
-        true,
-        true,
-        true,
-        true};
-            this.aGaugeT5T6.RangesEndValue = new float[] {
-        -10F,
-        50F,
-        20F,
-        5F,
-        50F};
-            this.aGaugeT5T6.RangesInnerRadius = new int[] {
-        30,
-        30,
-        30,
-        30,
-        30};
-            this.aGaugeT5T6.RangesOuterRadius = new int[] {
-        50,
-        40,
-        40,
-        40,
-        50};
-            this.aGaugeT5T6.RangesStartValue = new float[] {
-        -20F,
-        20F,
-        -10F,
-        -5F,
-        20F};
-            this.aGaugeT5T6.RangeStartValue = -10F;
-            this.aGaugeT5T6.ScaleLinesInterColor = System.Drawing.Color.Black;
-            this.aGaugeT5T6.ScaleLinesInterInnerRadius = 42;
-            this.aGaugeT5T6.ScaleLinesInterOuterRadius = 50;
-            this.aGaugeT5T6.ScaleLinesInterWidth = 1;
-            this.aGaugeT5T6.ScaleLinesMajorColor = System.Drawing.Color.Black;
-            this.aGaugeT5T6.ScaleLinesMajorInnerRadius = 40;
-            this.aGaugeT5T6.ScaleLinesMajorOuterRadius = 50;
-            this.aGaugeT5T6.ScaleLinesMajorStepValue = 10F;
-            this.aGaugeT5T6.ScaleLinesMajorWidth = 2;
-            this.aGaugeT5T6.ScaleLinesMinorColor = System.Drawing.Color.Gray;
-            this.aGaugeT5T6.ScaleLinesMinorInnerRadius = 43;
-            this.aGaugeT5T6.ScaleLinesMinorNumOf = 1;
-            this.aGaugeT5T6.ScaleLinesMinorOuterRadius = 50;
-            this.aGaugeT5T6.ScaleLinesMinorWidth = 1;
-            this.aGaugeT5T6.ScaleNumbersColor = System.Drawing.Color.Black;
-            this.aGaugeT5T6.ScaleNumbersFormat = null;
-            this.aGaugeT5T6.ScaleNumbersRadius = 62;
-            this.aGaugeT5T6.ScaleNumbersRotation = 0;
-            this.aGaugeT5T6.ScaleNumbersStartScaleLine = 1;
-            this.aGaugeT5T6.ScaleNumbersStepScaleLines = 2;
-            this.aGaugeT5T6.Size = new System.Drawing.Size(150, 169);
-            this.aGaugeT5T6.TabIndex = 60;
-            this.aGaugeT5T6.Text = "AGauge4";
-            this.aGaugeT5T6.Value = 0F;
-            // 
-            // aGaugeT4T5
-            // 
-            this.aGaugeT4T5.BaseArcColor = System.Drawing.Color.Indigo;
-            this.aGaugeT4T5.BaseArcRadius = 40;
-            this.aGaugeT4T5.BaseArcStart = 180;
-            this.aGaugeT4T5.BaseArcSweep = 330;
-            this.aGaugeT4T5.BaseArcWidth = 2;
-            this.aGaugeT4T5.Cap_Idx = ((byte)(1));
-            this.aGaugeT4T5.CapColors = new System.Drawing.Color[] {
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black};
-            this.aGaugeT4T5.CapPosition = new System.Drawing.Point(20, 140);
-            this.aGaugeT4T5.CapsPosition = new System.Drawing.Point[] {
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(20, 140),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10)};
-            this.aGaugeT4T5.CapsText = new string[] {
-        "",
-        "T6",
-        "",
-        "",
-        ""};
-            this.aGaugeT4T5.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge5_Label;
-            this.aGaugeT4T5.Center = new System.Drawing.Point(70, 70);
-            this.aGaugeT4T5.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge5_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.aGaugeT4T5.Location = new System.Drawing.Point(560, 215);
-            this.aGaugeT4T5.MaxValue = 50F;
-            this.aGaugeT4T5.MinValue = -20F;
-            this.aGaugeT4T5.Name = "aGaugeT4T5";
-            this.aGaugeT4T5.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
-            this.aGaugeT4T5.NeedleColor2 = System.Drawing.Color.BurlyWood;
-            this.aGaugeT4T5.NeedleRadius = 45;
-            this.aGaugeT4T5.NeedleType = 0;
-            this.aGaugeT4T5.NeedleWidth = 3;
-            this.aGaugeT4T5.Range_Idx = ((byte)(2));
-            this.aGaugeT4T5.RangeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.aGaugeT4T5.RangeEnabled = true;
-            this.aGaugeT4T5.RangeEndValue = 20F;
-            this.aGaugeT4T5.RangeInnerRadius = 30;
-            this.aGaugeT4T5.RangeOuterRadius = 40;
-            this.aGaugeT4T5.RangesColor = new System.Drawing.Color[] {
-        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
-        System.Drawing.Color.DarkTurquoise,
-        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
-        System.Drawing.Color.LawnGreen,
-        System.Drawing.Color.Red};
-            this.aGaugeT4T5.RangesEnabled = new bool[] {
-        true,
-        true,
-        true,
-        true,
-        true};
-            this.aGaugeT4T5.RangesEndValue = new float[] {
-        -10F,
-        50F,
-        20F,
-        5F,
-        50F};
-            this.aGaugeT4T5.RangesInnerRadius = new int[] {
-        30,
-        30,
-        30,
-        30,
-        30};
-            this.aGaugeT4T5.RangesOuterRadius = new int[] {
-        50,
-        40,
-        40,
-        40,
-        50};
-            this.aGaugeT4T5.RangesStartValue = new float[] {
-        -20F,
-        20F,
-        -10F,
-        -5F,
-        20F};
-            this.aGaugeT4T5.RangeStartValue = -10F;
-            this.aGaugeT4T5.ScaleLinesInterColor = System.Drawing.Color.Black;
-            this.aGaugeT4T5.ScaleLinesInterInnerRadius = 42;
-            this.aGaugeT4T5.ScaleLinesInterOuterRadius = 50;
-            this.aGaugeT4T5.ScaleLinesInterWidth = 1;
-            this.aGaugeT4T5.ScaleLinesMajorColor = System.Drawing.Color.Black;
-            this.aGaugeT4T5.ScaleLinesMajorInnerRadius = 40;
-            this.aGaugeT4T5.ScaleLinesMajorOuterRadius = 50;
-            this.aGaugeT4T5.ScaleLinesMajorStepValue = 10F;
-            this.aGaugeT4T5.ScaleLinesMajorWidth = 2;
-            this.aGaugeT4T5.ScaleLinesMinorColor = System.Drawing.Color.Gray;
-            this.aGaugeT4T5.ScaleLinesMinorInnerRadius = 43;
-            this.aGaugeT4T5.ScaleLinesMinorNumOf = 1;
-            this.aGaugeT4T5.ScaleLinesMinorOuterRadius = 50;
-            this.aGaugeT4T5.ScaleLinesMinorWidth = 1;
-            this.aGaugeT4T5.ScaleNumbersColor = System.Drawing.Color.Black;
-            this.aGaugeT4T5.ScaleNumbersFormat = null;
-            this.aGaugeT4T5.ScaleNumbersRadius = 62;
-            this.aGaugeT4T5.ScaleNumbersRotation = 0;
-            this.aGaugeT4T5.ScaleNumbersStartScaleLine = 1;
-            this.aGaugeT4T5.ScaleNumbersStepScaleLines = 2;
-            this.aGaugeT4T5.Size = new System.Drawing.Size(150, 169);
-            this.aGaugeT4T5.TabIndex = 57;
-            this.aGaugeT4T5.Text = "AGauge4";
-            this.aGaugeT4T5.Value = 0F;
-            // 
-            // aGaugeT3T4
-            // 
-            this.aGaugeT3T4.BaseArcColor = System.Drawing.Color.Indigo;
-            this.aGaugeT3T4.BaseArcRadius = 40;
-            this.aGaugeT3T4.BaseArcStart = 180;
-            this.aGaugeT3T4.BaseArcSweep = 330;
-            this.aGaugeT3T4.BaseArcWidth = 2;
-            this.aGaugeT3T4.Cap_Idx = ((byte)(1));
-            this.aGaugeT3T4.CapColors = new System.Drawing.Color[] {
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black};
-            this.aGaugeT3T4.CapPosition = new System.Drawing.Point(20, 140);
-            this.aGaugeT3T4.CapsPosition = new System.Drawing.Point[] {
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(20, 140),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10)};
-            this.aGaugeT3T4.CapsText = new string[] {
-        "",
-        "T6",
-        "",
-        "",
-        ""};
-            this.aGaugeT3T4.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge5_Label;
-            this.aGaugeT3T4.Center = new System.Drawing.Point(70, 70);
-            this.aGaugeT3T4.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge5_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.aGaugeT3T4.Location = new System.Drawing.Point(404, 215);
-            this.aGaugeT3T4.MaxValue = 50F;
-            this.aGaugeT3T4.MinValue = -20F;
-            this.aGaugeT3T4.Name = "aGaugeT3T4";
-            this.aGaugeT3T4.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
-            this.aGaugeT3T4.NeedleColor2 = System.Drawing.Color.BurlyWood;
-            this.aGaugeT3T4.NeedleRadius = 45;
-            this.aGaugeT3T4.NeedleType = 0;
-            this.aGaugeT3T4.NeedleWidth = 3;
-            this.aGaugeT3T4.Range_Idx = ((byte)(2));
-            this.aGaugeT3T4.RangeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.aGaugeT3T4.RangeEnabled = true;
-            this.aGaugeT3T4.RangeEndValue = 20F;
-            this.aGaugeT3T4.RangeInnerRadius = 30;
-            this.aGaugeT3T4.RangeOuterRadius = 40;
-            this.aGaugeT3T4.RangesColor = new System.Drawing.Color[] {
-        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
-        System.Drawing.Color.DarkTurquoise,
-        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
-        System.Drawing.Color.LawnGreen,
-        System.Drawing.Color.Red};
-            this.aGaugeT3T4.RangesEnabled = new bool[] {
-        true,
-        true,
-        true,
-        true,
-        true};
-            this.aGaugeT3T4.RangesEndValue = new float[] {
-        -10F,
-        50F,
-        20F,
-        5F,
-        50F};
-            this.aGaugeT3T4.RangesInnerRadius = new int[] {
-        30,
-        30,
-        30,
-        30,
-        30};
-            this.aGaugeT3T4.RangesOuterRadius = new int[] {
-        50,
-        40,
-        40,
-        40,
-        50};
-            this.aGaugeT3T4.RangesStartValue = new float[] {
-        -20F,
-        20F,
-        -10F,
-        -5F,
-        20F};
-            this.aGaugeT3T4.RangeStartValue = -10F;
-            this.aGaugeT3T4.ScaleLinesInterColor = System.Drawing.Color.Black;
-            this.aGaugeT3T4.ScaleLinesInterInnerRadius = 42;
-            this.aGaugeT3T4.ScaleLinesInterOuterRadius = 50;
-            this.aGaugeT3T4.ScaleLinesInterWidth = 1;
-            this.aGaugeT3T4.ScaleLinesMajorColor = System.Drawing.Color.Black;
-            this.aGaugeT3T4.ScaleLinesMajorInnerRadius = 40;
-            this.aGaugeT3T4.ScaleLinesMajorOuterRadius = 50;
-            this.aGaugeT3T4.ScaleLinesMajorStepValue = 10F;
-            this.aGaugeT3T4.ScaleLinesMajorWidth = 2;
-            this.aGaugeT3T4.ScaleLinesMinorColor = System.Drawing.Color.Gray;
-            this.aGaugeT3T4.ScaleLinesMinorInnerRadius = 43;
-            this.aGaugeT3T4.ScaleLinesMinorNumOf = 1;
-            this.aGaugeT3T4.ScaleLinesMinorOuterRadius = 50;
-            this.aGaugeT3T4.ScaleLinesMinorWidth = 1;
-            this.aGaugeT3T4.ScaleNumbersColor = System.Drawing.Color.Black;
-            this.aGaugeT3T4.ScaleNumbersFormat = null;
-            this.aGaugeT3T4.ScaleNumbersRadius = 62;
-            this.aGaugeT3T4.ScaleNumbersRotation = 0;
-            this.aGaugeT3T4.ScaleNumbersStartScaleLine = 1;
-            this.aGaugeT3T4.ScaleNumbersStepScaleLines = 2;
-            this.aGaugeT3T4.Size = new System.Drawing.Size(150, 169);
-            this.aGaugeT3T4.TabIndex = 51;
-            this.aGaugeT3T4.Text = "AGauge4";
-            this.aGaugeT3T4.Value = 0F;
-            // 
-            // aGaugeT2T3
-            // 
-            this.aGaugeT2T3.BaseArcColor = System.Drawing.Color.Indigo;
-            this.aGaugeT2T3.BaseArcRadius = 40;
-            this.aGaugeT2T3.BaseArcStart = 180;
-            this.aGaugeT2T3.BaseArcSweep = 330;
-            this.aGaugeT2T3.BaseArcWidth = 2;
-            this.aGaugeT2T3.Cap_Idx = ((byte)(1));
-            this.aGaugeT2T3.CapColors = new System.Drawing.Color[] {
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black};
-            this.aGaugeT2T3.CapPosition = new System.Drawing.Point(20, 140);
-            this.aGaugeT2T3.CapsPosition = new System.Drawing.Point[] {
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(20, 140),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10)};
-            this.aGaugeT2T3.CapsText = new string[] {
-        "",
-        "T6",
-        "",
-        "",
-        ""};
-            this.aGaugeT2T3.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge5_Label;
-            this.aGaugeT2T3.Center = new System.Drawing.Point(70, 70);
-            this.aGaugeT2T3.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge5_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.aGaugeT2T3.Location = new System.Drawing.Point(249, 215);
-            this.aGaugeT2T3.MaxValue = 50F;
-            this.aGaugeT2T3.MinValue = -20F;
-            this.aGaugeT2T3.Name = "aGaugeT2T3";
-            this.aGaugeT2T3.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
-            this.aGaugeT2T3.NeedleColor2 = System.Drawing.Color.BurlyWood;
-            this.aGaugeT2T3.NeedleRadius = 45;
-            this.aGaugeT2T3.NeedleType = 0;
-            this.aGaugeT2T3.NeedleWidth = 3;
-            this.aGaugeT2T3.Range_Idx = ((byte)(2));
-            this.aGaugeT2T3.RangeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.aGaugeT2T3.RangeEnabled = true;
-            this.aGaugeT2T3.RangeEndValue = 20F;
-            this.aGaugeT2T3.RangeInnerRadius = 30;
-            this.aGaugeT2T3.RangeOuterRadius = 40;
-            this.aGaugeT2T3.RangesColor = new System.Drawing.Color[] {
-        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
-        System.Drawing.Color.DarkTurquoise,
-        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
-        System.Drawing.Color.LawnGreen,
-        System.Drawing.Color.Red};
-            this.aGaugeT2T3.RangesEnabled = new bool[] {
-        true,
-        true,
-        true,
-        true,
-        true};
-            this.aGaugeT2T3.RangesEndValue = new float[] {
-        -10F,
-        50F,
-        20F,
-        5F,
-        50F};
-            this.aGaugeT2T3.RangesInnerRadius = new int[] {
-        30,
-        30,
-        30,
-        30,
-        30};
-            this.aGaugeT2T3.RangesOuterRadius = new int[] {
-        50,
-        40,
-        40,
-        40,
-        50};
-            this.aGaugeT2T3.RangesStartValue = new float[] {
-        -20F,
-        20F,
-        -10F,
-        -5F,
-        20F};
-            this.aGaugeT2T3.RangeStartValue = -10F;
-            this.aGaugeT2T3.ScaleLinesInterColor = System.Drawing.Color.Black;
-            this.aGaugeT2T3.ScaleLinesInterInnerRadius = 42;
-            this.aGaugeT2T3.ScaleLinesInterOuterRadius = 50;
-            this.aGaugeT2T3.ScaleLinesInterWidth = 1;
-            this.aGaugeT2T3.ScaleLinesMajorColor = System.Drawing.Color.Black;
-            this.aGaugeT2T3.ScaleLinesMajorInnerRadius = 40;
-            this.aGaugeT2T3.ScaleLinesMajorOuterRadius = 50;
-            this.aGaugeT2T3.ScaleLinesMajorStepValue = 10F;
-            this.aGaugeT2T3.ScaleLinesMajorWidth = 2;
-            this.aGaugeT2T3.ScaleLinesMinorColor = System.Drawing.Color.Gray;
-            this.aGaugeT2T3.ScaleLinesMinorInnerRadius = 43;
-            this.aGaugeT2T3.ScaleLinesMinorNumOf = 1;
-            this.aGaugeT2T3.ScaleLinesMinorOuterRadius = 50;
-            this.aGaugeT2T3.ScaleLinesMinorWidth = 1;
-            this.aGaugeT2T3.ScaleNumbersColor = System.Drawing.Color.Black;
-            this.aGaugeT2T3.ScaleNumbersFormat = null;
-            this.aGaugeT2T3.ScaleNumbersRadius = 62;
-            this.aGaugeT2T3.ScaleNumbersRotation = 0;
-            this.aGaugeT2T3.ScaleNumbersStartScaleLine = 1;
-            this.aGaugeT2T3.ScaleNumbersStepScaleLines = 2;
-            this.aGaugeT2T3.Size = new System.Drawing.Size(150, 169);
-            this.aGaugeT2T3.TabIndex = 54;
-            this.aGaugeT2T3.Text = "AGauge4";
-            this.aGaugeT2T3.Value = 0F;
-            // 
-            // aGaugeT1T2
-            // 
-            this.aGaugeT1T2.BaseArcColor = System.Drawing.Color.Indigo;
-            this.aGaugeT1T2.BaseArcRadius = 40;
-            this.aGaugeT1T2.BaseArcStart = 180;
-            this.aGaugeT1T2.BaseArcSweep = 330;
-            this.aGaugeT1T2.BaseArcWidth = 2;
-            this.aGaugeT1T2.Cap_Idx = ((byte)(1));
-            this.aGaugeT1T2.CapColors = new System.Drawing.Color[] {
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black};
-            this.aGaugeT1T2.CapPosition = new System.Drawing.Point(20, 140);
-            this.aGaugeT1T2.CapsPosition = new System.Drawing.Point[] {
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(20, 140),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10)};
-            this.aGaugeT1T2.CapsText = new string[] {
-        "",
-        "T6",
-        "",
-        "",
-        ""};
-            this.aGaugeT1T2.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge5_Label;
-            this.aGaugeT1T2.Center = new System.Drawing.Point(70, 70);
-            this.aGaugeT1T2.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge5_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.aGaugeT1T2.Location = new System.Drawing.Point(92, 215);
-            this.aGaugeT1T2.MaxValue = 50F;
-            this.aGaugeT1T2.MinValue = -20F;
-            this.aGaugeT1T2.Name = "aGaugeT1T2";
-            this.aGaugeT1T2.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
-            this.aGaugeT1T2.NeedleColor2 = System.Drawing.Color.BurlyWood;
-            this.aGaugeT1T2.NeedleRadius = 45;
-            this.aGaugeT1T2.NeedleType = 0;
-            this.aGaugeT1T2.NeedleWidth = 3;
-            this.aGaugeT1T2.Range_Idx = ((byte)(2));
-            this.aGaugeT1T2.RangeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.aGaugeT1T2.RangeEnabled = true;
-            this.aGaugeT1T2.RangeEndValue = 20F;
-            this.aGaugeT1T2.RangeInnerRadius = 30;
-            this.aGaugeT1T2.RangeOuterRadius = 40;
-            this.aGaugeT1T2.RangesColor = new System.Drawing.Color[] {
-        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
-        System.Drawing.Color.DarkTurquoise,
-        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
-        System.Drawing.Color.LawnGreen,
-        System.Drawing.Color.Red};
-            this.aGaugeT1T2.RangesEnabled = new bool[] {
-        true,
-        true,
-        true,
-        true,
-        true};
-            this.aGaugeT1T2.RangesEndValue = new float[] {
-        -10F,
-        50F,
-        20F,
-        5F,
-        50F};
-            this.aGaugeT1T2.RangesInnerRadius = new int[] {
-        30,
-        30,
-        30,
-        30,
-        30};
-            this.aGaugeT1T2.RangesOuterRadius = new int[] {
-        50,
-        40,
-        40,
-        40,
-        50};
-            this.aGaugeT1T2.RangesStartValue = new float[] {
-        -20F,
-        20F,
-        -10F,
-        -5F,
-        20F};
-            this.aGaugeT1T2.RangeStartValue = -10F;
-            this.aGaugeT1T2.ScaleLinesInterColor = System.Drawing.Color.Black;
-            this.aGaugeT1T2.ScaleLinesInterInnerRadius = 42;
-            this.aGaugeT1T2.ScaleLinesInterOuterRadius = 50;
-            this.aGaugeT1T2.ScaleLinesInterWidth = 1;
-            this.aGaugeT1T2.ScaleLinesMajorColor = System.Drawing.Color.Black;
-            this.aGaugeT1T2.ScaleLinesMajorInnerRadius = 40;
-            this.aGaugeT1T2.ScaleLinesMajorOuterRadius = 50;
-            this.aGaugeT1T2.ScaleLinesMajorStepValue = 10F;
-            this.aGaugeT1T2.ScaleLinesMajorWidth = 2;
-            this.aGaugeT1T2.ScaleLinesMinorColor = System.Drawing.Color.Gray;
-            this.aGaugeT1T2.ScaleLinesMinorInnerRadius = 43;
-            this.aGaugeT1T2.ScaleLinesMinorNumOf = 1;
-            this.aGaugeT1T2.ScaleLinesMinorOuterRadius = 50;
-            this.aGaugeT1T2.ScaleLinesMinorWidth = 1;
-            this.aGaugeT1T2.ScaleNumbersColor = System.Drawing.Color.Black;
-            this.aGaugeT1T2.ScaleNumbersFormat = null;
-            this.aGaugeT1T2.ScaleNumbersRadius = 62;
-            this.aGaugeT1T2.ScaleNumbersRotation = 0;
-            this.aGaugeT1T2.ScaleNumbersStartScaleLine = 1;
-            this.aGaugeT1T2.ScaleNumbersStepScaleLines = 2;
-            this.aGaugeT1T2.Size = new System.Drawing.Size(150, 168);
-            this.aGaugeT1T2.TabIndex = 51;
-            this.aGaugeT1T2.Text = "AGauge4";
-            this.aGaugeT1T2.Value = 0F;
-            // 
-            // aGaugeT4T5b
-            // 
-            this.aGaugeT4T5b.BaseArcColor = System.Drawing.Color.Indigo;
-            this.aGaugeT4T5b.BaseArcRadius = 40;
-            this.aGaugeT4T5b.BaseArcStart = 180;
-            this.aGaugeT4T5b.BaseArcSweep = 330;
-            this.aGaugeT4T5b.BaseArcWidth = 2;
-            this.aGaugeT4T5b.Cap_Idx = ((byte)(1));
-            this.aGaugeT4T5b.CapColors = new System.Drawing.Color[] {
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black};
-            this.aGaugeT4T5b.CapPosition = new System.Drawing.Point(20, 140);
-            this.aGaugeT4T5b.CapsPosition = new System.Drawing.Point[] {
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(20, 140),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10)};
-            this.aGaugeT4T5b.CapsText = new string[] {
-        "",
-        "T6",
-        "",
-        "",
-        ""};
-            this.aGaugeT4T5b.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge5_Label;
-            this.aGaugeT4T5b.Center = new System.Drawing.Point(70, 70);
-            this.aGaugeT4T5b.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge5_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.aGaugeT4T5b.Location = new System.Drawing.Point(564, 394);
-            this.aGaugeT4T5b.MaxValue = 50F;
-            this.aGaugeT4T5b.MinValue = -20F;
-            this.aGaugeT4T5b.Name = "aGaugeT4T5b";
-            this.aGaugeT4T5b.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
-            this.aGaugeT4T5b.NeedleColor2 = System.Drawing.Color.BurlyWood;
-            this.aGaugeT4T5b.NeedleRadius = 45;
-            this.aGaugeT4T5b.NeedleType = 0;
-            this.aGaugeT4T5b.NeedleWidth = 3;
-            this.aGaugeT4T5b.Range_Idx = ((byte)(2));
-            this.aGaugeT4T5b.RangeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.aGaugeT4T5b.RangeEnabled = true;
-            this.aGaugeT4T5b.RangeEndValue = 20F;
-            this.aGaugeT4T5b.RangeInnerRadius = 30;
-            this.aGaugeT4T5b.RangeOuterRadius = 40;
-            this.aGaugeT4T5b.RangesColor = new System.Drawing.Color[] {
-        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
-        System.Drawing.Color.DarkTurquoise,
-        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
-        System.Drawing.Color.LawnGreen,
-        System.Drawing.Color.Red};
-            this.aGaugeT4T5b.RangesEnabled = new bool[] {
-        true,
-        true,
-        true,
-        true,
-        true};
-            this.aGaugeT4T5b.RangesEndValue = new float[] {
-        -10F,
-        50F,
-        20F,
-        5F,
-        50F};
-            this.aGaugeT4T5b.RangesInnerRadius = new int[] {
-        30,
-        30,
-        30,
-        30,
-        30};
-            this.aGaugeT4T5b.RangesOuterRadius = new int[] {
-        50,
-        40,
-        40,
-        40,
-        50};
-            this.aGaugeT4T5b.RangesStartValue = new float[] {
-        -20F,
-        20F,
-        -10F,
-        -5F,
-        20F};
-            this.aGaugeT4T5b.RangeStartValue = -10F;
-            this.aGaugeT4T5b.ScaleLinesInterColor = System.Drawing.Color.Black;
-            this.aGaugeT4T5b.ScaleLinesInterInnerRadius = 42;
-            this.aGaugeT4T5b.ScaleLinesInterOuterRadius = 50;
-            this.aGaugeT4T5b.ScaleLinesInterWidth = 1;
-            this.aGaugeT4T5b.ScaleLinesMajorColor = System.Drawing.Color.Black;
-            this.aGaugeT4T5b.ScaleLinesMajorInnerRadius = 40;
-            this.aGaugeT4T5b.ScaleLinesMajorOuterRadius = 50;
-            this.aGaugeT4T5b.ScaleLinesMajorStepValue = 10F;
-            this.aGaugeT4T5b.ScaleLinesMajorWidth = 2;
-            this.aGaugeT4T5b.ScaleLinesMinorColor = System.Drawing.Color.Gray;
-            this.aGaugeT4T5b.ScaleLinesMinorInnerRadius = 43;
-            this.aGaugeT4T5b.ScaleLinesMinorNumOf = 1;
-            this.aGaugeT4T5b.ScaleLinesMinorOuterRadius = 50;
-            this.aGaugeT4T5b.ScaleLinesMinorWidth = 1;
-            this.aGaugeT4T5b.ScaleNumbersColor = System.Drawing.Color.Black;
-            this.aGaugeT4T5b.ScaleNumbersFormat = null;
-            this.aGaugeT4T5b.ScaleNumbersRadius = 62;
-            this.aGaugeT4T5b.ScaleNumbersRotation = 0;
-            this.aGaugeT4T5b.ScaleNumbersStartScaleLine = 1;
-            this.aGaugeT4T5b.ScaleNumbersStepScaleLines = 2;
-            this.aGaugeT4T5b.Size = new System.Drawing.Size(150, 169);
-            this.aGaugeT4T5b.TabIndex = 48;
-            this.aGaugeT4T5b.Text = "AGauge4";
-            this.aGaugeT4T5b.Value = 0F;
-            // 
-            // aGaugeT2T1
-            // 
-            this.aGaugeT2T1.BaseArcColor = System.Drawing.Color.Indigo;
-            this.aGaugeT2T1.BaseArcRadius = 40;
-            this.aGaugeT2T1.BaseArcStart = 180;
-            this.aGaugeT2T1.BaseArcSweep = 330;
-            this.aGaugeT2T1.BaseArcWidth = 2;
-            this.aGaugeT2T1.Cap_Idx = ((byte)(1));
-            this.aGaugeT2T1.CapColors = new System.Drawing.Color[] {
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black};
-            this.aGaugeT2T1.CapPosition = new System.Drawing.Point(20, 140);
-            this.aGaugeT2T1.CapsPosition = new System.Drawing.Point[] {
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(20, 140),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10)};
-            this.aGaugeT2T1.CapsText = new string[] {
-        "",
-        "T6",
-        "",
-        "",
-        ""};
-            this.aGaugeT2T1.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge5_Label;
-            this.aGaugeT2T1.Center = new System.Drawing.Point(70, 70);
-            this.aGaugeT2T1.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge5_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.aGaugeT2T1.Location = new System.Drawing.Point(225, 394);
-            this.aGaugeT2T1.MaxValue = 50F;
-            this.aGaugeT2T1.MinValue = -20F;
-            this.aGaugeT2T1.Name = "aGaugeT2T1";
-            this.aGaugeT2T1.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
-            this.aGaugeT2T1.NeedleColor2 = System.Drawing.Color.BurlyWood;
-            this.aGaugeT2T1.NeedleRadius = 45;
-            this.aGaugeT2T1.NeedleType = 0;
-            this.aGaugeT2T1.NeedleWidth = 3;
-            this.aGaugeT2T1.Range_Idx = ((byte)(2));
-            this.aGaugeT2T1.RangeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.aGaugeT2T1.RangeEnabled = true;
-            this.aGaugeT2T1.RangeEndValue = 20F;
-            this.aGaugeT2T1.RangeInnerRadius = 30;
-            this.aGaugeT2T1.RangeOuterRadius = 40;
-            this.aGaugeT2T1.RangesColor = new System.Drawing.Color[] {
-        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
-        System.Drawing.Color.DarkTurquoise,
-        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
-        System.Drawing.Color.LawnGreen,
-        System.Drawing.Color.Red};
-            this.aGaugeT2T1.RangesEnabled = new bool[] {
-        true,
-        true,
-        true,
-        true,
-        true};
-            this.aGaugeT2T1.RangesEndValue = new float[] {
-        -10F,
-        50F,
-        20F,
-        5F,
-        50F};
-            this.aGaugeT2T1.RangesInnerRadius = new int[] {
-        30,
-        30,
-        30,
-        30,
-        30};
-            this.aGaugeT2T1.RangesOuterRadius = new int[] {
-        50,
-        40,
-        40,
-        40,
-        50};
-            this.aGaugeT2T1.RangesStartValue = new float[] {
-        -20F,
-        20F,
-        -10F,
-        -5F,
-        20F};
-            this.aGaugeT2T1.RangeStartValue = -10F;
-            this.aGaugeT2T1.ScaleLinesInterColor = System.Drawing.Color.Black;
-            this.aGaugeT2T1.ScaleLinesInterInnerRadius = 42;
-            this.aGaugeT2T1.ScaleLinesInterOuterRadius = 50;
-            this.aGaugeT2T1.ScaleLinesInterWidth = 1;
-            this.aGaugeT2T1.ScaleLinesMajorColor = System.Drawing.Color.Black;
-            this.aGaugeT2T1.ScaleLinesMajorInnerRadius = 40;
-            this.aGaugeT2T1.ScaleLinesMajorOuterRadius = 50;
-            this.aGaugeT2T1.ScaleLinesMajorStepValue = 10F;
-            this.aGaugeT2T1.ScaleLinesMajorWidth = 2;
-            this.aGaugeT2T1.ScaleLinesMinorColor = System.Drawing.Color.Gray;
-            this.aGaugeT2T1.ScaleLinesMinorInnerRadius = 43;
-            this.aGaugeT2T1.ScaleLinesMinorNumOf = 1;
-            this.aGaugeT2T1.ScaleLinesMinorOuterRadius = 50;
-            this.aGaugeT2T1.ScaleLinesMinorWidth = 1;
-            this.aGaugeT2T1.ScaleNumbersColor = System.Drawing.Color.Black;
-            this.aGaugeT2T1.ScaleNumbersFormat = null;
-            this.aGaugeT2T1.ScaleNumbersRadius = 62;
-            this.aGaugeT2T1.ScaleNumbersRotation = 0;
-            this.aGaugeT2T1.ScaleNumbersStartScaleLine = 1;
-            this.aGaugeT2T1.ScaleNumbersStepScaleLines = 2;
-            this.aGaugeT2T1.Size = new System.Drawing.Size(150, 169);
-            this.aGaugeT2T1.TabIndex = 45;
-            this.aGaugeT2T1.Text = "AGauge6";
-            this.aGaugeT2T1.Value = 0F;
-            // 
-            // aGauge5
-            // 
-            this.aGauge5.BaseArcColor = System.Drawing.Color.Indigo;
-            this.aGauge5.BaseArcRadius = 40;
-            this.aGauge5.BaseArcStart = 180;
-            this.aGauge5.BaseArcSweep = 330;
-            this.aGauge5.BaseArcWidth = 2;
-            this.aGauge5.Cap_Idx = ((byte)(1));
-            this.aGauge5.CapColors = new System.Drawing.Color[] {
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black};
-            this.aGauge5.CapPosition = new System.Drawing.Point(20, 140);
-            this.aGauge5.CapsPosition = new System.Drawing.Point[] {
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(20, 140),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10)};
-            this.aGauge5.CapsText = new string[] {
-        "",
-        "T6",
-        "",
-        "",
-        ""};
-            this.aGauge5.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge5_Label;
-            this.aGauge5.Center = new System.Drawing.Point(70, 70);
-            this.aGauge5.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge5_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.aGauge5.DataBindings.Add(new System.Windows.Forms.Binding("MaxValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_max5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.aGauge5.DataBindings.Add(new System.Windows.Forms.Binding("MinValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_min5", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.aGauge5.Location = new System.Drawing.Point(632, 10);
-            this.aGauge5.MaxValue = global::AGaugeApp.Properties.Settings.Default.AgMS_max5;
-            this.aGauge5.MinValue = global::AGaugeApp.Properties.Settings.Default.AgMS_min5;
-            this.aGauge5.Name = "aGauge5";
-            this.aGauge5.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
-            this.aGauge5.NeedleColor2 = System.Drawing.Color.BurlyWood;
-            this.aGauge5.NeedleRadius = 45;
-            this.aGauge5.NeedleType = 0;
-            this.aGauge5.NeedleWidth = 3;
-            this.aGauge5.Range_Idx = ((byte)(4));
-            this.aGauge5.RangeColor = System.Drawing.Color.Red;
-            this.aGauge5.RangeEnabled = true;
-            this.aGauge5.RangeEndValue = 125F;
-            this.aGauge5.RangeInnerRadius = 30;
-            this.aGauge5.RangeOuterRadius = 50;
-            this.aGauge5.RangesColor = new System.Drawing.Color[] {
-        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
-        System.Drawing.Color.DarkTurquoise,
-        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
-        System.Drawing.Color.LawnGreen,
-        System.Drawing.Color.Red};
-            this.aGauge5.RangesEnabled = new bool[] {
-        true,
-        true,
-        true,
-        true,
-        true};
-            this.aGauge5.RangesEndValue = new float[] {
-        5F,
-        50F,
-        90F,
-        85F,
-        125F};
-            this.aGauge5.RangesInnerRadius = new int[] {
-        30,
-        30,
-        30,
-        30,
-        30};
-            this.aGauge5.RangesOuterRadius = new int[] {
-        50,
-        40,
-        40,
-        40,
-        50};
-            this.aGauge5.RangesStartValue = new float[] {
-        -20F,
-        20F,
-        50F,
-        60F,
-        90F};
-            this.aGauge5.RangeStartValue = 90F;
-            this.aGauge5.ScaleLinesInterColor = System.Drawing.Color.Black;
-            this.aGauge5.ScaleLinesInterInnerRadius = 42;
-            this.aGauge5.ScaleLinesInterOuterRadius = 50;
-            this.aGauge5.ScaleLinesInterWidth = 1;
-            this.aGauge5.ScaleLinesMajorColor = System.Drawing.Color.Black;
-            this.aGauge5.ScaleLinesMajorInnerRadius = 40;
-            this.aGauge5.ScaleLinesMajorOuterRadius = 50;
-            this.aGauge5.ScaleLinesMajorStepValue = 10F;
-            this.aGauge5.ScaleLinesMajorWidth = 2;
-            this.aGauge5.ScaleLinesMinorColor = System.Drawing.Color.Gray;
-            this.aGauge5.ScaleLinesMinorInnerRadius = 43;
-            this.aGauge5.ScaleLinesMinorNumOf = 1;
-            this.aGauge5.ScaleLinesMinorOuterRadius = 50;
-            this.aGauge5.ScaleLinesMinorWidth = 1;
-            this.aGauge5.ScaleNumbersColor = System.Drawing.Color.Black;
-            this.aGauge5.ScaleNumbersFormat = null;
-            this.aGauge5.ScaleNumbersRadius = 62;
-            this.aGauge5.ScaleNumbersRotation = 0;
-            this.aGauge5.ScaleNumbersStartScaleLine = 1;
-            this.aGauge5.ScaleNumbersStepScaleLines = 2;
-            this.aGauge5.Size = new System.Drawing.Size(150, 169);
-            this.aGauge5.TabIndex = 38;
-            this.aGauge5.Text = "AGauge5";
-            this.aGauge5.Value = 0F;
-            // 
-            // aGauge3
-            // 
-            this.aGauge3.BaseArcColor = System.Drawing.Color.Indigo;
-            this.aGauge3.BaseArcRadius = 40;
-            this.aGauge3.BaseArcStart = 180;
-            this.aGauge3.BaseArcSweep = 330;
-            this.aGauge3.BaseArcWidth = 2;
-            this.aGauge3.Cap_Idx = ((byte)(1));
-            this.aGauge3.CapColors = new System.Drawing.Color[] {
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black};
-            this.aGauge3.CapPosition = new System.Drawing.Point(20, 140);
-            this.aGauge3.CapsPosition = new System.Drawing.Point[] {
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(20, 140),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10)};
-            this.aGauge3.CapsText = new string[] {
-        "",
-        "T3",
-        "",
-        "",
-        ""};
-            this.aGauge3.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge3_Label;
-            this.aGauge3.Center = new System.Drawing.Point(70, 70);
-            this.aGauge3.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge3_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.aGauge3.DataBindings.Add(new System.Windows.Forms.Binding("MaxValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_max3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.aGauge3.DataBindings.Add(new System.Windows.Forms.Binding("MinValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_min3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.aGauge3.Location = new System.Drawing.Point(320, 10);
-            this.aGauge3.MaxValue = global::AGaugeApp.Properties.Settings.Default.AgMS_max3;
-            this.aGauge3.MinValue = global::AGaugeApp.Properties.Settings.Default.AgMS_min3;
-            this.aGauge3.Name = "aGauge3";
-            this.aGauge3.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
-            this.aGauge3.NeedleColor2 = System.Drawing.Color.BurlyWood;
-            this.aGauge3.NeedleRadius = 45;
-            this.aGauge3.NeedleType = 0;
-            this.aGauge3.NeedleWidth = 3;
-            this.aGauge3.Range_Idx = ((byte)(4));
-            this.aGauge3.RangeColor = System.Drawing.Color.Red;
-            this.aGauge3.RangeEnabled = true;
-            this.aGauge3.RangeEndValue = 125F;
-            this.aGauge3.RangeInnerRadius = 30;
-            this.aGauge3.RangeOuterRadius = 50;
-            this.aGauge3.RangesColor = new System.Drawing.Color[] {
-        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
-        System.Drawing.Color.DarkTurquoise,
-        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
-        System.Drawing.Color.LawnGreen,
-        System.Drawing.Color.Red};
-            this.aGauge3.RangesEnabled = new bool[] {
-        true,
-        true,
-        true,
-        true,
-        true};
-            this.aGauge3.RangesEndValue = new float[] {
-        5F,
-        50F,
-        90F,
-        85F,
-        125F};
-            this.aGauge3.RangesInnerRadius = new int[] {
-        30,
-        30,
-        30,
-        30,
-        30};
-            this.aGauge3.RangesOuterRadius = new int[] {
-        50,
-        40,
-        40,
-        40,
-        50};
-            this.aGauge3.RangesStartValue = new float[] {
-        -20F,
-        20F,
-        50F,
-        60F,
-        90F};
-            this.aGauge3.RangeStartValue = 90F;
-            this.aGauge3.ScaleLinesInterColor = System.Drawing.Color.Black;
-            this.aGauge3.ScaleLinesInterInnerRadius = 42;
-            this.aGauge3.ScaleLinesInterOuterRadius = 50;
-            this.aGauge3.ScaleLinesInterWidth = 1;
-            this.aGauge3.ScaleLinesMajorColor = System.Drawing.Color.Black;
-            this.aGauge3.ScaleLinesMajorInnerRadius = 40;
-            this.aGauge3.ScaleLinesMajorOuterRadius = 50;
-            this.aGauge3.ScaleLinesMajorStepValue = 10F;
-            this.aGauge3.ScaleLinesMajorWidth = 2;
-            this.aGauge3.ScaleLinesMinorColor = System.Drawing.Color.Gray;
-            this.aGauge3.ScaleLinesMinorInnerRadius = 43;
-            this.aGauge3.ScaleLinesMinorNumOf = 1;
-            this.aGauge3.ScaleLinesMinorOuterRadius = 50;
-            this.aGauge3.ScaleLinesMinorWidth = 1;
-            this.aGauge3.ScaleNumbersColor = System.Drawing.Color.Black;
-            this.aGauge3.ScaleNumbersFormat = null;
-            this.aGauge3.ScaleNumbersRadius = 62;
-            this.aGauge3.ScaleNumbersRotation = 0;
-            this.aGauge3.ScaleNumbersStartScaleLine = 1;
-            this.aGauge3.ScaleNumbersStepScaleLines = 2;
-            this.aGauge3.Size = new System.Drawing.Size(150, 169);
-            this.aGauge3.TabIndex = 37;
-            this.aGauge3.Text = "AGauge3";
-            this.aGauge3.Value = 0F;
-            // 
-            // aGauge2
-            // 
-            this.aGauge2.BaseArcColor = System.Drawing.Color.Indigo;
-            this.aGauge2.BaseArcRadius = 40;
-            this.aGauge2.BaseArcStart = 180;
-            this.aGauge2.BaseArcSweep = 330;
-            this.aGauge2.BaseArcWidth = 2;
-            this.aGauge2.Cap_Idx = ((byte)(1));
-            this.aGauge2.CapColors = new System.Drawing.Color[] {
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black};
-            this.aGauge2.CapPosition = new System.Drawing.Point(20, 140);
-            this.aGauge2.CapsPosition = new System.Drawing.Point[] {
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(20, 140),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10)};
-            this.aGauge2.CapsText = new string[] {
-        "",
-        "T2",
-        "",
-        "",
-        ""};
-            this.aGauge2.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge2_Label;
-            this.aGauge2.Center = new System.Drawing.Point(70, 70);
-            this.aGauge2.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge2_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.aGauge2.DataBindings.Add(new System.Windows.Forms.Binding("MinValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_min2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.aGauge2.DataBindings.Add(new System.Windows.Forms.Binding("MaxValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_max2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.aGauge2.Location = new System.Drawing.Point(164, 10);
-            this.aGauge2.MaxValue = global::AGaugeApp.Properties.Settings.Default.AgMS_max2;
-            this.aGauge2.MinValue = global::AGaugeApp.Properties.Settings.Default.AgMS_min2;
-            this.aGauge2.Name = "aGauge2";
-            this.aGauge2.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
-            this.aGauge2.NeedleColor2 = System.Drawing.Color.BurlyWood;
-            this.aGauge2.NeedleRadius = 45;
-            this.aGauge2.NeedleType = 0;
-            this.aGauge2.NeedleWidth = 3;
-            this.aGauge2.Range_Idx = ((byte)(4));
-            this.aGauge2.RangeColor = System.Drawing.Color.Red;
-            this.aGauge2.RangeEnabled = true;
-            this.aGauge2.RangeEndValue = 125F;
-            this.aGauge2.RangeInnerRadius = 30;
-            this.aGauge2.RangeOuterRadius = 50;
-            this.aGauge2.RangesColor = new System.Drawing.Color[] {
-        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
-        System.Drawing.Color.DarkTurquoise,
-        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
-        System.Drawing.Color.LawnGreen,
-        System.Drawing.Color.Red};
-            this.aGauge2.RangesEnabled = new bool[] {
-        true,
-        true,
-        true,
-        true,
-        true};
-            this.aGauge2.RangesEndValue = new float[] {
-        5F,
-        50F,
-        90F,
-        85F,
-        125F};
-            this.aGauge2.RangesInnerRadius = new int[] {
-        30,
-        30,
-        30,
-        30,
-        30};
-            this.aGauge2.RangesOuterRadius = new int[] {
-        50,
-        40,
-        40,
-        40,
-        50};
-            this.aGauge2.RangesStartValue = new float[] {
-        -20F,
-        20F,
-        50F,
-        60F,
-        90F};
-            this.aGauge2.RangeStartValue = 90F;
-            this.aGauge2.ScaleLinesInterColor = System.Drawing.Color.Black;
-            this.aGauge2.ScaleLinesInterInnerRadius = 42;
-            this.aGauge2.ScaleLinesInterOuterRadius = 50;
-            this.aGauge2.ScaleLinesInterWidth = 1;
-            this.aGauge2.ScaleLinesMajorColor = System.Drawing.Color.Black;
-            this.aGauge2.ScaleLinesMajorInnerRadius = 40;
-            this.aGauge2.ScaleLinesMajorOuterRadius = 50;
-            this.aGauge2.ScaleLinesMajorStepValue = 10F;
-            this.aGauge2.ScaleLinesMajorWidth = 2;
-            this.aGauge2.ScaleLinesMinorColor = System.Drawing.Color.Gray;
-            this.aGauge2.ScaleLinesMinorInnerRadius = 43;
-            this.aGauge2.ScaleLinesMinorNumOf = 1;
-            this.aGauge2.ScaleLinesMinorOuterRadius = 50;
-            this.aGauge2.ScaleLinesMinorWidth = 1;
-            this.aGauge2.ScaleNumbersColor = System.Drawing.Color.Black;
-            this.aGauge2.ScaleNumbersFormat = null;
-            this.aGauge2.ScaleNumbersRadius = 62;
-            this.aGauge2.ScaleNumbersRotation = 0;
-            this.aGauge2.ScaleNumbersStartScaleLine = 1;
-            this.aGauge2.ScaleNumbersStepScaleLines = 2;
-            this.aGauge2.Size = new System.Drawing.Size(150, 169);
-            this.aGauge2.TabIndex = 36;
-            this.aGauge2.Text = "AGauge2";
-            this.aGauge2.Value = 0F;
-            // 
-            // aGauge1
-            // 
-            this.aGauge1.BaseArcColor = System.Drawing.Color.Indigo;
-            this.aGauge1.BaseArcRadius = 40;
-            this.aGauge1.BaseArcStart = 180;
-            this.aGauge1.BaseArcSweep = 330;
-            this.aGauge1.BaseArcWidth = 2;
-            this.aGauge1.Cap_Idx = ((byte)(1));
-            this.aGauge1.CapColors = new System.Drawing.Color[] {
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black};
-            this.aGauge1.CapPosition = new System.Drawing.Point(20, 140);
-            this.aGauge1.CapsPosition = new System.Drawing.Point[] {
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(20, 140),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10)};
-            this.aGauge1.CapsText = new string[] {
-        "",
-        "T1",
-        "",
-        "",
-        ""};
-            this.aGauge1.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge1_Label;
-            this.aGauge1.Center = new System.Drawing.Point(70, 70);
-            this.aGauge1.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge1_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.aGauge1.DataBindings.Add(new System.Windows.Forms.Binding("MinValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_min1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.aGauge1.DataBindings.Add(new System.Windows.Forms.Binding("MaxValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_max1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.aGauge1.Location = new System.Drawing.Point(8, 10);
-            this.aGauge1.MaxValue = global::AGaugeApp.Properties.Settings.Default.AgMS_max1;
-            this.aGauge1.MinValue = global::AGaugeApp.Properties.Settings.Default.AgMS_min1;
-            this.aGauge1.Name = "aGauge1";
-            this.aGauge1.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
-            this.aGauge1.NeedleColor2 = System.Drawing.Color.BurlyWood;
-            this.aGauge1.NeedleRadius = 45;
-            this.aGauge1.NeedleType = 0;
-            this.aGauge1.NeedleWidth = 3;
-            this.aGauge1.Range_Idx = ((byte)(1));
-            this.aGauge1.RangeColor = System.Drawing.Color.DarkTurquoise;
-            this.aGauge1.RangeEnabled = true;
-            this.aGauge1.RangeEndValue = 50F;
-            this.aGauge1.RangeInnerRadius = 30;
-            this.aGauge1.RangeOuterRadius = 40;
-            this.aGauge1.RangesColor = new System.Drawing.Color[] {
-        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
-        System.Drawing.Color.DarkTurquoise,
-        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
-        System.Drawing.Color.LawnGreen,
-        System.Drawing.Color.Red};
-            this.aGauge1.RangesEnabled = new bool[] {
-        true,
-        true,
-        true,
-        true,
-        true};
-            this.aGauge1.RangesEndValue = new float[] {
-        5F,
-        50F,
-        90F,
-        85F,
-        125F};
-            this.aGauge1.RangesInnerRadius = new int[] {
-        30,
-        30,
-        30,
-        30,
-        30};
-            this.aGauge1.RangesOuterRadius = new int[] {
-        50,
-        40,
-        40,
-        40,
-        50};
-            this.aGauge1.RangesStartValue = new float[] {
-        -20F,
-        20F,
-        50F,
-        60F,
-        90F};
-            this.aGauge1.RangeStartValue = 20F;
-            this.aGauge1.ScaleLinesInterColor = System.Drawing.Color.Black;
-            this.aGauge1.ScaleLinesInterInnerRadius = 42;
-            this.aGauge1.ScaleLinesInterOuterRadius = 50;
-            this.aGauge1.ScaleLinesInterWidth = 1;
-            this.aGauge1.ScaleLinesMajorColor = System.Drawing.Color.Black;
-            this.aGauge1.ScaleLinesMajorInnerRadius = 40;
-            this.aGauge1.ScaleLinesMajorOuterRadius = 50;
-            this.aGauge1.ScaleLinesMajorStepValue = 10F;
-            this.aGauge1.ScaleLinesMajorWidth = 2;
-            this.aGauge1.ScaleLinesMinorColor = System.Drawing.Color.Gray;
-            this.aGauge1.ScaleLinesMinorInnerRadius = 43;
-            this.aGauge1.ScaleLinesMinorNumOf = 1;
-            this.aGauge1.ScaleLinesMinorOuterRadius = 50;
-            this.aGauge1.ScaleLinesMinorWidth = 1;
-            this.aGauge1.ScaleNumbersColor = System.Drawing.Color.Black;
-            this.aGauge1.ScaleNumbersFormat = null;
-            this.aGauge1.ScaleNumbersRadius = 62;
-            this.aGauge1.ScaleNumbersRotation = 0;
-            this.aGauge1.ScaleNumbersStartScaleLine = 1;
-            this.aGauge1.ScaleNumbersStepScaleLines = 2;
-            this.aGauge1.Size = new System.Drawing.Size(150, 169);
-            this.aGauge1.TabIndex = 35;
-            this.aGauge1.Text = "AGauge1";
-            this.aGauge1.Value = 0F;
-            // 
-            // aGauge4
-            // 
-            this.aGauge4.BaseArcColor = System.Drawing.Color.Indigo;
-            this.aGauge4.BaseArcRadius = 40;
-            this.aGauge4.BaseArcStart = 180;
-            this.aGauge4.BaseArcSweep = 330;
-            this.aGauge4.BaseArcWidth = 2;
-            this.aGauge4.Cap_Idx = ((byte)(1));
-            this.aGauge4.CapColors = new System.Drawing.Color[] {
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black,
-        System.Drawing.Color.Black};
-            this.aGauge4.CapPosition = new System.Drawing.Point(20, 140);
-            this.aGauge4.CapsPosition = new System.Drawing.Point[] {
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(20, 140),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10),
-        new System.Drawing.Point(10, 10)};
-            this.aGauge4.CapsText = new string[] {
-        "",
-        "T4",
-        "",
-        "",
-        ""};
-            this.aGauge4.CapText = global::AGaugeApp.Properties.Settings.Default.Gauge4_Label;
-            this.aGauge4.Center = new System.Drawing.Point(70, 70);
-            this.aGauge4.DataBindings.Add(new System.Windows.Forms.Binding("CapText", global::AGaugeApp.Properties.Settings.Default, "Gauge4_Label", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.aGauge4.DataBindings.Add(new System.Windows.Forms.Binding("MaxValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_max4", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.aGauge4.DataBindings.Add(new System.Windows.Forms.Binding("MinValue", global::AGaugeApp.Properties.Settings.Default, "AgMS_min4", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.aGauge4.Location = new System.Drawing.Point(476, 10);
-            this.aGauge4.MaxValue = global::AGaugeApp.Properties.Settings.Default.AgMS_max4;
-            this.aGauge4.MinValue = global::AGaugeApp.Properties.Settings.Default.AgMS_min4;
-            this.aGauge4.Name = "aGauge4";
-            this.aGauge4.NeedleColor1 = AGaugeApp.AGauge.NeedleColorEnum.Gray;
-            this.aGauge4.NeedleColor2 = System.Drawing.Color.BurlyWood;
-            this.aGauge4.NeedleRadius = 45;
-            this.aGauge4.NeedleType = 0;
-            this.aGauge4.NeedleWidth = 3;
-            this.aGauge4.Range_Idx = ((byte)(4));
-            this.aGauge4.RangeColor = System.Drawing.Color.Red;
-            this.aGauge4.RangeEnabled = true;
-            this.aGauge4.RangeEndValue = 125F;
-            this.aGauge4.RangeInnerRadius = 30;
-            this.aGauge4.RangeOuterRadius = 50;
-            this.aGauge4.RangesColor = new System.Drawing.Color[] {
-        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
-        System.Drawing.Color.DarkTurquoise,
-        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))),
-        System.Drawing.Color.LawnGreen,
-        System.Drawing.Color.Red};
-            this.aGauge4.RangesEnabled = new bool[] {
-        true,
-        true,
-        true,
-        true,
-        true};
-            this.aGauge4.RangesEndValue = new float[] {
-        5F,
-        50F,
-        90F,
-        85F,
-        125F};
-            this.aGauge4.RangesInnerRadius = new int[] {
-        30,
-        30,
-        30,
-        30,
-        30};
-            this.aGauge4.RangesOuterRadius = new int[] {
-        50,
-        40,
-        40,
-        40,
-        50};
-            this.aGauge4.RangesStartValue = new float[] {
-        -20F,
-        20F,
-        50F,
-        60F,
-        90F};
-            this.aGauge4.RangeStartValue = 90F;
-            this.aGauge4.ScaleLinesInterColor = System.Drawing.Color.Black;
-            this.aGauge4.ScaleLinesInterInnerRadius = 42;
-            this.aGauge4.ScaleLinesInterOuterRadius = 50;
-            this.aGauge4.ScaleLinesInterWidth = 1;
-            this.aGauge4.ScaleLinesMajorColor = System.Drawing.Color.Black;
-            this.aGauge4.ScaleLinesMajorInnerRadius = 40;
-            this.aGauge4.ScaleLinesMajorOuterRadius = 50;
-            this.aGauge4.ScaleLinesMajorStepValue = 10F;
-            this.aGauge4.ScaleLinesMajorWidth = 2;
-            this.aGauge4.ScaleLinesMinorColor = System.Drawing.Color.Gray;
-            this.aGauge4.ScaleLinesMinorInnerRadius = 43;
-            this.aGauge4.ScaleLinesMinorNumOf = 1;
-            this.aGauge4.ScaleLinesMinorOuterRadius = 50;
-            this.aGauge4.ScaleLinesMinorWidth = 1;
-            this.aGauge4.ScaleNumbersColor = System.Drawing.Color.Black;
-            this.aGauge4.ScaleNumbersFormat = null;
-            this.aGauge4.ScaleNumbersRadius = 62;
-            this.aGauge4.ScaleNumbersRotation = 0;
-            this.aGauge4.ScaleNumbersStartScaleLine = 1;
-            this.aGauge4.ScaleNumbersStepScaleLines = 2;
-            this.aGauge4.Size = new System.Drawing.Size(150, 169);
-            this.aGauge4.TabIndex = 27;
-            this.aGauge4.Text = "AGauge4";
-            this.aGauge4.Value = 0F;
-            this.aGauge4.ValueInRangeChanged += new AGaugeApp.AGauge.ValueInRangeChangedDelegate(this.AGauge4_ValueInRangeChanged);
             // 
             // PHeatingSystem
             // 

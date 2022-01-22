@@ -313,7 +313,7 @@ namespace AGaugeApp.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("-20")]
+        [global::System.Configuration.DefaultSettingValueAttribute("125")]
         public float AgMS_max6 {
             get {
                 return ((float)(this["AgMS_max6"]));
